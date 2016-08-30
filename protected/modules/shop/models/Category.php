@@ -11,11 +11,16 @@ class Category extends CActiveRecord
 		$data = array();
 
 		foreach(Category::model()->findAll('parent_id = ' . $id) as $model) {
-			$row['text'] = CHtml::link($model->title, array('category/view', 'id' => $model->category_id));
+            if ($model->parent_id == 0) {
+                $row['text'] = CHtml::link($model->title, array('category/view', 'id' => $model->category_id),
+                    array('class'=>"dropdown-toggle", 'data-toggle'=>"dropdown"));
+            } else {
+                $row['text'] = CHtml::link($model->title, array('category/view', 'id' => $model->category_id));
+            }
 			$row['children'] = Category::getChilds($model->category_id);
 			$data[] = $row;
 		}
-		return $data;
+        return $data;
 	}
 
 

@@ -50,7 +50,7 @@ class ShopModule extends CWebModule
 	// Where the uploaded product images are stored:
 	public $productImagesFolder = 'productimages'; // Approot/...
 
-	public $layout = 'application.modules.shop.views.layouts.minhtu';
+	public $layout = 'application.modules.shop.views.layouts.minhtu-v1';
 
 	public function init()
 	{
