@@ -2,7 +2,11 @@
 
 class ShoppingCartController extends Controller
 {
-	public function actionView()
+    public function beforeAction($action) {
+        $this->layout = Shop::module()->layout;
+        return parent::beforeAction($action);
+    }
+    public function actionView()
 	{
 		$cart = Shop::getCartContent();
 
