@@ -46,9 +46,9 @@
                 <div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
                     <!-- ============================================================= LOGO ============================================================= -->
                     <div class="logo">
-                        <a href="home.html">
+                        <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">
 
-                            <img src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/logo.png"
+                            <img style="height: 90px;" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/logo3.png"
                                  alt="">
 
                         </a>
@@ -73,7 +73,7 @@
                                 <ul class="categories-filter animate-dropdown">
                                     <li class="dropdown">
 
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="danh mục.html">Categories
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="danh mục.html">Danh mục
                                             <b class="caret"></b></a>
 
                                         <ul class="dropdown-menu" role="menu">
@@ -90,7 +90,7 @@
                                     </li>
                                 </ul>
 
-                                <input class="search-field" placeholder="Search here..."/>
+                                <input class="search-field" placeholder="Nhập sản phẩm cần tìm..."/>
 
                                 <a class="search-button" href="#"></a>
 
@@ -104,61 +104,25 @@
                     <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
 
                     <div class="dropdown dropdown-cart">
-                        <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
+                        <a href="/shop/shoppingCart/view" class="dropdown-toggle lnk-cart">
                             <div class="items-cart-inner">
                                 <div class="total-price-basket">
-                                    <span class="lbl">cart -</span>
+                                    <span class="lbl">TỔNG -</span>
                                     <span class="total-price">
-                        <span class="sign">$</span>
-                        <span class="value">600.00</span>
+                        <span class="value"><?php echo Shop::getPriceTotalNumber();?></span>
                     </span>
                                 </div>
                                 <div class="basket">
                                     <i class="glyphicon glyphicon-shopping-cart"></i>
                                 </div>
-                                <div class="basket-item-count"><span class="count">2</span></div>
+                                <?php
+                                if (!isset($products))
+                                    $products = Shop::getCartContent();
+                                ?>
+                                <div class="basket-item-count"><span class="count"><?php echo count($products);?></span></div>
 
                             </div>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <div class="cart-item product-summary">
-                                    <div class="row">
-                                        <div class="col-xs-4">
-                                            <div class="image">
-                                                <a href="detail.html"><img
-                                                        src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/cart.jpg"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-7">
-
-                                            <h3 class="name"><a href="index.php?page-detail">Simple Product</a></h3>
-                                            <div class="price">$600.00</div>
-                                        </div>
-                                        <div class="col-xs-1 action">
-                                            <a href="#"><i class="fa fa-trash"></i></a>
-                                        </div>
-                                    </div>
-                                </div><!-- /.cart-item -->
-                                <div class="clearfix"></div>
-                                <hr>
-
-                                <div class="clearfix cart-total">
-                                    <div class="pull-right">
-
-                                        <span class="text">Sub Total :</span><span class='price'>$600.00</span>
-
-                                    </div>
-                                    <div class="clearfix"></div>
-
-                                    <a href="checkout.html"
-                                       class="btn btn-upper btn-primary btn-block m-t-20">Checkout</a>
-                                </div><!-- /.cart-total-->
-
-
-                            </li>
-                        </ul><!-- /.dropdown-menu-->
                     </div><!-- /.dropdown-cart -->
 
                     <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= -->
@@ -228,7 +192,7 @@
 <!-- ============================================== HEADER : END ============================================== -->
 <div class="body-content outer-top-xs" id="top-banner-and-menu">
     <div class="container">
-        <div class="row">
+        <div class="row single-product outer-bottom-sm ">
             <!-- ============================================== SIDEBAR ============================================== -->
             <div class="col-xs-12 col-sm-12 col-md-3 sidebar">
 
@@ -262,10 +226,11 @@
                     </nav><!-- /.megamenu-horizontal -->
                 </div><!-- /.side-menu -->
                 <!-- ================================== TOP NAVIGATION : END ================================== -->
-                <!-- ============================================== SPECIAL OFFER ============================================== -->
 
-                <div class="sidebar-widget outer-bottom-small wow fadeInUp">
-                    <h3 class="section-title">Special Offer</h3>
+                <!-- ============================================== SẢN PHẨM ĐẶC BIỆT ============================================== -->
+
+                <div class="sidebar-widget outer-bottom-small wow fadeInUp hidden-xs">
+                    <h3 class="section-title">NỔI BẬT</h3>
                     <div class="sidebar-widget-body outer-top-xs">
                         <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
                             <div class="item">
@@ -622,29 +587,11 @@
                         </div>
                     </div><!-- /.sidebar-widget-body -->
                 </div><!-- /.sidebar-widget -->
-                <!-- ============================================== SPECIAL OFFER : END ============================================== -->
-                <!-- ============================================== PRODUCT TAGS ============================================== -->
-                <div class="sidebar-widget product-tag wow fadeInUp">
-                    <h3 class="section-title">Product tags</h3>
-                    <div class="sidebar-widget-body outer-top-xs">
-                        <div class="tag-list">
-                            <a class="item" title="Phone" href="danh mục.html">Phone</a>
-                            <a class="item active" title="Vest" href="danh mục.html">Vest</a>
-                            <a class="item" title="Smartphone" href="danh mục.html">Smartphone</a>
-                            <a class="item" title="Furniture" href="danh mục.html">Furniture</a>
-                            <a class="item" title="T-shirt" href="danh mục.html">T-shirt</a>
-                            <a class="item" title="Sweatpants" href="danh mục.html">Sweatpants</a>
-                            <a class="item" title="Sneaker" href="danh mục.html">Sneaker</a>
-                            <a class="item" title="Toys" href="danh mục.html">Toys</a>
-                            <a class="item" title="Rose" href="danh mục.html">Rose</a>
-                        </div><!-- /.tag-list -->
-                    </div><!-- /.sidebar-widget-body -->
-                </div><!-- /.sidebar-widget -->
-                <!-- ============================================== PRODUCT TAGS : END ============================================== -->
-                <!-- ============================================== SPECIAL DEALS ============================================== -->
+                <!-- ============================================== SẢN PHẨM ĐẶC BIỆT : END ============================================== -->
+                <!-- ============================================== GIẢM GIÁ ============================================== -->
 
-                <div class="sidebar-widget outer-bottom-small wow fadeInUp">
-                    <h3 class="section-title">Special Deals</h3>
+                <div class="sidebar-widget outer-bottom-small wow fadeInUp hidden-xs">
+                    <h3 class="section-title">GIẢM GIÁ</h3>
                     <div class="sidebar-widget-body outer-top-xs">
                         <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
                             <div class="item">
@@ -1001,286 +948,23 @@
                         </div>
                     </div><!-- /.sidebar-widget-body -->
                 </div><!-- /.sidebar-widget -->
-                <!-- ============================================== SPECIAL DEALS : END ============================================== -->
-                <!-- ============================================== NEWSLETTER ============================================== -->
-                <div class="sidebar-widget newsletter wow fadeInUp outer-bottom-small">
-                    <h3 class="section-title">Newsletters</h3>
+                <!-- ============================================== GIẢM GIÁ : END ============================================== -->
+
+                <!-- ============================================== THỐNG KÊ TRUY CẬP ============================================== -->
+
+                <div class="sidebar-widget outer-bottom-small wow fadeInUp hidden-xs">
+                    <h3 class="section-title">THỐNG KÊ TRUY CẬP</h3>
                     <div class="sidebar-widget-body outer-top-xs">
-                        <p>Sign Up for Our Newsletter!</p>
-                        <form role="form">
-                            <div class="form-group">
-                                <label class="sr-only" for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                       placeholder="Subscribe to our newsletter">
+                        <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
+                            <div class="item">
+                                <div class="products special-product">
+
+                                </div>
                             </div>
-                            <button class="btn btn-primary">Subscribe</button>
-                        </form>
+                        </div>
                     </div><!-- /.sidebar-widget-body -->
                 </div><!-- /.sidebar-widget -->
-                <!-- ============================================== NEWSLETTER: END ============================================== -->
-                <!-- ============================================== HOT DEALS ============================================== -->
-                <div class="sidebar-widget hot-deals wow fadeInUp">
-                    <h3 class="section-title">hot deals</h3>
-                    <div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-xs">
-
-                        <div class="item">
-                            <div class="products">
-                                <div class="hot-deal-wrapper">
-                                    <div class="image">
-                                        <img
-                                            src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/hot-deals/1.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="sale-offer-tag"><span>35%<br>off</span></div>
-                                    <div class="timing-wrapper">
-                                        <div class="box-wrapper">
-                                            <div class="date box">
-                                                <span class="key">120</span>
-                                                <span class="value">Days</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-wrapper">
-                                            <div class="hour box">
-                                                <span class="key">20</span>
-                                                <span class="value">HRS</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-wrapper">
-                                            <div class="minutes box">
-                                                <span class="key">36</span>
-                                                <span class="value">MINS</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-wrapper hidden-md">
-                                            <div class="seconds box">
-                                                <span class="key">60</span>
-                                                <span class="value">SEC</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- /.hot-deal-wrapper -->
-
-                                <div class="product-info text-left m-t-20">
-                                    <h3 class="name"><a href="detail.html">Apple Iphone 5s 32GB Gold</a></h3>
-                                    <div class="rating rateit-small"></div>
-
-                                    <div class="product-price">
-                                <span class="price">
-                                    $600.00
-                                </span>
-
-                                        <span class="price-before-discount">$800.00</span>
-
-                                    </div><!-- /.product-price -->
-
-                                </div><!-- /.product-info -->
-
-                                <div class="cart clearfix animate-effect">
-                                    <div class="action">
-
-                                        <div class="add-cart-button btn-group">
-                                            <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-                                                <i class="fa fa-shopping-cart"></i>
-                                            </button>
-                                            <button class="btn btn-primary" type="button">Add to cart</button>
-
-                                        </div>
-
-                                    </div><!-- /.action -->
-                                </div><!-- /.cart -->
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products">
-                                <div class="hot-deal-wrapper">
-                                    <div class="image">
-                                        <img
-                                            src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/hot-deals/2.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="sale-offer-tag"><span>35%<br>off</span></div>
-                                    <div class="timing-wrapper">
-                                        <div class="box-wrapper">
-                                            <div class="date box">
-                                                <span class="key">120</span>
-                                                <span class="value">Days</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-wrapper">
-                                            <div class="hour box">
-                                                <span class="key">20</span>
-                                                <span class="value">HRS</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-wrapper">
-                                            <div class="minutes box">
-                                                <span class="key">36</span>
-                                                <span class="value">MINS</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-wrapper hidden-md">
-                                            <div class="seconds box">
-                                                <span class="key">60</span>
-                                                <span class="value">SEC</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- /.hot-deal-wrapper -->
-
-                                <div class="product-info text-left m-t-20">
-                                    <h3 class="name"><a href="detail.html">Apple Iphone 5s 32GB Gold</a></h3>
-                                    <div class="rating rateit-small"></div>
-
-                                    <div class="product-price">
-                                <span class="price">
-                                    $600.00
-                                </span>
-
-                                        <span class="price-before-discount">$800.00</span>
-
-                                    </div><!-- /.product-price -->
-
-                                </div><!-- /.product-info -->
-
-                                <div class="cart clearfix animate-effect">
-                                    <div class="action">
-
-                                        <div class="add-cart-button btn-group">
-                                            <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-                                                <i class="fa fa-shopping-cart"></i>
-                                            </button>
-                                            <button class="btn btn-primary" type="button">Add to cart</button>
-
-                                        </div>
-
-                                    </div><!-- /.action -->
-                                </div><!-- /.cart -->
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="products">
-                                <div class="hot-deal-wrapper">
-                                    <div class="image">
-                                        <img
-                                            src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/hot-deals/3.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="sale-offer-tag"><span>35%<br>off</span></div>
-                                    <div class="timing-wrapper">
-                                        <div class="box-wrapper">
-                                            <div class="date box">
-                                                <span class="key">120</span>
-                                                <span class="value">Days</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-wrapper">
-                                            <div class="hour box">
-                                                <span class="key">20</span>
-                                                <span class="value">HRS</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-wrapper">
-                                            <div class="minutes box">
-                                                <span class="key">36</span>
-                                                <span class="value">MINS</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-wrapper hidden-md">
-                                            <div class="seconds box">
-                                                <span class="key">60</span>
-                                                <span class="value">SEC</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- /.hot-deal-wrapper -->
-
-                                <div class="product-info text-left m-t-20">
-                                    <h3 class="name"><a href="detail.html">Apple Iphone 5s 32GB Gold</a></h3>
-                                    <div class="rating rateit-small"></div>
-
-                                    <div class="product-price">
-                                <span class="price">
-                                    $600.00
-                                </span>
-
-                                        <span class="price-before-discount">$800.00</span>
-
-                                    </div><!-- /.product-price -->
-
-                                </div><!-- /.product-info -->
-
-                                <div class="cart clearfix animate-effect">
-                                    <div class="action">
-
-                                        <div class="add-cart-button btn-group">
-                                            <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-                                                <i class="fa fa-shopping-cart"></i>
-                                            </button>
-                                            <button class="btn btn-primary" type="button">Add to cart</button>
-
-                                        </div>
-
-                                    </div><!-- /.action -->
-                                </div><!-- /.cart -->
-                            </div>
-                        </div>
-
-
-                    </div><!-- /.sidebar-widget -->
-                </div>
-                <!-- ============================================== HOT DEALS: END ============================================== -->
-                <!-- ============================================== COLOR============================================== -->
-                <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
-                    <div id="advertisement" class="advertisement">
-                        <div class="item bg-color">
-                            <div class="container-fluid">
-                                <div class="caption vertical-top text-left">
-                                    <div class="big-text">
-                                        Save<span class="big">50%</span>
-                                    </div>
-
-
-                                    <div class="excerpt">
-                                        on selected items
-                                    </div>
-                                </div><!-- /.caption -->
-                            </div><!-- /.container-fluid -->
-                        </div><!-- /.item -->
-
-                        <div class="item"
-                             style="background-image: url('<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/advertisement/1.jpg');">
-
-                        </div><!-- /.item -->
-
-                        <div class="item bg-color">
-                            <div class="container-fluid">
-                                <div class="caption vertical-top text-left">
-                                    <div class="big-text">
-                                        Save<span class="big">50%</span>
-                                    </div>
-
-
-                                    <div class="excerpt fadeInDown-2">
-                                        on selected items
-                                    </div>
-                                </div><!-- /.caption -->
-                            </div><!-- /.container-fluid -->
-                        </div><!-- /.item -->
-
-                    </div><!-- /.owl-carousel -->
-                </div>
-
-                <!-- ============================================== COLOR: END ============================================== -->
-
+                <!-- ============================================== THỐNG KÊ TRUY CẬP : END ============================================== -->
 
             </div><!-- /.sidemenu-holder -->
             <!-- ============================================== SIDEBAR : END ============================================== -->
@@ -1307,8 +991,8 @@
                             <div class="logo">
                                 <a href="home.html">
 
-                                    <img
-                                        src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/logo.png"
+                                    <img style="height: 90px;"
+                                        src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/logo3.png"
                                         alt="">
 
                                 </a>
@@ -1340,7 +1024,7 @@
                     <!-- ============================================================= CONTACT TIMING============================================================= -->
                     <div class="contact-timing">
                         <div class="module-heading">
-                            <h4 class="module-title">opening time</h4>
+                            <h4 class="module-title">THỜI GIAN LÀM VIỆC</h4>
                         </div><!-- /.module-heading -->
 
                         <div class="module-body outer-top-xs">
@@ -1369,56 +1053,14 @@
                 </div><!-- /.col -->
 
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <!-- ============================================================= LATEST TWEET============================================================= -->
-                    <div class="latest-tweet">
-                        <div class="module-heading">
-                            <h4 class="module-title">latest tweet</h4>
-                        </div><!-- /.module-heading -->
 
-                        <div class="module-body outer-top-xs">
-                            <div class="re-twitter">
-                                <div class="comment media">
-                                    <div class='pull-left'>
-                    <span class="icon fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <a href="#">@laurakalbag</a> As a result of your previous recommendation :)
-                                        <span class="time">
-                        12 hours ago
-                    </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="re-twitter">
-                                <div class="comment media">
-                                    <div class='pull-left'>
-                    <span class="icon fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <a href="#">@laurakalbag</a> As a result of your previous recommendation :)
-                                        <span class="time">
-                        12 hours ago
-                    </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- /.module-body -->
-                    </div><!-- /.contact-timing -->
-                    <!-- ============================================================= LATEST TWEET : END ============================================================= -->
                 </div><!-- /.col -->
 
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <!-- ============================================================= INFORMATION============================================================= -->
-                    <div class="contact-information">
+                    <!-- ============================================================= THÔNG TIN CỬA HÀNG============================================================= -->
+                    <div class="contact-THÔNG TIN CỬA HÀNG">
                         <div class="module-heading">
-                            <h4 class="module-title">information</h4>
+                            <h4 class="module-title">THÔNG TIN CỬA HÀNG</h4>
                         </div><!-- /.module-heading -->
 
                         <div class="module-body outer-top-xs">
@@ -1455,15 +1097,15 @@
                     </span>
                                     </div>
                                     <div class="media-body">
-                                        <span><a href="#">Contact @Unicase.com</a></span><br>
-                                        <span><a href="#">Sale @Unicase.com</a></span>
+                                        <span><a href="#">Liên hệ @vanphongphamminhtu.vn</a></span><br>
+                                        <span><a href="#">Kinh  doanh @vanphongphamminhtu.vn</a></span>
                                     </div>
                                 </li>
 
                             </ul>
                         </div><!-- /.module-body -->
                     </div><!-- /.contact-timing -->
-                    <!-- ============================================================= INFORMATION : END ============================================================= -->
+                    <!-- ============================================================= THÔNG TIN CỬA HÀNG : END ============================================================= -->
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container -->
@@ -1472,9 +1114,9 @@
     <div class="footer-bottom inner-bottom-sm">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="module-heading outer-bottom-xs">
-                        <h4 class="module-title">danh mục</h4>
+                        <h4 class="module-title">DỊCH VỤ</h4>
                     </div><!-- /.module-heading -->
 
                     <div class="module-body">
@@ -1488,41 +1130,9 @@
                     </div><!-- /.module-body -->
                 </div><!-- /.col -->
 
-                <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="module-heading outer-bottom-xs">
-                        <h4 class="module-title">my account</h4>
-                    </div><!-- /.module-heading -->
-
-                    <div class="module-body">
-                        <ul class='list-unstyled'>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Customer Service</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Site Map</a></li>
-                            <li><a href="#">Search Terms</a></li>
-                        </ul>
-                    </div><!-- /.module-body -->
-                </div><!-- /.col -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="module-heading outer-bottom-xs">
-                        <h4 class="module-title">our services</h4>
-                    </div><!-- /.module-heading -->
-
-                    <div class="module-body">
-                        <ul class='list-unstyled'>
-                            <li><a href="#">Order History</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Libero Sed rhoncus</a></li>
-                            <li><a href="#">Venenatis augue tellus</a></li>
-                            <li><a href="#">My Vouchers</a></li>
-                        </ul>
-                    </div><!-- /.module-body -->
-                </div><!-- /.col -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="module-heading outer-bottom-xs">
-                        <h4 class="module-title">help & support</h4>
+                        <h4 class="module-title">HƯỚNG DẪN & HỖ TRỢ</h4>
                     </div><!-- /.module-heading -->
 
                     <div class="module-body">
@@ -1543,31 +1153,13 @@
         <div class="container">
             <div class="col-xs-12 col-sm-6 no-padding">
                 <div class="copyright">
-                    Copyright © 2014
-                    <a href="home.html">Unicase Shop.</a>
+                    Copyright © 2016
+                    <a href="home.html">Văn phòng phẩm Minh Tú.</a>
                     - All rights Reserved
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 no-padding">
-                <div class="clearfix payment-methods">
-                    <ul>
-                        <li><img
-                                src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/payments/1.png"
-                                alt=""></li>
-                        <li><img
-                                src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/payments/2.png"
-                                alt=""></li>
-                        <li><img
-                                src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/payments/3.png"
-                                alt=""></li>
-                        <li><img
-                                src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/payments/4.png"
-                                alt=""></li>
-                        <li><img
-                                src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/payments/5.png"
-                                alt=""></li>
-                    </ul>
-                </div><!-- /.payment-methods -->
+
             </div>
         </div>
     </div>
@@ -1591,6 +1183,7 @@
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/js/bootstrap-select.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/js/wow.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/js/scripts.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/js/custom.js"></script>
 
 </body>
 </html>

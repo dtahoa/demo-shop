@@ -43,7 +43,7 @@
 		} */
 
 		public static function priceFormat ($price) {
-			$price = sprintf('%.2f', $price);
+			$price = sprintf('%.0f', $price);
 			if(Yii::app()->language == 'de')
 				$price = str_replace('.', ',', $price);
 
@@ -85,16 +85,33 @@
 			if($shipping_method = Shop::getShippingMethod())
 				$price_total += $shipping_method->price;
 
-			$price_total = Shop::t('Price total: {total}', array(
+			$price_total = Shop::t('<strong>Thành tiền</strong>:  <span class="total2">{total}</span>', array(
 						'{total}' => Shop::priceFormat($price_total),
-						)); 
-			$price_total .= '<br />';
-			$price_total .= Shop::t('All prices are including VAT: {vat}', array(
+						));
+			$price_total .= '<br /><hr>';
+			$price_total .= Shop::t('Giá đã bao gồm <strong>10%</strong> VAT: <strong class="text-blue">{vat}</strong>', array(
 						'{vat}' => Shop::priceFormat($tax_total))) . '<br />';
-			$price_total .= Shop::t('All prices excluding shipping costs') . '<br />';
+			$price_total .= Shop::t('Giá đã bao gồm phí vận chuyển') . '<br />';
 
 			return $price_total;
 		}
+
+        public static function getPriceTotalNumber() {
+            $price_total = 0;
+            $tax_total = 0;
+            foreach(Shop::getCartContent() as $product)  {
+                $model = Products::model()->findByPk($product['product_id']);
+                $price_total += $model->getPrice(@$product['Variations'], @$product['amount']);
+                $tax_total += $model->getTaxRate(@$product['Variations'], @$product['amount']);
+
+            }
+
+            if($shipping_method = Shop::getShippingMethod())
+                $price_total += $shipping_method->price;
+
+            $price_total = Shop::priceFormat($price_total);
+            return $price_total;
+        }
 
 		public static function register($file)
 		{

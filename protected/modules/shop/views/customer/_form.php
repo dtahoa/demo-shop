@@ -1,71 +1,87 @@
-<div class="form">
-
-<?php
-if(isset($action) && $action !== null) 
-	$form=$this->beginWidget('CActiveForm', array(
+<div class="form-group">
+	<div class="col-md-10">
+		<?php
+		if(isset($action) && $action !== null)
+			$form=$this->beginWidget('CActiveForm', array(
 				'id'=>'customer-form',
 				'action' => $action,
 				'enableAjaxValidation'=>false,
-				)); 
-else
-$form=$this->beginWidget('CActiveForm', array(
-			'id'=>'customer-form',
-			'enableAjaxValidation'=>false,
+				'htmlOptions'=> array('class'=>'form-horizontal','role'=>'form')
+			));
+		else
+			$form=$this->beginWidget('CActiveForm', array(
+				'id'=>'customer-form',
+				'enableAjaxValidation'=>false,
+				'htmlOptions'=> array('class'=>'form-horizontal','role'=>'form')
 			)); ?>
+		<fieldset>
+			<?php echo $form->hiddenField($customer, 'user_id', array('value'=> Yii::app()->user->id)); ?>
 
-<?php echo $form->errorSummary(array($customer, $address)); ?>
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Họ *</label>
+				<div class="col-sm-10">
+					<?php echo $form->textField($address,'firstname',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
+					<?php echo $form->error($address,'firstname', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
 
-		<?php echo $form->hiddenField($customer, 'user_id', array('value'=> Yii::app()->user->id)); ?>
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Tên *</label>
+				<div class="col-sm-10">
+					<?php echo $form->textField($address,'lastname',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
+					<?php echo $form->error($address,'lastname', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($address,'firstname'); ?>
-		<?php echo $form->textField($address,'firstname',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($address,'firstname'); ?>
-	</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Email *</label>
+				<div class="col-sm-10">
+					<?php echo $form->textField($customer,'email',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
+					<?php echo $form->error($customer,'email', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($address,'lastname'); ?>
-		<?php echo $form->textField($address,'lastname',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($address,'lastname'); ?>
-	</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Địa chỉ *</label>
+				<div class="col-sm-10">
+					<?php echo $form->textField($address,'street',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
+					<?php echo $form->error($address,'street', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($customer,'email'); ?>
-		<?php echo $form->textField($customer,'email',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($customer,'email'); ?>
-	</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Mã vùng</label>
+				<div class="col-sm-4">
+					<?php echo $form->textField($address,'zipcode',array('size'=>10,'maxlength'=>45, 'class'=>'form-control')); ?>
+					<?php echo $form->error($address,'zipcode', array('class'=>'lb-error')); ?>
+				</div>
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Thành phố</label>
+				<div class="col-sm-4">
+					<?php echo $form->textField($address,'city',array('size'=>32,'maxlength'=>45, 'class'=>'form-control')); ?>
+					<?php echo $form->error($address,'city', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($address,'street'); ?>
-		<?php echo $form->textField($address,'street',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($address,'street'); ?>
-	</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Quốc gia</label>
+				<div class="col-sm-10">
+					<?php echo $form->textField($address,'country',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
+					<?php echo $form->error($address,'country', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($address,'city'); ?>
-		<?php echo $form->textField($address,'zipcode',array('size'=>10,'maxlength'=>45)); ?>
-		<?php echo $form->error($address,'zipcode'); ?>
-
-		<?php echo $form->textField($address,'city',array('size'=>32,'maxlength'=>45)); ?>
-		<?php echo $form->error($address,'city'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($address,'country'); ?>
-		<?php echo $form->textField($address,'country',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($address,'country'); ?>
-	</div>
-
-	<div style="clear: both;"> </div>
-
-	<div class="row buttons">
-	<?php echo CHtml::submitButton($customer->isNewRecord 
-			? Yii::t('ShopModule.shop', 'Register') 
-			: Yii::t('ShopModule.shop', 'Save')
-			,array('id'=>'next')
-			); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-
-</div><!-- form -->
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<div class="pull-right">
+					<?php echo CHtml::submitButton($customer->isNewRecord
+						? Yii::t('ShopModule.shop', 'Đăng kí')
+						: Yii::t('ShopModule.shop', 'Lưu')
+						,array('id'=>'next', 'class'=>'btn btn-primary')
+					); ?>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+		<?php $this->endWidget(); ?>
+	</div><!-- /.col-lg-12 -->
+</div><!-- /.row -->

@@ -4,29 +4,22 @@ Shop::register('css/shop.css');
 if($this->id == 'shoppingCart')
 	$this->renderPartial('/order/waypoint', array('point' => 0));
 
-if(!isset($products)) 
+if(!isset($products))
 	$products = Shop::getCartContent();
-
-if(!isset($this->breadcrumbs) || ($this->breadcrumbs== array()))
-	$this->breadcrumbs = array(
-			Shop::t('Shop') => array('//shop/products/'),
-			Shop::t('Shopping Cart'));
 ?>
 
-<h2><?php echo Shop::t('Shopping cart'); ?></h2>
+<h2 class="text-blue"><?php echo Shop::t('Thông tin giỏ hàng'); ?></h2>
 
 
 <?php
 if($products) {
-	echo '<table cellpadding="0" cellspacing="0" class="shopping_cart">';
-	printf('<tr><th>%s</th><th>%s</th><th>%s</th><th>%s</th><th style="width:60px;">%s</th><th style="width:60px;">%s</th><th>%s</th></tr>',
-			Shop::t('Image'),
-			Shop::t('Amount'),
-			Shop::t('Product'),
-			Shop::t('Variation'),
-			Shop::t('Price Single'),
-			Shop::t('Sum'),
-			Shop::t('Actions')
+	echo '<table cellpadding="0" cellspacing="0" class="shopping_cart" id="mt-cart">';
+	printf('<tr><th style="width:10px;">%s</th><th>%s</th><th style="width:60px;">%s</th><th style="width:100px;">%s</th><th style="width:5px; text-align: center">%s</th></tr>',
+			Shop::t('SL'),
+			Shop::t('SẢN PHẨM'),
+			Shop::t('GIÁ'),
+			Shop::t('TỔNG TIỀN'),
+			Shop::t('XÓA')
 );
 
 	foreach($products as $position => $product) {
@@ -44,19 +37,17 @@ if($products) {
 				}
 			}
 
-			printf('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td class="text-right">%s</td><td class="text-right price_'.$position.'">%s</td><td>%s</td></tr>',
-					$model->getImage(0, true),
+			printf('<tr><td>%s</td><td>%s</td><td class="text-right">%s</td><td class="text-right price_'.$position.'">%s</td><td style="text-align:center;">%s</td></tr>',
 					CHtml::textField('amount_'.$position,
 						$product['amount'], array(
 							'size' => 4,
-							'class' => 'amount_'.$position,
+							'class' => 'center-input amount_'.$position,
 							)
 						),
 					$model->title,
-					$variations,
 					Shop::priceFormat($model->getPrice(@$product['Variations'])),
 					Shop::priceFormat($model->getPrice(@$product['Variations'], @$product['amount'])),
-					CHtml::link(Shop::t('Remove'), array(
+					CHtml::link(Shop::t('<i class="fa fa-times"></i>'), array(
 							'//shop/shoppingCart/delete',
 							'id' => $position), array(
 								'confirm' => Shop::t('Are you sure?')))
@@ -87,43 +78,41 @@ if($products) {
 	if($shippingMethod = Shop::getShippingMethod()) {
 		printf('<tr>
 				<td></td>
-				<td>1</td>
 				<td>%s</td>
-				<td></td>
 				<td class="text-right">%s</td>
 				<td class="text-right">%s</td>
 				<td>%s</td></tr>',
-				Shop::t('Shipping costs'),
+				Shop::t('Phí vận chuyển'),
 				Shop::priceFormat($shippingMethod->price),
 				Shop::priceFormat($shippingMethod->price),
-				CHtml::link(Shop::t('edit'), array('//shop/shippingMethod/choose'))
+				CHtml::link(Shop::t('Sửa'), array('//shop/shippingMethod/choose'))
 				);
 	}
 echo '<tr>
 <td class="text-right no-border" colspan="6">
-<p class="price_total">'.Shop::getPriceTotal().'</p></td>
-<td class="no-border"></td></tr>';
+<p class="price_total">'.Shop::getPriceTotal().'</p></td>';
 echo '</table>';
 ?>
 
 <?php
 
  if(Yii::app()->controller->id != 'order') {
-echo '<div class="buttons">';
-echo CHtml::link(Shop::t('Buy additional Products'), array(
-			'//shop/products'), array('class'=>'btn-previous'));
+echo '<div class="buttons btn-process-cart">';
+echo CHtml::link(Shop::t('Tiếp tục mua hàng'), array(
+			'//shop/products'), array('class'=>'btn-previous btn-upper btn btn-default checkout-page-button checkout-continue'));
 
 echo '<br />';
-			
-echo CHtml::link(Shop::t('Buy this products'), array(
-			'//shop/order/create'), array('class'=>'btn-next')); 
+
+echo CHtml::link(Shop::t('Tiến hành đặt hàng'), array(
+			'//shop/order/create'), array('class'=>'btn-next btn-upper btn btn-primary checkout-page-button checkout-continue'));
 echo '</div>';
 }
 
 ?>
+
 <div class="clear"></div>
 
 <?php
 
-} else echo Shop::t('Your shopping cart is empty'); ?>
+} else echo Shop::t('Không có sản phẩm nào trong giỏ hàng'); ?>
 

@@ -35,7 +35,7 @@ $this->breadcrumbs=array(
 			)); ?>
 
 <div class="summary_delivery_address">
-<h3> <?php echo Shop::t('Delivery address'); ?> </h3>
+<h3> <?php echo Shop::t('Địa chỉ giao hàng'); ?> </h3>
 <?php $this->widget('zii.widgets.CDetailView', array(
 			'data'=>$model->deliveryAddress,
 			'attributes'=>array(
@@ -50,7 +50,7 @@ $this->breadcrumbs=array(
 </div>
 
 <div class="summary_billing_address">
-<h3> <?php echo Shop::t('Billing address'); ?> </h3>
+<h3> <?php echo Shop::t('Địa chỉ thanh toán'); ?> </h3>
 <?php $this->widget('zii.widgets.CDetailView', array(
 			'data'=>$model->billingAddress,
 			'attributes'=>array(

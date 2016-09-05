@@ -22,14 +22,14 @@ $form=$this->beginWidget('CActiveForm', array(
 			)); 
 ?>
 
-<h2> <?php echo Shop::t('Shipping options'); ?> </h2>
+<h2> <?php echo Shop::t('Phương thức giao hàng'); ?> </h2>
 
-<h3> <?php echo Shop::t('Shipping address'); ?></h3>
+<h3> <?php echo Shop::t('Địa chỉ người nhận'); ?></h3>
 
 <div class="current_address">
 	<?php $this->widget('zii.widgets.CDetailView', array(
                 'data'=>$customer->address,
-                'htmlOptions' => array('class' => 'detail-view'),
+                'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
                 'attributes'=>array(
                     'firstname',
                     'lastname',
@@ -42,11 +42,12 @@ $form=$this->beginWidget('CActiveForm', array(
 </div>
 <br/>
 <?php
-echo CHtml::checkBox('toggle_delivery',
+// Disable this features for small project
+/*echo CHtml::checkBox('toggle_delivery',
 			$customer->deliveryAddress !== NULL, array(
 				'style' => 'float: left')); 
 	echo CHtml::label(Shop::t('alternative delivery address'), 'toggle_delivery', array(
-				'style' => 'cursor:pointer'));
+				'style' => 'cursor:pointer'));*/
 	
 ?>
 
@@ -93,20 +94,18 @@ echo CHtml::checkBox('toggle_delivery',
 	</fieldset>
 <br />
 <hr />  
-<h3> <?php echo Shop::t('Shipping Method'); ?> </h3>
-<p> <?php echo Shop::t('Choose your Shipping method'); ?> </p>
+<h3> <?php echo Shop::t('Chọn phương thức giao hàng:'); ?> </h3>
 
 <?php
 $i = 0;
 
 foreach(ShippingMethod::model()->findAll() as $method) {
-	echo '<div class="row">';
+	echo '<div class="shipping-method">';
 	echo CHtml::radioButton("ShippingMethod", $i == 0, array(
 				'value' => $method->id));
-	echo '<div class="float-left">';
 	echo CHtml::label($method->title, 'ShippingMethod');
 	echo CHtml::tag('p', array(), $method->description);
-	echo CHtml::tag('p', array(), Shop::t('Price: ') . Shop::priceFormat($method->price));
+	echo CHtml::tag('p', array(), Shop::t('Phí vận chuyển: ') . '<strong>' .Shop::priceFormat($method->price) . '</strong>');
 	echo '</div>';
 	echo '</div>';
 	echo '<div class="clear"></div>';
@@ -126,9 +125,9 @@ foreach(ShippingMethod::model()->findAll() as $method) {
 ");
 ?>
 
-    <div class="row buttons">
+    <div class="buttons">
 		<?php
-        	echo CHtml::submitButton(Shop::t('Continue'),array('id'=>'next'));
+        	echo CHtml::submitButton(Shop::t('Tiếp tục'),array('id'=>'next', 'class'=>'btn-next btn-upper btn btn-primary'));
         ?>
 	</div>
 </div>

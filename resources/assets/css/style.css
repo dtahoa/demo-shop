@@ -1,3 +1,102 @@
 .sidebar .side-menu nav .nav > li > .mega-menu {
   min-width: 100% !important;
 }
+.ellipses {
+  width: 100%;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: nowrap;
+}
+.btn-cart, .btn-add-cart {
+  height: 34px;
+}
+.product-info {
+  margin-top: 10px;
+}
+
+#mt-cart {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#mt-cart td, #mt-cart th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#mt-cart tr:nth-child(even){background-color: #f2f2f2;}
+
+#mt-cart tr:hover {background-color: #ddd;}
+
+#mt-cart th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+#mt-cart.grey th {
+  color: #333;
+  background-color: #f5f5f5;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+.center-input {
+  text-align: center;
+}
+.text-blue {
+  color: #1d6ca1
+}
+.lb-customer {
+  text-align: left;
+}
+.lb-error {
+  color: #ff7878;
+  font-style: italic;
+}
+.btn-primary {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.btn-process-cart {
+  float: right;
+}
+.total2 {
+  color: #ee2347;
+  font-size: 19px;
+  font-weight: 400;
+}
+.price_total, .text-right .no-border {
+  text-align: right;
+}
+.btn-checkout {
+  color: #fff;
+  background: -webkit-gradient(linear,0 0,0 bottom,from(#ef3959),to(#d72041));
+  background: -webkit-linear-gradient(#ef3959,#d72041);
+  background: -moz-linear-gradient(#ef3959,#d72041);
+  background: -ms-linear-gradient(#ef3959,#d72041);
+  background: -o-linear-gradient(#ef3959,#d72041);
+  background: linear-gradient(#ef3959,#d72041);
+  -webkit-transistion: all .5s linear;
+  -moz-transistion: all .5s linear;
+  -ms-transistion: all .5s linear;
+  -o-transistion: all .5s linear;
+  transistion: all .5s linear;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}

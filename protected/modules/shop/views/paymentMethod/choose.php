@@ -23,12 +23,12 @@ $form=$this->beginWidget('CActiveForm', array(
 			)); 
 ?>
 
-<h2><?php echo Shop::t('Payment method'); ?></h2>
-<h3><?php echo Shop::t('Billing address'); ?></h3>
+<h2><?php echo Shop::t('Thanh Toán & Đặt Mua'); ?></h2>
+<h3><?php echo Shop::t('Địa chỉ người mua'); ?></h3>
 <div class="current_address">
 <?php $this->widget('zii.widgets.CDetailView', array(
 			'data'=>$customer->address,
-			'htmlOptions' => array('class' => 'detail-view'),
+			'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 			'attributes'=>array(
 				'firstname',
 				'lastname',
@@ -41,11 +41,12 @@ $form=$this->beginWidget('CActiveForm', array(
 </div>
 <br/>
 <?php
-echo CHtml::checkBox('toggle_billing',
+// Disable this features for small project
+/*echo CHtml::checkBox('toggle_billing',
 			$customer->billingAddress !== NULL, array(
 				'style' => 'float: left')); 
 	echo CHtml::label(Shop::t('alternative billing address'), 'toggle_billing', array(
-				'style' => 'cursor:pointer'));
+				'style' => 'cursor:pointer'));*/
 ?>
 <div class="form">
 	<fieldset id="billing_information" style="display: none;" >
@@ -90,17 +91,14 @@ echo CHtml::checkBox('toggle_billing',
      </fieldset>
 <br />
 <hr />  
-<h3> <?php echo Shop::t('Payment method'); ?> </h3>
-<p> <?php echo Shop::t('Choose your Payment method'); ?> </p>
-
+<h3> <?php echo Shop::t('Chọn phương thức thanh toán:'); ?> </h3>
 
 <?php
 $i = 0;
 foreach(PaymentMethod::model()->findAll() as $method) {
-	echo '<div class="row">';
+	echo '<div class="payment-method">';
 	echo CHtml::radioButton("PaymentMethod", $i == 0, array(
 				'value' => $method->id));
-	echo '<div class="float-left">';
 	echo CHtml::label($method->title, 'PaymentMethod');
 	echo CHtml::tag('p', array(), $method->description);
 	echo '</div>';
@@ -111,9 +109,9 @@ foreach(PaymentMethod::model()->findAll() as $method) {
 	?>
 
 
-<div class="row buttons">
+<div class="buttons">
 <?php
-echo CHtml::submitButton(Shop::t('Continue'),array('id'=>'next'));
+echo CHtml::submitButton(Shop::t('Tiếp tục'),array('id'=>'next', 'class'=>'btn-next btn-upper btn btn-primary'));
 ?>
 </div>
 

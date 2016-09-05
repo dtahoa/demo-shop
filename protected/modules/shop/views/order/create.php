@@ -10,7 +10,7 @@ $this->breadcrumbs=array(
 <?php 
 Shop::renderFlash();
 echo CHtml::beginForm(array('//shop/order/confirm'));
-echo '<h2>'.Shop::t('Confirmation').'</h2>';
+echo '<h2>'.Shop::t('Xác nhận thông tin đơn hàng').'</h2>';
 
 
 if(Shop::getCartContent() == array())
@@ -30,40 +30,40 @@ echo '<hr />';
 				
 echo '<p>';
 	$shipping = ShippingMethod::model()->findByPk(Yii::app()->user->getState('shipping_method'));
-	echo '<strong>'.Shop::t('Shipping Method').': </strong>'.' '.$shipping->title.' ('.$shipping->description.')';
+	echo '<strong>'.Shop::t('Phương thức vận chuyển').': </strong>'.' '.$shipping->title.' ('.$shipping->description.')';
 	echo '<br />';
-	echo CHtml::link(Shop::t('Edit shipping method'), array(
-			'//shop/shippingMethod/choose', 'order' => true));
+	/*echo CHtml::link(Shop::t('Edit shipping method'), array(
+			'//shop/shippingMethod/choose', 'order' => true));*/
 			echo '</p>';
 
 
 echo '<p>';
 	$payment = 	PaymentMethod::model()->findByPk(Yii::app()->user->getState('payment_method'));
-	echo '<strong>'.Shop::t('Payment method').': </strong>'.' '.$payment->title.' ('.$payment->description.')';	
+	echo '<strong>'.Shop::t('Phương thức thanh toán').': </strong>'.' '.$payment->title.' ('.$payment->description.')';
 	echo '<br />';
-	echo CHtml::link(Shop::t('Edit payment method'), array(
-			'//shop/paymentMethod/choose', 'order' => true));
+	/*echo CHtml::link(Shop::t('Edit payment method'), array(
+			'//shop/paymentMethod/choose', 'order' => true));*/
 echo '</p>';
 
 echo '<hr />';
 
 $this->renderPartial('application.modules.shop.views.shoppingCart.view'); 
 
-
-echo '<h3>'.Shop::t('Please add additional comments to the order here').'</h3>'; 
+// Disable this for small/VN project
+/*echo '<h3>'.Shop::t('Please add additional comments to the order here').'</h3>';
 
 echo CHtml::textArea('Order[Comment]',
 		@Yii::app()->user->getState('order_comment'), array('style'=>'width:600px; height:100px;padding:10px;'));
 		
-echo '<br /><br />';
+echo '<br /><br />';*/
 
 echo '<hr />';
 $this->renderPartial(Shop::module()->termsView);
 
 ?>
 
-<div class="row buttons">
-	<?php echo CHtml::submitButton(Shop::t('Confirm Order'),array ('id'=>'next'), array(
+<div class="buttons">
+	<?php echo CHtml::submitButton(Shop::t('Đặt mua'),array ('id'=>'next', 'class'=>'btn-next btn-upper btn btn-checkout'), array(
                 '//shop/order/confirm')); ?>
 </div>
 <?php echo CHtml::endForm(); ?>

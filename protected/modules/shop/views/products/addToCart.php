@@ -1,7 +1,6 @@
 <?php
 echo Shop::renderFlash();
 echo '<div class="product-price-info">';
-echo Shop::pricingInfo();
 echo '</div>';
 
 echo CHtml::beginForm(array('shoppingCart/create'));
@@ -40,11 +39,22 @@ if($variations = $model->getVariations()) {
 echo '<div style="clear: both;"></div>';
 echo '<br />';
 echo CHtml::hiddenField('product_id', $model->product_id);
-echo CHtml::label(Shop::t('Amount'), 'ShoppingCart_amount');
-echo ': ';
-echo CHtml::textField('amount', 1, array('size' => 3));
-echo '<br />';
+$style = '<div class="col-sm-2">
+	<span class="label">Số lượng :</span>
+</div>
 
-echo CHtml::submitButton(Shop::t('Add to shopping Cart'), array( 'class' => 'btn-add-cart'));
+<div class="col-sm-2">
+	<div class="cart-quantity">
+		<div class="quant-input">
+			<input type="text" name="amount" value="1">
+		</div>
+	</div>
+</div>
+
+<div class="col-sm-7">
+	<button class="btn btn-primary btn-add-to-cart" type="submit"><i
+			class="fa fa-shopping-cart inner-right-vs"></i> MUA HÀNG</button>
+</div>';
+echo $style;
 echo CHtml::endForm();
 ?>

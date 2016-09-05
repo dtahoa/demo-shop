@@ -10,10 +10,8 @@ echo CHtml::image($path,
 		$model->title,
 		array(
 			'title' => $model->title,
-			'style' => 'margin: 10px;',
-			'width' => isset($thumb) && $thumb
-			? Shop::module()->imageWidthThumb 
-			: Shop::module()->imageWidth)
+			'style' => '',
+			'width' => isset($thumb) && $thumb ? Shop::module()->imageWidthThumb : Shop::module()->imageWidth)
 		); ?>
 <?php 
 

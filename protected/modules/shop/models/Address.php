@@ -40,7 +40,7 @@ class Address extends CActiveRecord
 	public function rules()
 	{
 		return array(
-			array('firstname, lastname, street, zipcode, city, country', 'required'),
+			array('firstname, lastname, street', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin cho {attribute}.'),
 			array('firstname, lastname, street, zipcode, city, country', 'length', 'max'=>255),
 			array('id, firstname, lastname, street, zipcode, city, country', 'safe', 'on'=>'search'),
 		);
@@ -64,12 +64,12 @@ class Address extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'firstname' => Yii::t('ShopModule.shop', 'Firstname'),
-			'lastname' => Yii::t('ShopModule.shop', 'Lastname'),
-			'street' => Shop::t('Street'),
-			'zipcode' =>Shop::t('Zipcode'),
-			'city' => Shop::t('City'),
-			'country' => Shop::t('Country'),
+			'firstname' => Yii::t('ShopModule.shop', 'Họ'),
+			'lastname' => Yii::t('ShopModule.shop', 'Tên'),
+			'street' => Shop::t('Địa chỉ'),
+			'zipcode' =>Shop::t('Mã vùng'),
+			'city' => Shop::t('Thành phố'),
+			'country' => Shop::t('Quốc gia'),
 		);
 	}
 

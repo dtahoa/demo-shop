@@ -17,7 +17,7 @@ class Customer extends CActiveRecord
 	public function rules()
 	{
 		return array(
-			array('email', 'required'),
+			array('email', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin cho {attribute}.'),
 			array('address_id, customer_id, user_id', 'numerical', 'integerOnly'=>true),
 			array('email', 'CEmailValidator'),
 			array('customer_id, user_id, email', 'safe', 'on'=>'search'),

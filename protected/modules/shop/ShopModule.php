@@ -27,7 +27,7 @@ class ShopModule extends CWebModule
 	public $taxTable = 'shop_tax';
 	public $productSpecificationTable = 'shop_product_specification';
 	public $productVariationTable = 'shop_product_variation';
-	public $currencySymbol = '$';
+	public $currencySymbol = 'VNĐ';
 
 	public $logoPath = 'logo.jpg';
 	public $slipView = '/order/slip';
@@ -36,8 +36,8 @@ class ShopModule extends CWebModule
 
 	public $dateFormat = 'd/m/Y';
 	
-	public $imageWidthThumb = 100;
-	public $imageWidth = 200;
+	public $imageWidthThumb = "100%"; // 100
+	public $imageWidth = "100%"; // 200
 
 	public $notifyAdminEmail = null;
 

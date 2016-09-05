@@ -28,7 +28,10 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 		*/
-		'shop' => array( 'debug' => 'true')
+        'shop' => array(
+            'debug' => true,
+            'loginUrl' => array('/user/auth')
+        ),
 	),
 
 	// application components
@@ -41,14 +44,15 @@ return array(
 
 		// uncomment the following to enable URLs in path-format
 
-		'urlManager'=>array(
-			'urlFormat'=>'path',
-			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
-		),
+        'urlManager'=>array(
+            'urlFormat'=>'path',
+            'showScriptName'=>false,
+            'rules'=>array(
+                '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+            ),
+        ),
 
 
 		// database settings are configured in database.php

@@ -71,7 +71,7 @@ class ShoppingCartController extends Controller
 		$cart[] = $_POST;
 	
 		Shop::setCartcontent($cart);
-		Shop::setFlash(Shop::t('The product has been added to the shopping cart'));
+		Shop::setFlash(Shop::t('Sản phẩm đã được thêm vào giỏ hàng'));
 		$this->redirect(array('//shop/products/index'));
 	}
 

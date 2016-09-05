@@ -29,5 +29,7 @@ Here is the full example:
 			'failureView' = array('/myprojectspecific_controller/failure'),
 			),
 
-
+3. Cai tieng viet
+ALTER TABLE shop_payment_method MODIFY COLUMN description text
+    CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 

@@ -14,17 +14,17 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h2> <?php echo Shop::t('Please enter your Customer information'); ?> </h2>
+<!--<h2> <?php /*echo Shop::t('Please enter your Customer information'); */?> </h2>
 
-<h3> <?php echo Shop::t('I am a registered customer'); ?></h3>
+<h3> <?php /*echo Shop::t('I am a registered customer'); */?></h3>
 
-<p> <?php echo Shop::t('Click {link} if you are already registered', array(
-	'{link}' =>  CHtml::link(Shop::t('here'), Shop::module()->loginUrl))); ?> 
+<p> <?php /*echo Shop::t('Click {link} if you are already registered', array(
+	'{link}' =>  CHtml::link(Shop::t('here'), Shop::module()->loginUrl))); */?>
 </p>
 <hr />
-<h3><?php echo Shop::t('I am a new customer'); ?></h3>
-<p><?php echo Shop::t('Registration information'); ?></p>
-<p><strong> <?php echo Shop::t('Please enter your Customer information'); ?></strong> </p>
+<h3><?php /*echo Shop::t('I am a new customer'); */?></h3>-->
+<h3><?php echo Shop::t('Thông tin khách hàng'); ?></h3>
+<p><strong> <?php echo Shop::t('Vui lòng điền đầy đủ thông tin khách hàng'); ?></strong> </p>
 	<?php
 
 if($address === null)

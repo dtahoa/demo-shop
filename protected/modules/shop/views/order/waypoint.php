@@ -1,10 +1,10 @@
 <?php
 $points = array(
-		Shop::t('Customer information'),
-		Shop::t('Shipping'),
-		Shop::t('Payment'),
-		Shop::t('Confirm'),
-		Shop::t('Success')
+		Shop::t('Thông tin khách hàng'),
+		Shop::t('Giao hàng'),
+		Shop::t('Thanh toán'),
+		Shop::t('Xác nhận'),
+		Shop::t('Thành công')
 );
 
 $links = array(
@@ -17,12 +17,12 @@ $links = array(
 echo '<div id="waypointarea" class="waypointarea">';
 	printf('<span class="waypoint %s">%s</span>',
 			$point == 0 ? 'active' : '',
-			CHtml::link(Shop::t('Shopping Cart'), array(
+			CHtml::link(Shop::t('Giỏ hàng'), array(
 						'//shop/shoppingCart/view')));
 
 foreach ($points as $p => $pointText) 
 {
-	printf('<span class="waypoint%s">%s</span>',
+	printf('<span class="waypoint%s"> / %s</span>',
 			($point == ++$p) ? ' active' : '',
 			$point < ++$p ? $pointText : CHtml::link($pointText, @$links[$p-2])
 			);
