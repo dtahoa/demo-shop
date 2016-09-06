@@ -43,7 +43,10 @@
 		} */
 
 		public static function priceFormat ($price) {
-			$price = sprintf('%.0f', $price);
+            $symbol_thousand = '.';
+            $decimal_place = 0;
+            $price = sprintf('%.0f', $price);
+            $price = number_format($price, $decimal_place, '', $symbol_thousand);
 			if(Yii::app()->language == 'de')
 				$price = str_replace('.', ',', $price);
 
@@ -80,7 +83,7 @@
 				$price_total += $model->getPrice(@$product['Variations'], @$product['amount']);
 				$tax_total += $model->getTaxRate(@$product['Variations'], @$product['amount']);
 
-		}
+		    }
 
 			if($shipping_method = Shop::getShippingMethod())
 				$price_total += $shipping_method->price;
@@ -99,17 +102,21 @@
         public static function getPriceTotalNumber() {
             $price_total = 0;
             $tax_total = 0;
-            foreach(Shop::getCartContent() as $product)  {
-                $model = Products::model()->findByPk($product['product_id']);
-                $price_total += $model->getPrice(@$product['Variations'], @$product['amount']);
-                $tax_total += $model->getTaxRate(@$product['Variations'], @$product['amount']);
 
+            if (Shop::getCartContent()) {
+                foreach(Shop::getCartContent() as $product)  {
+                    $model = Products::model()->findByPk($product['product_id']);
+                    $price_total += $model->getPrice(@$product['Variations'], @$product['amount']);
+                    $tax_total += $model->getTaxRate(@$product['Variations'], @$product['amount']);
+
+                }
+
+                if($shipping_method = Shop::getShippingMethod())
+                    $price_total += $shipping_method->price;
+
+                $price_total = Shop::priceFormat($price_total);
             }
 
-            if($shipping_method = Shop::getShippingMethod())
-                $price_total += $shipping_method->price;
-
-            $price_total = Shop::priceFormat($price_total);
             return $price_total;
         }
 

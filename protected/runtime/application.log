@@ -912,3 +912,830 @@ Stack trace:
 REQUEST_URI=/index.php/shop/category/view/id/assets/images/banners/3.jpg
 HTTP_REFERER=http://demo-shop.local.com/index.php/shop/category/view/id/3
 ---
+2016/09/06 10:48:14 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:102)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (102)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:48:33 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:102)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (102)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:49:50 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:102)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (102)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:49:54 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:102)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (102)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:49:54 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:102)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (102)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:49:55 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:102)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (102)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:49:55 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:102)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (102)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:49:55 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:102)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (102)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:49:56 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:102)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (102)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:51:27 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:103)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (103)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:51:28 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:103)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (103)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:51:28 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:103)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (103)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:51:28 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:103)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (103)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:51:28 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:103)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (103)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:51:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://demo-shop.local.com/resources/assets/css/rateit.css
+---
+2016/09/06 10:52:05 [error] [php] Invalid argument supplied for foreach() (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:104)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (104)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (112)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+2016/09/06 10:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://demo-shop.local.com/resources/assets/css/rateit.css
+---
+2016/09/06 11:30:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Games".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Games')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Games
+---
+2016/09/06 11:31:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Games".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Games')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Games
+---
+2016/09/06 11:37:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://demo-shop.local.com/resources/assets/css/rateit.css
+---
+2016/09/06 11:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:38:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:38:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:39:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:39:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:39:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:39:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:40:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:40:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:42:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:42:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:43:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:43:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:44:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:44:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:45:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:45:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:46:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:46:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:51:44 [error] [php] Undefined variable: model (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\products\_highlights.php:16)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\zii\widgets\CListView.php(291): ProductsController->renderFile()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(181): CListView->run()
+#6 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\products\highlights.php(18): ProductsController->widget()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(126): require()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#10 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php(236): ProductsController->renderPartial()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(126): require()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): ProductsController->renderFile()
+#14 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#15 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#16 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#18 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#21 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#24 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#25 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#27 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\products\_highlights.php (16)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\products\highlights.php (18)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php (236)
+2016/09/06 11:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 11:53:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 11:53:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 12:08:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'minhtushop.shop_products' doesn't exist in engine. The SQL statement executed was: SHOW FULL COLUMNS FROM `shop_products`.
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\products\index.php (14)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php (119)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php (13)
+2016/09/06 12:08:16 [error] [exception.CDbException] exception 'CDbException' with message 'The table "shop_products" for active record class "Products" cannot be found in the database.' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\db\ar\CActiveRecord.php:2387
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Products))
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 D:\Projects\HoaNguyen\freelance\demo\yii\framework\db\ar\CActiveRecord.php(1606): CActiveRecord->getTableSchema()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(147): CListView->init()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#11 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\products\index.php(14): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(126): require('D:\\Projects\\Hoa...')
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Projects\\Hoa...', Array, true)
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\Projects\\Hoa...', Array, true)
+#15 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#16 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): CController->render('index', Array)
+#17 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#18 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#20 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#22 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#24 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#27 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#28 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#29 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/
+---
+2016/09/06 12:14:21 [error] [php] number_format() expects parameter 1 to be double, string given (D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php:48)
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(130): require()
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#2 D:\Projects\HoaNguyen\freelance\demo\yii\framework\zii\widgets\CListView.php(291): ProductsController->renderFile()
+#3 D:\Projects\HoaNguyen\freelance\demo\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#4 unknown(0): CListView->renderSection()
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#7 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(181): CListView->run()
+#8 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\products\index.php(14): ProductsController->widget()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(126): require()
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#13 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): ProductsController->render()
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#15 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#17 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#19 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#20 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#21 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#23 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#24 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#25 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\models\Shop.php (48)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\products\_view.php (53)
+in D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\products\index.php (14)
+2016/09/06 12:23:00 [error] [exception.CException] exception 'CException' with message 'Alias "ext.UserCounter" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\YiiBase.php:323
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\YiiBase.php(196): YiiBase::import('ext.UserCounter', true)
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CModule.php(103): CModule->getComponent('userCounter')
+#3 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\views\layouts\minhtu-v1.php(261): CModule->__get('userCounter')
+#4 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(126): require('D:\\Projects\\Hoa...')
+#5 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\Projects\\Hoa...', Array, true)
+#6 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(784): CBaseController->renderFile('D:\\Projects\\Hoa...', Array, true)
+#7 D:\Projects\HoaNguyen\freelance\demo\demo-shop\protected\modules\shop\controllers\ProductsController.php(119): CController->render('index', Array)
+#8 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#9 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#18 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#19 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2016/09/06 12:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://demo-shop.local.com/resources/assets/css/rateit.css
+---
+2016/09/06 12:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 12:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 12:27:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 12:27:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 12:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://demo-shop.local.com/resources/assets/css/rateit.css
+---
+2016/09/06 12:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 12:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 12:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 12:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 12:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 12:36:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/09/06 12:36:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/09/06 12:36:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Projects\HoaNguyen\freelance\demo\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 D:\Projects\HoaNguyen\freelance\demo\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 D:\Projects\HoaNguyen\freelance\demo\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---

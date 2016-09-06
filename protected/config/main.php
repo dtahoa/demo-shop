@@ -78,7 +78,15 @@ return array(
 				*/
 			),
 		),
-
+        'userCounter' => array(
+            // Use this when you copied the file to components folder
+            'class' => 'application.components.UserCounter',
+            // You can setup these options:
+            'tableUsers' => 'pcounter_users',
+            'tableSave' => 'pcounter_save',
+            'autoInstallTables' => true,
+            'onlineTime' => 10, // min
+        ),
 	),
 
 	// application-level parameters that can be accessed

@@ -9,5 +9,6 @@ Shop::renderFlash();
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
+	'summaryText'=>'',
 	'itemView'=>'_view',
 )); ?>
