@@ -1,22 +1,6 @@
-<div class="table-responsive">
-	<table class="table">
-		<tbody>
-		<tr>
-			<td>Số người đang truy cập:</td>
-			<td class="pull-right"><?php echo Yii::app()->userCounter->getOnline(); ?></td>
-		</tr>
-		<tr>
-			<td>Hôm nay:</td>
-			<td class="pull-right"><?php echo Yii::app()->userCounter->getToday(); ?></td>
-		</tr>
-		<tr>
-			<td>Hôm qua:</td>
-			<td class="pull-right"><?php echo Yii::app()->userCounter->getYesterday(); ?></td>
-		</tr>
-		<tr>
-			<td>Tổng số lượt truy cập:</td>
-			<td class="pull-right"><?php echo Yii::app()->userCounter->getTotal(); ?></td>
-		</tr>
-		</tbody>
-	</table>
-</div><!-- /.table-responsive -->
+<ul class="list-group">
+	<li class="list-group-item">Số người đang truy cập: <span class="badge green"><?php echo Yii::app()->userCounter->getOnline(); ?></span></li>
+	<li class="list-group-item">Hôm nay: <span class="badge green"><?php echo Yii::app()->userCounter->getToday(); ?></span></li>
+	<li class="list-group-item">Hôm qua: <span class="badge green"><?php echo Yii::app()->userCounter->getYesterday(); ?></span></li>
+	<li class="list-group-item">Tổng số lượt truy cập:: <span class="badge green"><?php echo Yii::app()->userCounter->getTotal(); ?></span></li>
+</ul>

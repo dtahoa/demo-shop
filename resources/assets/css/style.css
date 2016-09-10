@@ -100,3 +100,23 @@
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
 }
+.inner-top-vs {
+   padding-top: 0px;
+}
+/* User counter */
+.badge.green {
+  background-color: #abd07e;
+}
+/* Yii pagination */
+.list-view .pager {
+  margin-bottom: 5px;
+}
+li .first {
+  display: none;
+}
+#yw1 > li.first, #yw2 > li.first, #yw1 > li.last, #yw2 > li.last {
+  display: none;
+}
+li.page.selected > a {
+  background-color: #e7e7e7;
+}

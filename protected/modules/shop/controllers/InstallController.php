@@ -158,7 +158,8 @@ class InstallController extends Controller
 							`address_id` INT NOT NULL ,
 							`delivery_address_id` INT NOT NULL ,
 							`billing_address_id` INT NOT NULL ,
-							`email` VARCHAR(45) NOT NULL ,
+							`email` VARCHAR(45) NULL ,
+							`phone` VARCHAR(45) NOT NULL ,
 							PRIMARY KEY (`customer_id`) )
 								ENGINE = InnoDB;";
 

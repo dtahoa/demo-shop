@@ -139,6 +139,7 @@ return array(
 		'City' => 'Stadt',
 		'Country' => 'Land',
 		'Email' => 'E-Mail',
+        'Phone' => 'Phone',
 		'Product' => 'Produkt',
 		'Filename' => 'Dateiname',
 		'Weight: ' => 'Gewicht: ',

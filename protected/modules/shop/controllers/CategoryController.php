@@ -11,9 +11,15 @@ class CategoryController extends Controller
 
 	public function actionView()
 	{
-		$this->render('view',array(
+	    // @Todo: Apply paging, should check again on ADMIN view
+	    /*$this->render('view',array(
 			'model'=>$this->loadModel(),
-		));
+		));*/
+
+        $this->render('view',array(
+            'dataProvider'=>$this->loadModel()[0],
+            'model'=>$this->loadModel()[1],
+        ));
 	}
 
 	public function actionCreate()
@@ -102,14 +108,28 @@ class CategoryController extends Controller
 	 */
 	public function loadModel()
 	{
-		if($this->_model===null)
+        $dataProvider = null;
+	    if($this->_model===null)
 		{
 			if(isset($_GET['id']))
 				$this->_model=Category::model()->findbyPk($_GET['id']);
+                $dataProvider = new CActiveDataProvider('Products', array(
+                    'criteria'=>array(
+                        'condition'=>'category_id='.$_GET['id'],
+                        'order'=>'title DESC',
+                    ),
+                    'pagination'=>array(
+                        'pageSize'=>12,
+                    ),
+                ));
 			if($this->_model===null)
 				throw new CHttpException(404,'The requested page does not exist.');
+
 		}
-		return $this->_model;
+		return [$dataProvider, $this->_model];
+
+        // @TODO: Should check in ADMIN site
+        //return $this->_model;
 	}
 
 	/**

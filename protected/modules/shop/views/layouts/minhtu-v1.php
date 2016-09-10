@@ -151,16 +151,14 @@
                         <div class="nav-outer">
                             <ul class="nav navbar-nav">
                                 <li class="active dropdown yamm-fw">
-                                    <a href="home.html" data-hover="dropdown" class="dropdown-toggle"
-                                       data-toggle="dropdown">Trang chủ</a>
+                                    <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">Trang chủ</a>
                                 </li>
                                 <li class="dropdown yamm">
-                                    <a href="home.html" data-hover="dropdown" class="dropdown-toggle"
+                                    <a href="<?php echo Yii::app()->getBaseUrl(true); ?>" data-hover="dropdown" class="dropdown-toggle"
                                        data-toggle="dropdown">Giới thiệu</a>
                                 </li>
                                 <li class="dropdown yamm">
-                                    <a href="home.html" data-hover="dropdown" class="dropdown-toggle"
-                                       data-toggle="dropdown">Sản phẩm</a>
+                                    <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">Sản phẩm</a>
                                 </li>
                                 <li class="dropdown yamm">
                                     <a href="home.html" data-hover="dropdown" class="dropdown-toggle"
@@ -233,7 +231,7 @@
                     <h3 class="section-title">NỔI BẬT</h3>
                     <div class="sidebar-widget-body outer-top-xs">
                         <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
-                            <?php $this->renderPartial('/products/highlights', array()); ?>
+                            <?php $this->renderPartial('application.modules.shop.views.products.highlights', array()); ?>
                         </div>
                     </div><!-- /.sidebar-widget-body -->
                 </div><!-- /.sidebar-widget -->
@@ -244,7 +242,7 @@
                     <h3 class="section-title">GIẢM GIÁ</h3>
                     <div class="sidebar-widget-body outer-top-xs">
                         <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
-                            <?php $this->renderPartial('/products/highlights', array()); ?>
+                            <?php $this->renderPartial('application.modules.shop.views.products.discounts', array()); ?>
                         </div>
                     </div><!-- /.sidebar-widget-body -->
                 </div><!-- /.sidebar-widget -->
@@ -258,7 +256,7 @@
                         <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
                             <div class="item">
                                 <div class="products special-product">
-                                    <?php $this->renderPartial('/products/usercounter', array()); ?>
+                                    <?php $this->renderPartial('application.modules.shop.views.products.usercounter', array()); ?>
                                 </div>
                             </div>
                         </div>

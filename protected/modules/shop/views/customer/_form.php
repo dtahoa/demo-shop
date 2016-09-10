@@ -18,7 +18,7 @@
 			<?php echo $form->hiddenField($customer, 'user_id', array('value'=> Yii::app()->user->id)); ?>
 
 			<div class="form-group">
-				<label class="col-sm-2 control-label lb-customer" for="textinput">Họ *</label>
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Họ & Tên*</label>
 				<div class="col-sm-10">
 					<?php echo $form->textField($address,'firstname',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
 					<?php echo $form->error($address,'firstname', array('class'=>'lb-error')); ?>
