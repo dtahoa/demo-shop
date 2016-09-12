@@ -204,7 +204,7 @@ class InstallController extends Controller
 						$sql = "CREATE TABLE IF NOT EXISTS `".$addressTable."` (
 							`id` int(11) NOT NULL AUTO_INCREMENT,
 							`firstname` varchar(255) NOT NULL,
-							`lastname` varchar(255) NOT NULL,
+							`phone` varchar(255) NOT NULL,
 							`street` varchar(255) NOT NULL,
 							`zipcode` varchar(255) NOT NULL,
 							`city` varchar(255) NOT NULL,

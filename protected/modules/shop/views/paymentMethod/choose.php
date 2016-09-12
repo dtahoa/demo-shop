@@ -31,7 +31,7 @@ $form=$this->beginWidget('CActiveForm', array(
 			'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 			'attributes'=>array(
 				'firstname',
-				'lastname',
+				'phone',
 				'street',
 				'zipcode',
 				'city',
@@ -62,9 +62,9 @@ $form=$this->beginWidget('CActiveForm', array(
             </div>
         
             <div class="row">
-                <?php echo $form->labelEx($billingAddress,'lastname'); ?>
-                <?php echo $form->textField($billingAddress,'lastname',array('size'=>45,'maxlength'=>45)); ?>
-                <?php echo $form->error($billingAddress,'lastname'); ?>
+                <?php echo $form->labelEx($billingAddress,'phone'); ?>
+                <?php echo $form->textField($billingAddress,'phone',array('size'=>45,'maxlength'=>45)); ?>
+                <?php echo $form->error($billingAddress,'phone'); ?>
             </div>
         
             <div class="row">

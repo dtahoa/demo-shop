@@ -201,7 +201,7 @@ class OrderController extends Controller
 		} else {
 			Shop::setFlash(
 					Shop::t(
-						'Please accept our Terms and Conditions to continue'));
+						'Vui lòng chấp nhận các điều khoản và điều kiện khi đặt mua hàng!'));
 			$this->redirect(array('//shop/order/create'));
 		}
 	}

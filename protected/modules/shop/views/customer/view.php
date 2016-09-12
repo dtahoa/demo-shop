@@ -16,7 +16,7 @@ if($model->address && !isset($hideAddress)) {
 	'data'=>$model->address,
 	'attributes'=>array(
 		'firstname',
-		'lastname',
+		'phone',
 		'street',
 		'zipcode',
 		'city',
@@ -33,7 +33,7 @@ echo '<h3>'.Shop::t('Địa chỉ giao hàng').'</h3>';
 	 'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 	'attributes'=>array(
 		'firstname',
-		'lastname',
+		'phone',
 		'street',
 		'zipcode',
 		'city',
@@ -53,6 +53,7 @@ echo '<h3>'.Shop::t('Địa chỉ thanh toán').'</h3>';
 	'attributes'=>array(
 		'firstname',
 		'lastname',
+		'phone',
 		'street',
 		'zipcode',
 		'city',

@@ -26,7 +26,8 @@ class Address extends CActiveRecord
 	}
 
 	public function renderAddress() {
-		echo $this->firstname . ' ' . $this->lastname . '<br />';
+		echo $this->firstname . '<br />';
+        echo $this->phone . '<br />';
 		echo $this->street . '<br />';
 		echo $this->zipcode . ' ' . $this->city . '<br />';
 		echo $this->country;
@@ -40,9 +41,9 @@ class Address extends CActiveRecord
 	public function rules()
 	{
 		return array(
-			array('firstname, lastname, street', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin cho {attribute}.'),
-			array('firstname, lastname, street, zipcode, city, country', 'length', 'max'=>255),
-			array('id, firstname, lastname, street, zipcode, city, country', 'safe', 'on'=>'search'),
+			array('firstname, phone, street', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin cho {attribute}.'),
+			array('firstname, phone, street, zipcode, city, country', 'length', 'max'=>255),
+			array('id, firstname, phone, street, zipcode, city, country', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,8 +65,9 @@ class Address extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'firstname' => Yii::t('ShopModule.shop', 'Họ'),
+			'firstname' => Yii::t('ShopModule.shop', 'Họ & Tên'),
 			'lastname' => Yii::t('ShopModule.shop', 'Tên'),
+            'phone' => Shop::t('Điện thoại'),
 			'street' => Shop::t('Địa chỉ'),
 			'zipcode' =>Shop::t('Mã vùng'),
 			'city' => Shop::t('Thành phố'),

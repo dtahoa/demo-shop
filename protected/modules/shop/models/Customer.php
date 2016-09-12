@@ -57,6 +57,8 @@ class Customer extends CActiveRecord
 
 		$criteria->compare('email',$this->email,true);
 
+        $criteria->compare('phone',$this->phone,true);
+
 		return new CActiveDataProvider('Customer', array(
 			'criteria'=>$criteria,
 		));

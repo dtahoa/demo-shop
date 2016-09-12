@@ -154,23 +154,19 @@
                                     <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">Trang chủ</a>
                                 </li>
                                 <li class="dropdown yamm">
-                                    <a href="<?php echo Yii::app()->getBaseUrl(true); ?>" data-hover="dropdown" class="dropdown-toggle"
-                                       data-toggle="dropdown">Giới thiệu</a>
+                                    <a href="/shop/pages/gioi-thieu">Giới thiệu</a>
                                 </li>
                                 <li class="dropdown yamm">
                                     <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">Sản phẩm</a>
                                 </li>
                                 <li class="dropdown yamm">
-                                    <a href="home.html" data-hover="dropdown" class="dropdown-toggle"
-                                       data-toggle="dropdown">Đặt hàng</a>
+                                    <a href="/shop/shoppingCart/view">Đặt hàng</a>
                                 </li>
                                 <li class="dropdown yamm">
-                                    <a href="home.html" data-hover="dropdown" class="dropdown-toggle"
-                                       data-toggle="dropdown">Liên hệ</a>
+                                    <a href="/shop/pages/lien-he">Liên hệ</a>
                                 </li>
                                 <li class="dropdown yamm">
-                                    <a href="home.html" data-hover="dropdown" class="dropdown-toggle"
-                                       data-toggle="dropdown">Tuyển dụng</a>
+                                    <a href="/shop/pages/tuyen-dung">Tuyển dụng</a>
                                 </li>
                             </ul><!-- /.navbar-nav -->
                             <div class="clearfix"></div>
@@ -304,7 +300,7 @@
 
                             <div class="social-icons">
 
-                                <a href="http://facebook.com/transvelo" class='active'><i
+                                <a href="http://facebook.com/vanphongphamminhtu" class='active'><i
                                         class="icon fa fa-facebook"></i></a>
                                 <a href="#"><i class="icon fa fa-twitter"></i></a>
                                 <a href="#"><i class="icon fa fa-linkedin"></i></a>

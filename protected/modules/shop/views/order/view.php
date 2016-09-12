@@ -40,7 +40,7 @@ $this->breadcrumbs=array(
 			'data'=>$model->deliveryAddress,
 			'attributes'=>array(
 				'firstname',
-				'lastname',
+				'phone',
 				'street',
 				'zipcode',
 				'city',
@@ -55,7 +55,7 @@ $this->breadcrumbs=array(
 			'data'=>$model->billingAddress,
 			'attributes'=>array(
 				'firstname',
-				'lastname',
+				'phone',
 				'street',
 				'zipcode',
 				'city',

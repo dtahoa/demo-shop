@@ -26,10 +26,10 @@
 			</div>
 
 			<div class="form-group">
-				<label class="col-sm-2 control-label lb-customer" for="textinput">Tên *</label>
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Điện thoại *</label>
 				<div class="col-sm-10">
-					<?php echo $form->textField($address,'lastname',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
-					<?php echo $form->error($address,'lastname', array('class'=>'lb-error')); ?>
+					<?php echo $form->textField($address,'phone',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
+					<?php echo $form->error($address,'phone', array('class'=>'lb-error')); ?>
 				</div>
 			</div>
 
