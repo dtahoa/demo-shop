@@ -154,7 +154,7 @@
                                     <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">Trang chủ</a>
                                 </li>
                                 <li class="dropdown yamm">
-                                    <a href="/shop/pages/gioi-thieu">Giới thiệu</a>
+                                    <a href="/shop/pages/view/id/1">Giới thiệu</a>
                                 </li>
                                 <li class="dropdown yamm">
                                     <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">Sản phẩm</a>
