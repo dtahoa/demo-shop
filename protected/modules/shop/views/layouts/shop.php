@@ -33,7 +33,7 @@
 		<?php
 	$items = array();
 	$items[] = array('label'=>'Home', 'url'=>array('/site/index'));
-	$items[] = array('label'=>'All', 'url'=>array('/shop/products/index'));
+	$items[] = array('label'=>'All', 'url'=>array('/shop/products/indexAdmin'));
 	foreach(Category::model()->findAll() as $category)
 	$items[] = array(
 			'label' => $category->title,

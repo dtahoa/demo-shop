@@ -4,22 +4,25 @@ class CategoryController extends Controller
 {
 	public $_model;
 
-	public function beforeAction($action) {
-		$this->layout = Shop::module()->layout;
-		return parent::beforeAction($action);
-	}
+    public function beforeAction($action) {
+        if(!Yii::app()->user->isGuest)
+            $this->layout = Shop::module()->adminLayout;
+        else
+            $this->layout = Shop::module()->layout;
+        return parent::beforeAction($action);
+    }
 
 	public function actionView()
 	{
-	    // @Todo: Apply paging, should check again on ADMIN view
-	    /*$this->render('view',array(
-			'model'=>$this->loadModel(),
-		));*/
-
-        $this->render('view',array(
-            'dataProvider'=>$this->loadModel()[0],
-            'model'=>$this->loadModel()[1],
-        ));
+	    if(!Yii::app()->user->isGuest)
+            $this->render('viewAdmin',array(
+                'model'=>$this->loadModelAdmin(),
+            ));
+        else
+            $this->render('view',array(
+                'dataProvider'=>$this->loadModel()[0],
+                'model'=>$this->loadModel()[1],
+            ));
 	}
 
 	public function actionCreate()
@@ -132,6 +135,17 @@ class CategoryController extends Controller
         //return $this->_model;
 	}
 
+    public function loadModelAdmin()
+    {
+        if($this->_model===null)
+        {
+            if(isset($_GET['id']))
+                $this->_model=Category::model()->findbyPk($_GET['id']);
+            if($this->_model===null)
+                throw new CHttpException(404,'The requested page does not exist.');
+        }
+        return $this->_model;
+    }
 	/**
 	 * Performs the AJAX validation.
 	 * @param CModel the model to be validated

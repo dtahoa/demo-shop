@@ -62,11 +62,11 @@
                         <button class="btn btn-primary icon btn-cart" data-toggle="dropdown" type="button">
                             <i class="fa fa-shopping-cart"></i>
                         </button>
-                        <button class="btn btn-primary btn-add-cart" alt="<?php echo $data->product_id; ?>" type="button">Thêm vào giỏ hàng</button>
+                        <button class="btn btn-primary btn-add-cart" alt="<?php echo $data->product_id; ?>" type="button">Mua hàng</button>
                     </li>
 
                     <li class="lnk">
-                        <a class="add-to-cart" href="detail.html" title="Share FB">
+                        <a class="add-to-cart" href="/" title="Share FB">
                             <i class="icon fa fa-facebook"></i>
                         </a>
                     </li>

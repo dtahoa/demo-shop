@@ -15,11 +15,11 @@ class ProductsController extends Controller
 	public function accessRules() {
 		return array(
 				array('allow',
-					'actions'=>array('view', 'index'),
+					'actions'=>array('view', 'index', 'list'),
 					'users' => array('*'),
 					),
 				array('allow',
-					'actions'=>array('admin','delete','create','update', 'view'),
+					'actions'=>array('admin','delete','create','update', 'view', 'indexAdmin'),
 					'users' => array('admin'),
 					),
 				array('deny',  // deny all other users
@@ -29,7 +29,10 @@ class ProductsController extends Controller
 	}
 
 	public function beforeAction($action) {
-		$this->layout = Shop::module()->layout;
+        if(!Yii::app()->user->isGuest)
+            $this->layout = Shop::module()->adminLayout;
+        else
+		    $this->layout = Shop::module()->layout;
 		return parent::beforeAction($action);
 	}
 
@@ -117,11 +120,42 @@ class ProductsController extends Controller
                 'pageSize'=>12,
             ),
         ));
-        
-        $this->render('index',array(
+
+        if(!Yii::app()->user->isGuest)
+            $this->render('indexAdmin',array(
+                'dataProvider'=>$dataProvider,
+            ));
+        else
+            $this->render('index',array(
+                'dataProvider'=>$dataProvider,
+            ));
+	}
+
+    public function actionIndexAdmin()
+    {
+        $dataProvider = new CActiveDataProvider('Products', array(
+            'pagination'=>array(
+                'pageSize'=>12,
+            ),
+        ));
+
+        $this->render('indexAdmin',array(
             'dataProvider'=>$dataProvider,
         ));
-	}
+    }
+
+    public function actionList()
+    {
+        $dataProvider = new CActiveDataProvider('Products', array(
+            'pagination'=>array(
+                'pageSize'=>12,
+            ),
+        ));
+
+        $this->render('list',array(
+            'dataProvider'=>$dataProvider,
+        ));
+    }
 
 	/**
 	 * Manages all models.

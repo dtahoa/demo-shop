@@ -42,7 +42,7 @@ class ContactController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','add','captcha'),
+				'actions'=>array('index','view','add','captcha', 'create'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -72,7 +72,7 @@ class ContactController extends Controller
 
     public function actionAdd()
     {
-        $model=new ContactForm;
+        $model=new Contact;
         if(isset($_POST['ContactForm']))
         {
             $model->attributes=$_POST['ContactForm'];
@@ -101,8 +101,10 @@ class ContactController extends Controller
 		if(isset($_POST['Contact']))
 		{
 			$model->attributes=$_POST['Contact'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if($model->save()) {
+                Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+                $this->redirect(array('/shop/products/index'));
+            }
 		}
 
 		$this->render('create',array(

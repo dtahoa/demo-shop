@@ -55,6 +55,9 @@ class Pages extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Title',
 			'content' => 'Content',
+            'image_1' => 'Hình 1',
+            'image_2' => 'Hình 2',
+            'image_3' => 'Hình 3',
 			'updated' => 'Updated',
 		);
 	}

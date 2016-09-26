@@ -33,7 +33,7 @@ class JobsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'list', 'detail'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -60,6 +60,13 @@ class JobsController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
+
+    public function actionDetail($id)
+    {
+        $this->render('detail',array(
+            'model'=>$this->loadModel($id),
+        ));
+    }
 
 	/**
 	 * Creates a new model.
@@ -132,6 +139,14 @@ class JobsController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
+
+    public function actionList()
+    {
+        $dataProvider=new CActiveDataProvider('Jobs');
+        $this->render('list',array(
+            'dataProvider'=>$dataProvider,
+        ));
+    }
 
 	/**
 	 * Manages all models.

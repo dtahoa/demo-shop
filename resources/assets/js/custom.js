@@ -16,6 +16,7 @@ $(document).ready(function () {
             success: function(result)
             {
                 console.log("result", result);
+                window.location.replace("/shop/shoppingCart/view");
             }
         });
     });

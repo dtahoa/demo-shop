@@ -9,6 +9,8 @@
  * @property string $email
  * @property string $subject
  * @property string $body
+ * @property string $phone
+ * @property string $address
  * @property string $updated
  */
 class Contact extends CActiveRecord
@@ -29,11 +31,11 @@ class Contact extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, email, subject, body, updated', 'required'),
-			array('name, email, subject', 'length', 'max'=>255),
+			array('name, email, subject, body, phone', 'required', 'message'=>'Vui lòng điền đầy đủ: {attribute}.'),
+			array('name, email, subject, phone', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, email, subject, body, updated', 'safe', 'on'=>'search'),
+			array('id, name, email, subject, body, phone, address', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,10 +57,12 @@ class Contact extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
+			'name' => 'Họ & Tên',
 			'email' => 'Email',
-			'subject' => 'Subject',
-			'body' => 'Body',
+			'subject' => 'Tiêu đề',
+			'body' => 'Nội dung',
+            'phone' => 'Điện thoại',
+            'address' => 'Địa chỉ',
 			'updated' => 'Updated',
 		);
 	}

@@ -3,56 +3,82 @@
 /* @var $model Contact */
 /* @var $form CActiveForm */
 ?>
+<div class="form-group">
+	<div class="col-md-10">
 
-<div class="form">
+		<?php $form=$this->beginWidget('CActiveForm', array(
+			'id'=>'customer-form',
+			'enableAjaxValidation'=>false,
+			'htmlOptions'=> array('class'=>'form-horizontal','role'=>'form')
+		)); ?>
+		<fieldset>
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'contact-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
-	'enableAjaxValidation'=>false,
-)); ?>
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Họ & Tên*</label>
+				<div class="col-sm-10">
+					<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
+					<?php echo $form->error($model,'name', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Email*</label>
+				<div class="col-sm-10">
+					<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
+					<?php echo $form->error($model,'email', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
 
-	<?php echo $form->errorSummary($model); ?>
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Địa chỉ</label>
+				<div class="col-sm-10">
+					<?php echo $form->textField($model,'address',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
+					<?php echo $form->error($model,'address', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'name'); ?>
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Điện thoại*</label>
+				<div class="col-sm-10">
+					<?php echo $form->textField($model,'phone',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
+					<?php echo $form->error($model,'phone', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Tiêu đề*</label>
+				<div class="col-sm-10">
+					<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
+					<?php echo $form->error($model,'subject', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-sm-2 control-label lb-customer" for="textinput">Nội dung*</label>
+				<div class="col-sm-10">
+					<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
+					<?php /*$this->widget('application.extensions.extckeditor.ExtCKEditor', array(
+						'model'=>$model,
+						'attribute'=>'body',
+						'language'=>'en',
+						'editorTemplate'=>'basic'
+					)); */?>
+					<?php echo $form->error($model,'body', array('class'=>'lb-error')); ?>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<div class="pull-left">
+						<?php echo CHtml::submitButton($model->isNewRecord
+							? Yii::t('ShopModule.shop', 'Gửi')
+							: Yii::t('ShopModule.shop', 'Lưu')
+							,array('id'=>'next', 'class'=>'btn btn-primary')
+						); ?>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+	<?php $this->endWidget(); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'email'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'subject'); ?>
-		<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'subject'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'body'); ?>
-		<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'body'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'updated'); ?>
-		<?php echo $form->textField($model,'updated'); ?>
-		<?php echo $form->error($model,'updated'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-
-</div><!-- form -->
+</div>

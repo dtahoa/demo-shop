@@ -51,6 +51,7 @@ class ShopModule extends CWebModule
 	public $productImagesFolder = 'productimages'; // Approot/...
 
 	public $layout = 'application.modules.shop.views.layouts.minhtu-v1';
+    public $adminLayout = 'application.modules.shop.views.layouts.shop';
 
 	public function init()
 	{

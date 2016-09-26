@@ -58,37 +58,12 @@
 
                 <div class="col-xs-12 col-sm-12 col-md-6 top-search-holder">
                     <div class="contact-row">
-                        <div class="phone inline">
-                            <i class="icon fa fa-phone"></i> (400) 888 888 868
-                        </div>
-                        <div class="contact inline">
-                            <i class="icon fa fa-envelope"></i> saler@vanphongphamminhtu.com
-                        </div>
+                        <?php $this->renderPartial('application.modules.shop.views.shopInformation.info-header', array()); ?>
                     </div><!-- /.contact-row -->
                     <!-- ============================================================= SEARCH AREA ============================================================= -->
                     <div class="search-area">
                         <form>
                             <div class="control-group">
-
-                                <ul class="categories-filter animate-dropdown">
-                                    <li class="dropdown">
-
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="danh mục.html">Danh mục
-                                            <b class="caret"></b></a>
-
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li class="menu-header">Computer</li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1"
-                                                                       href="danh mục.html">- Laptops</a></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1"
-                                                                       href="danh mục.html">- Tv & audio</a></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1"
-                                                                       href="danh mục.html">- Gadgets</a></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1"
-                                                                       href="danh mục.html">- Cameras</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
 
                                 <input class="search-field" placeholder="Nhập sản phẩm cần tìm..."/>
 
@@ -150,23 +125,23 @@
                     <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
                         <div class="nav-outer">
                             <ul class="nav navbar-nav">
-                                <li class="active dropdown yamm-fw">
+                                <li class="<?php if (Yii::app()->controller->id == "products") echo "active";?> dropdown yamm-fw">
                                     <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">Trang chủ</a>
                                 </li>
-                                <li class="dropdown yamm">
-                                    <a href="/shop/pages/view/id/1">Giới thiệu</a>
+                                <li class="<?php if (Yii::app()->controller->id == "pages") echo "active";?> dropdown yamm">
+                                    <a href="/shop/pages/index">Giới thiệu</a>
                                 </li>
-                                <li class="dropdown yamm">
-                                    <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">Sản phẩm</a>
+                                <li class="<?php if (Yii::app()->controller->id == "products" && Yii::app()->controller->action->id== "list") echo "active";?> dropdown yamm">
+                                    <a href="/shop/products/list">Sản phẩm</a>
                                 </li>
-                                <li class="dropdown yamm">
+                                <li class="<?php if (Yii::app()->controller->id == "shoppingCart") echo "active";?> dropdown yamm">
                                     <a href="/shop/shoppingCart/view">Đặt hàng</a>
                                 </li>
-                                <li class="dropdown yamm">
-                                    <a href="/shop/pages/lien-he">Liên hệ</a>
+                                <li class="<?php if (Yii::app()->controller->id == "contact") echo "active";?> dropdown yamm">
+                                    <a href="/shop/contact/create">Liên hệ</a>
                                 </li>
-                                <li class="dropdown yamm">
-                                    <a href="/shop/pages/tuyen-dung">Tuyển dụng</a>
+                                <li class="<?php if (Yii::app()->controller->id == "jobs") echo "active";?> dropdown yamm">
+                                    <a href="/shop/jobs/list">Tuyển dụng</a>
                                 </li>
                             </ul><!-- /.navbar-nav -->
                             <div class="clearfix"></div>
@@ -275,188 +250,7 @@
 
 <!-- ============================================================= FOOTER ============================================================= -->
 <footer id="footer" class="footer color-bg">
-    <div class="links-social inner-top-sm">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <!-- ============================================================= CONTACT INFO ============================================================= -->
-                    <div class="contact-info">
-                        <div class="footer-logo">
-                            <div class="logo">
-                                <a href="home.html">
-
-                                    <img style="height: 90px;"
-                                        src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/logo3.png"
-                                        alt="">
-
-                                </a>
-                            </div><!-- /.logo -->
-
-                        </div><!-- /.footer-logo -->
-
-                        <div class="module-body m-t-20">
-                            <p class="about-us"> Nam libero tempore, cum soluta nobis est ses eligendi optio cumque cum
-                                soluta nobis est ses eligendi optio cumque.</p>
-
-                            <div class="social-icons">
-
-                                <a href="http://facebook.com/vanphongphamminhtu" class='active'><i
-                                        class="icon fa fa-facebook"></i></a>
-                                <a href="#"><i class="icon fa fa-twitter"></i></a>
-                                <a href="#"><i class="icon fa fa-linkedin"></i></a>
-                                <a href="#"><i class="icon fa fa-rss"></i></a>
-                                <a href="#"><i class="icon fa fa-pinterest"></i></a>
-
-                            </div><!-- /.social-icons -->
-                        </div><!-- /.module-body -->
-
-                    </div><!-- /.contact-info -->
-                    <!-- ============================================================= CONTACT INFO : END ============================================================= -->
-                </div><!-- /.col -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <!-- ============================================================= CONTACT TIMING============================================================= -->
-                    <div class="contact-timing">
-                        <div class="module-heading">
-                            <h4 class="module-title">THỜI GIAN LÀM VIỆC</h4>
-                        </div><!-- /.module-heading -->
-
-                        <div class="module-body outer-top-xs">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tbody>
-                                    <tr>
-                                        <td>Monday-Friday:</td>
-                                        <td class="pull-right">08.00 To 18.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Saturday:</td>
-                                        <td class="pull-right">09.00 To 20.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sunday:</td>
-                                        <td class="pull-right">10.00 To 20.00</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div><!-- /.table-responsive -->
-                            <p class='contact-number'>Hot Line:(400)888 868 848</p>
-                        </div><!-- /.module-body -->
-                    </div><!-- /.contact-timing -->
-                    <!-- ============================================================= CONTACT TIMING : END ============================================================= -->
-                </div><!-- /.col -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-
-                </div><!-- /.col -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <!-- ============================================================= THÔNG TIN CỬA HÀNG============================================================= -->
-                    <div class="contact-THÔNG TIN CỬA HÀNG">
-                        <div class="module-heading">
-                            <h4 class="module-title">THÔNG TIN CỬA HÀNG</h4>
-                        </div><!-- /.module-heading -->
-
-                        <div class="module-body outer-top-xs">
-                            <ul class="toggle-footer" style="">
-                                <li class="media">
-                                    <div class="pull-left">
-                     <span class="icon fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
-                    </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <p>868 Any Stress,Burala Casi,Picasa USA.</p>
-                                    </div>
-                                </li>
-
-                                <li class="media">
-                                    <div class="pull-left">
-                     <span class="icon fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
-                    </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <p>(400) 0888 888 888<br>(400) 888 888 888</p>
-                                    </div>
-                                </li>
-
-                                <li class="media">
-                                    <div class="pull-left">
-                     <span class="icon fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                    </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <span><a href="#">Liên hệ @vanphongphamminhtu.vn</a></span><br>
-                                        <span><a href="#">Kinh  doanh @vanphongphamminhtu.vn</a></span>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div><!-- /.module-body -->
-                    </div><!-- /.contact-timing -->
-                    <!-- ============================================================= THÔNG TIN CỬA HÀNG : END ============================================================= -->
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.links-social -->
-
-    <div class="footer-bottom inner-bottom-sm">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="module-heading outer-bottom-xs">
-                        <h4 class="module-title">DỊCH VỤ</h4>
-                    </div><!-- /.module-heading -->
-
-                    <div class="module-body">
-                        <ul class='list-unstyled'>
-                            <li><a href="#">Order History</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Libero Sed rhoncus</a></li>
-                            <li><a href="#">Venenatis augue tellus</a></li>
-                            <li><a href="#">My Vouchers</a></li>
-                        </ul>
-                    </div><!-- /.module-body -->
-                </div><!-- /.col -->
-
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="module-heading outer-bottom-xs">
-                        <h4 class="module-title">HƯỚNG DẪN & HỖ TRỢ</h4>
-                    </div><!-- /.module-heading -->
-
-                    <div class="module-body">
-                        <ul class='list-unstyled'>
-                            <li><a href="#">Knowledgebase</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Contact Support</a></li>
-                            <li><a href="#">Marketplace Blog</a></li>
-                            <li><a href="#">About Unicase</a></li>
-                        </ul>
-                    </div><!-- /.module-body -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="copyright-bar">
-        <div class="container">
-            <div class="col-xs-12 col-sm-6 no-padding">
-                <div class="copyright">
-                    Copyright © 2016
-                    <a href="home.html">Văn phòng phẩm Minh Tú.</a>
-                    - All rights Reserved
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 no-padding">
-
-            </div>
-        </div>
-    </div>
+    <?php $this->renderPartial('application.modules.shop.views.shopInformation.info', array()); ?>
 </footer>
 <!-- ============================================================= FOOTER : END============================================================= -->
 

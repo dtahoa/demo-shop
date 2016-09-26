@@ -14,7 +14,7 @@
 						?>
 						<a href="<?php echo Yii::app()->request->baseUrl . '/shop/products/view/id/' . $data->product_id; ?>"
 						   data-lightbox="image-1" data-title="<?php echo $data->title; ?>">
-							<img
+							<img class='img-responsive'
 								data-echo="<?php echo $path; ?>"
 								src="<?php echo $path; ?>"
 								alt="">
@@ -38,7 +38,7 @@
 								</span>
 
 					</div><!-- /.product-price -->
-					<div class="action"><a href="#" class="lnk btn btn-primary">Thêm vào giỏ hàng</a></div>
+					<div class="action"><a href="#" class="lnk btn btn-primary btn-add-cart" alt="<?php echo $data->product_id; ?>">Mua hàng</a></div>
 				</div>
 			</div><!-- /.col -->
 		</div><!-- /.product-micro-row -->

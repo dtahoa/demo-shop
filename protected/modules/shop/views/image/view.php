@@ -9,6 +9,7 @@ if($model->filename)
 echo CHtml::image($path,
 		$model->title,
 		array(
+			'class'=> 'img-responsive',
 			'title' => $model->title,
 			'style' => '',
 			'width' => isset($thumb) && $thumb ? Shop::module()->imageWidthThumb : Shop::module()->imageWidth)

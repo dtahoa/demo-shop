@@ -72,8 +72,19 @@ class ShoppingCartController extends Controller
 		if(isset($_POST['yt1']))
 			unset($_POST['yt1']);
 
-		$cart[] = $_POST;
-	
+        $productExisted = false;
+        if (count($cart) > 0)
+            foreach ($cart as $key => $item) {
+                if ($_POST['product_id'] == $item['product_id']) {
+                    $cart[$key]['amount'] = $item['amount'] + $_POST['amount'];
+                    $productExisted = true;
+                    break;
+                }
+            }
+        if (!$productExisted) {
+            $cart[] = $_POST;
+        }
+
 		Shop::setCartcontent($cart);
 		Shop::setFlash(Shop::t('Sản phẩm đã được thêm vào giỏ hàng'));
 		$this->redirect(array('//shop/products/index'));
