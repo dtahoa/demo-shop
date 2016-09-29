@@ -53,7 +53,9 @@ return array(
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
             ),
         ),
-
+        'yexcel' => array(
+            'class' => 'application.extensions.yexcel.Yexcel'
+        ),
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),

@@ -9,6 +9,9 @@
     <li> <?php echo CHtml::link(Shop::t('Thuế'), array('/shop/tax/admin')); ?> </li>
     <li></li>
     <li style="border-top:solid black 1px;"></li>
+    <li> <?php echo CHtml::link(Shop::t('Cập nhật báo giá'), array('//shop/quotation/admin')); ?> </li>
+    <li></li>
+
     <li> <?php echo CHtml::link(Shop::t('Thông tin cửa hàng'), array('//shop/shopInformation/admin')); ?> </li>
 
     <?php if (isset(Yii::app()->controller->menu)) {

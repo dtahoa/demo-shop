@@ -115,7 +115,7 @@ class ProductsController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider = new CActiveDataProvider('Products', array(
+        $dataProvider = new CActiveDataProvider('Products', array(
             'pagination'=>array(
                 'pageSize'=>12,
             ),
@@ -169,7 +169,7 @@ class ProductsController extends Controller
 		));
 	}
 
-	/**
+    /**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 */
