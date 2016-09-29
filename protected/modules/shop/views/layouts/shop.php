@@ -4,6 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/css/bootstrap.min.css">
 	<!-- blueprint CSS framework -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
@@ -32,14 +34,15 @@
 		<div id="mainmenu">
 		<?php
 	$items = array();
-	$items[] = array('label'=>'Home', 'url'=>array('/site/index'));
-	$items[] = array('label'=>'All', 'url'=>array('/shop/products/indexAdmin'));
-	foreach(Category::model()->findAll() as $category)
+	$items[] = array('label'=>'Home', 'url'=>array('/shop/products/admin'));
+	/*$items[] = array('label'=>'All', 'url'=>array('/shop/products/indexAdmin'));*/
+	/*foreach(Category::model()->findAll() as $category)
 	$items[] = array(
 			'label' => $category->title,
 			'url' => array(
-				'//shop/category/view', 'id' => $category->category_id));
-	$items[] = array('label'=>'Admin', 'url'=>array('/shop/shop/admin'));
+				'//shop/category/view', 'id' => $category->category_id));*/
+	/*$items[] = array('label'=>'Admin', 'url'=>array('/shop/shop/admin'));*/
+	$items[] = array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest);
 
  $this->widget('zii.widgets.CMenu',array(
 			'items'=>$items,
@@ -47,10 +50,10 @@
 	</div><!-- mainmenu -->
 
 	<div id="content">
-	<div style="float: right; max-height: 200px; width: 200px; margin: 5px;">
+	<div style="float: right; max-height: 160px; width: 160px; margin: 5px;">
 	<?php
 	$this->widget('ShoppingCartWidget'); 
-	$this->widget('ProductCategoriesWidget'); 
+	/*$this->widget('ProductCategoriesWidget'); */
 	if(!Yii::app()->user->isGuest) 
 		$this->widget('AdminWidget');
 

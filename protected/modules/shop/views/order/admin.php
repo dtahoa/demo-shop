@@ -12,11 +12,13 @@ $model = new Order();
 $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'order-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+	/*'filter'=>$model,*/
+	'cssFile'=>'/resources/assets/css/gridview.css',
 	'columns'=>array(
 		'order_id',
 		'customer.address.firstname',
 		'customer.address.phone',
+		'customer.address.street',
 		array('name' => 'ordering_date',
 			'value' => 'date("M j, Y", $data->ordering_date)'),
 		array(

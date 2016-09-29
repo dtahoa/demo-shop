@@ -8,6 +8,7 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'shop-information-form',
+	'htmlOptions'=>array('enctype' => 'multipart/form-data'),
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
@@ -15,26 +16,55 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Những cột <span class="required">*</span> bắt buộc điền vào.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="row" style="height: 45px">
 		<?php echo $form->labelEx($model,'name'); ?>
 		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
+	<div class="row">
+		<?php echo $form->labelEx($model,'description'); ?>
+		<?php $this->widget('application.extensions.extckeditor.ExtCKEditor', array(
+			'model'=>$model,
+			'attribute'=>'description',
+			'language'=>'en',
+			'editorTemplate'=>'basic'
+		)); ?>
+		<?php echo $form->error($model,'description'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'logo'); ?>
-		<?php echo $form->textField($model,'logo',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->fileField($model,'logo',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'logo'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'working_time'); ?>
-		<?php echo $form->textArea($model,'working_time',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'working_time'); ?>
+		<?php
+			$folder = Shop::module()->productImagesFolder;
+			if($model->logo)
+				$path = Yii::app()->baseUrl. '/' . $folder . '/' . $model->logo;
+			else
+				$path = Shop::register('no-pic.jpg');
+
+			echo CHtml::image($path,
+				$model->logo,
+				array(
+					'class'=> 'img-responsive',
+					'title' => $model->logo,
+					'style' => '',
+					'width' => '150px')
+			);
+		?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'hotline'); ?>
+		<?php echo $form->textField($model,'hotline',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->error($model,'hotline'); ?>
 	</div>
 
 	<div class="row">
@@ -68,21 +98,21 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'working_time'); ?>
+		<?php /*echo $form->textArea($model,'working_time',array('rows'=>6, 'cols'=>50)); */?>
+		<?php $this->widget('application.extensions.extckeditor.ExtCKEditor', array(
+			'model'=>$model,
+			'attribute'=>'working_time',
+			'language'=>'en',
+			'editorTemplate'=>'basic'
+		)); ?>
+		<?php echo $form->error($model,'working_time'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'map'); ?>
-		<?php echo $form->textArea($model,'map',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'map',array('rows'=>6, 'cols'=>120)); ?>
 		<?php echo $form->error($model,'map'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'description'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'hotline'); ?>
-		<?php echo $form->textField($model,'hotline',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($model,'hotline'); ?>
 	</div>
 
 	<div class="row buttons">

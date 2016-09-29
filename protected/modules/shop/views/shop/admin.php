@@ -1,6 +1,6 @@
 <div id="shopcontent">
 
-<H1> Webshop Administration </H1>
+<H1> Danh mục </H1>
 
 <div class="span-8"> 
 <?php $this->beginWidget('zii.widgets.CPortlet',

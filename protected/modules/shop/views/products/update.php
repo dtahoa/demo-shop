@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 <div class="prepend-1" id="shopcontent">
 
-<h1><?php echo Yii::t('ShopModule.shop', 'Update'); ?>
+<h1><?php echo Yii::t('ShopModule.shop', 'Chỉnh sửa thông tin: '); ?>
  <?php echo $model->title; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

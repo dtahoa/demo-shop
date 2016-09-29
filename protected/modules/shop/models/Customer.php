@@ -40,7 +40,7 @@ class Customer extends CActiveRecord
 		return array(
 			'customer_id' => Yii::t('ShopModule.shop', 'Customer'),
 			'user_id' => Yii::t('ShopModule.shop', 'Userid'),
-			'address_id' => Yii::t('ShopModule.shop', 'Address'),
+			'address_id' => Yii::t('ShopModule.shop', 'Địa chỉ'),
 			'billing_address_id' => Yii::t('ShopModule.shop', 'Billing Address'),
 			'delivery_address_id' => Yii::t('ShopModule.shop', 'Delivery Address'),
 			'email' => Yii::t('ShopModule.shop', 'Email'),

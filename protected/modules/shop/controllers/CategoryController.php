@@ -129,7 +129,10 @@ class CategoryController extends Controller
 				throw new CHttpException(404,'The requested page does not exist.');
 
 		}
-		return [$dataProvider, $this->_model];
+        if(!Yii::app()->user->isGuest)
+            return $this->_model;
+        else
+		    return [$dataProvider, $this->_model];
 
         // @TODO: Should check in ADMIN site
         //return $this->_model;

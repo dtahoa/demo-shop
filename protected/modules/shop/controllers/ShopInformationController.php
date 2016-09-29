@@ -6,7 +6,14 @@ class ShopInformationController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	//public $layout='//layouts/column2';
+    public function beforeAction($action) {
+        if(!Yii::app()->user->isGuest)
+            $this->layout = Shop::module()->adminLayout;
+        else
+            $this->layout = Shop::module()->layout;
+        return parent::beforeAction($action);
+    }
 
 	/**
 	 * @return array action filters
@@ -69,9 +76,14 @@ class ShopInformationController extends Controller
 
 		if(isset($_POST['ShopInformation']))
 		{
-			$model->attributes=$_POST['ShopInformation'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+            $model->attributes=$_POST['ShopInformation'];
+            $model->logo = CUploadedFile::getInstance($model, 'logo');
+            if($model->save()) {
+                $folder = Yii::app()->controller->module->productImagesFolder;
+                $model->logo->saveAs($folder . '/' . $model->logo);
+                //$this->redirect(array('view','id'=>$model->id));
+                $this->redirect(array('//shop/shopInformation/admin'));
+            }
 		}
 
 		$this->render('create',array(
@@ -93,9 +105,21 @@ class ShopInformationController extends Controller
 
 		if(isset($_POST['ShopInformation']))
 		{
-			$model->attributes=$_POST['ShopInformation'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+            if($_POST['ShopInformation']['logo'] == null) {
+                $_POST['ShopInformation']['logo'] = $model->logo;
+            }
+
+		    $model->attributes=$_POST['ShopInformation'];
+            $uploadedFile = CUploadedFile::getInstance($model, 'logo');
+            if($model->save()) {
+                if($uploadedFile !== null) {
+                    $folder = Yii::app()->controller->module->productImagesFolder;
+                    $uploadedFile->saveAs($folder . '/' . $model->logo);
+                }
+
+                //$this->redirect(array('view','id'=>$model->id));
+                $this->redirect(array('//shop/shopInformation/admin'));
+            }
 		}
 
 		$this->render('update',array(

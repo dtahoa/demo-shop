@@ -125,7 +125,7 @@
                     <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
                         <div class="nav-outer">
                             <ul class="nav navbar-nav">
-                                <li class="<?php if (Yii::app()->controller->id == "products") echo "active";?> dropdown yamm-fw">
+                                <li class="<?php if (Yii::app()->controller->id == "products" && Yii::app()->controller->action->id== "index") echo "active";?> dropdown yamm-fw">
                                     <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">Trang chủ</a>
                                 </li>
                                 <li class="<?php if (Yii::app()->controller->id == "pages") echo "active";?> dropdown yamm">

@@ -8,7 +8,10 @@ class ContactController extends Controller
 	 */
 	//public $layout='//layouts/column2';
     public function beforeAction($action) {
-        $this->layout = Shop::module()->layout;
+        if(!Yii::app()->user->isGuest)
+            $this->layout = Shop::module()->adminLayout;
+        else
+            $this->layout = Shop::module()->layout;
         return parent::beforeAction($action);
     }
 

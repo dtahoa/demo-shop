@@ -37,7 +37,7 @@ class ShopInformation extends CActiveRecord
 		return array(
 			array('phone, email', 'required'),
 			array('name, logo, phone, fax, email, email_kinhdoanh, address, hotline', 'length', 'max'=>255),
-			array('working_time, map, description', 'safe'),
+            array('working_time, map, description', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name, logo, working_time, phone, fax, email, email_kinhdoanh, address, map, description, hotline', 'safe', 'on'=>'search'),

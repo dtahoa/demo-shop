@@ -115,11 +115,11 @@ class Products extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'product_id' => Yii::t('ShopModule.shop', 'Product'),
-			'title' => Yii::t('ShopModule.shop', 'Title'),
-			'description' => Yii::t('ShopModule.shop', 'Description'),
-			'price' => Yii::t('ShopModule.shop', 'Price'),
-			'category_id' => Yii::t('ShopModule.shop', 'Category'),
+			'product_id' => Yii::t('ShopModule.shop', 'Mã sản phẩm'),
+			'title' => Yii::t('ShopModule.shop', 'Tên sản phẩm'),
+			'description' => Yii::t('ShopModule.shop', 'Mô tả'),
+			'price' => Yii::t('ShopModule.shop', 'Đơn giá'),
+			'category_id' => Yii::t('ShopModule.shop', 'Danh mục'),
 		);
 	}
 

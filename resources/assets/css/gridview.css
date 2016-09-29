@@ -1,0 +1,3 @@
+#order-grid_c0, #order-grid > table > thead > tr.filters > td:nth-child(1) > input[type="text"] {
+  width: 60px;
+}

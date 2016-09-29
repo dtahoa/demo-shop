@@ -122,9 +122,7 @@ class ProductsController extends Controller
         ));
 
         if(!Yii::app()->user->isGuest)
-            $this->render('indexAdmin',array(
-                'dataProvider'=>$dataProvider,
-            ));
+            $this->redirect(array('//shop/products/admin'));
         else
             $this->render('index',array(
                 'dataProvider'=>$dataProvider,

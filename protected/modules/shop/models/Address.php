@@ -70,7 +70,7 @@ class Address extends CActiveRecord
             'phone' => Shop::t('Điện thoại'),
 			'street' => Shop::t('Địa chỉ'),
 			'zipcode' =>Shop::t('Mã vùng'),
-			'city' => Shop::t('Thành phố'),
+            'city' => Shop::t('Thành phố'),
 			'country' => Shop::t('Quốc gia'),
 		);
 	}

@@ -38,9 +38,9 @@ class Order extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'order_id' => Shop::t('Order number'),
+			'order_id' => Shop::t('No.'),
 			'customer_id' => Shop::t('Customer number'),
-			'ordering_date' => Shop::t('Ordering Date'),
+			'ordering_date' => Shop::t('Ngày đặt'),
 			'ordering_done' => Shop::t('Ordering Done'),
 			'ordering_confirmed' => Shop::t('Ordering Confirmed'),
 		);
