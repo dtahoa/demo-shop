@@ -36,7 +36,7 @@ class ShippingMethod extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, tax_id, price', 'required'),
+			array('title, tax_id, price', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin'),
 			array('tax_id', 'numerical', 'integerOnly'=>true),
 			array('price', 'numerical'),
 			array('description', 'safe'),
@@ -65,10 +65,10 @@ class ShippingMethod extends CActiveRecord
 	{
 		return array(
 			'id' => Shop::t('ID'),
-			'title' => Shop::t('Title'),
-			'description' => Shop::t('Description'),
-			'tax_id' => Shop::t('Tax'),
-			'price' => Shop::t('Price'),
+			'title' => Shop::t('Hình thức'),
+			'description' => Shop::t('Mô tà'),
+			'tax_id' => Shop::t('Thuế'),
+			'price' => Shop::t('Giá'),
 		);
 	}
 

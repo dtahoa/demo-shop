@@ -26,11 +26,11 @@ class Address extends CActiveRecord
 	}
 
 	public function renderAddress() {
-		echo $this->firstname . '<br />';
-        echo $this->phone . '<br />';
-		echo $this->street . '<br />';
-		echo $this->zipcode . ' ' . $this->city . '<br />';
-		echo $this->country;
+		echo 'Người mua hàng: '.$this->firstname . '<br />';
+        echo 'Số điện thoại: '. $this->phone . '<br />';
+		echo 'Địa chỉ: '.$this->street . '<br />';
+		echo 'Mã vùng: '.$this->zipcode . ' Thành phố: ' . $this->city . '<br />';
+		echo 'Quốc gia: '.$this->country;
 	}
 
 	public function tableName()

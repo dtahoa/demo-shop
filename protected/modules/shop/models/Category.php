@@ -34,7 +34,7 @@ class Category extends CActiveRecord
 		return array(
 			array('category_id, parent_id', 'numerical', 'integerOnly'=>true),
 			array('title, description, language', 'length', 'max'=>45),
-			array('title', 'required'),
+			array('title', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin.'),
 			array('category_id, parent_id, title, description, language', 'safe', 'on'=>'search'),
 		);
 	}
@@ -62,8 +62,9 @@ class Category extends CActiveRecord
 	{
 		return array(
 			'category_id' => '#',
-			'parent_id' => Yii::t('ShopModule.shop', 'Parent'),
-			'title' => Yii::t('ShopModule.shop', 'Danh mục sản phẩm'),
+			'parent_id' => Yii::t('ShopModule.shop', 'Mã danh mục'),
+			'title' => Yii::t('ShopModule.shop', 'Tên danh mục'),
+            'description' => Yii::t('ShopModule.shop', 'Mô tả'),
 		);
 	}
 

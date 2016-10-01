@@ -22,8 +22,8 @@
 					"$('.price_information').tooltip(); ");
 
 			echo '<p class="price_information">';
-			echo Shop::t('All prices are including VAT') . '<br />';
-			echo Shop::t('All prices excluding shipping costs');
+			echo Shop::t('Giá bao gồm VAT') . '<br />';
+			echo Shop::t('Giá bao gồm phí giao hàng');
 			echo '</p>';
 			echo '<div class="tooltip">';
 				Yii::app()->controller->renderPartial('/shippingMethod/index'); 

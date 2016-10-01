@@ -41,8 +41,8 @@ class Customer extends CActiveRecord
 			'customer_id' => Yii::t('ShopModule.shop', 'Customer'),
 			'user_id' => Yii::t('ShopModule.shop', 'Userid'),
 			'address_id' => Yii::t('ShopModule.shop', 'Địa chỉ'),
-			'billing_address_id' => Yii::t('ShopModule.shop', 'Billing Address'),
-			'delivery_address_id' => Yii::t('ShopModule.shop', 'Delivery Address'),
+			'billing_address_id' => Yii::t('ShopModule.shop', 'Địa chỉ thanh toán'),
+			'delivery_address_id' => Yii::t('ShopModule.shop', 'Địa chỉ giao hàng'),
 			'email' => Yii::t('ShopModule.shop', 'Email'),
 		);
 	}

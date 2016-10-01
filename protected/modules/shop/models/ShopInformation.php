@@ -61,17 +61,17 @@ class ShopInformation extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'name' => 'Name',
+			'id' => 'No.',
+			'name' => 'Tên cửa hàng',
 			'logo' => 'Logo',
-			'working_time' => 'Working Time',
-			'phone' => 'Phone',
+			'working_time' => 'Giờ làm việc',
+			'phone' => 'Điện thoại',
 			'fax' => 'Fax',
 			'email' => 'Email',
-			'email_kinhdoanh' => 'Email Kinhdoanh',
-			'address' => 'Address',
-			'map' => 'Map',
-			'description' => 'Description',
+			'email_kinhdoanh' => 'Email kinh doanh',
+			'address' => 'Địa chỉ',
+			'map' => 'Bản đồ',
+			'description' => 'Mô tả',
 			'hotline' => 'Hotline',
 		);
 	}

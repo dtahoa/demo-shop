@@ -6,6 +6,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'category-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+	'template'=>'{pager}{items}{pager}',
 	'columns'=>array(
 		'title',
 		array(
@@ -20,6 +21,6 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	),
 )); 
 
-echo CHtml::link(Yii::t('ShopModule.shop', 'Create a new Category'), array('category/create'));
+echo CHtml::link(Yii::t('ShopModule.shop', 'Thêm danh mục mới'), array('category/create'), array('class'=>'btn btn-primary'));
 
 ?>

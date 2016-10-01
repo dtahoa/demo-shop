@@ -15,12 +15,13 @@ $this->menu=array(
 );
 ?>
 
-<h2> <?php echo Shop::t('Shipping method');?></h2>
+<h2> <?php echo Shop::t('Phương thức giao hàng');?></h2>
 
 <?php 
 if($model)
 	$this->widget('zii.widgets.CDetailView', array(
 				'data'=>$model,
+				'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 				'attributes'=>array(
 					'title',
 					'description',

@@ -34,9 +34,9 @@ class Image extends CActiveRecord
 	{
 		return array(
 			'id' => 'Id',
-			'title' => Yii::t('shop', 'Title'),
-			'filename' => Yii::t('shop', 'Filename'),
-			'product_id' => Yii::t('shop', 'Product'),
+			'title' => Yii::t('shop', 'Mô tả'),
+			'filename' => Yii::t('shop', 'Tên file'),
+			'product_id' => Yii::t('shop', 'Mã sẩn phẩm'),
 		);
 	}
 

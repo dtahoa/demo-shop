@@ -1,7 +1,7 @@
 <?php
 if(!isset($this->breadcrumbs))
 	$this->breadcrumbs=array(
-			Shop::t('Payment Methods')=>array('index'),
+			Shop::t('Phương thức giao hàngs')=>array('index'),
 			$model->title,
 			);
 
@@ -14,10 +14,11 @@ $this->menu=array(
 );
 ?>
 
-<h2> <?php echo Shop::t('Payment method') ?> </h2>
+<h2> <?php echo Shop::t('Phương thức thanh toán') ?> </h2>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
+	'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 	'attributes'=>array(
 		'title',
 		'description',

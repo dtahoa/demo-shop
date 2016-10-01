@@ -1,23 +1,24 @@
 <?php
 Shop::register('css/shop.css');
 $this->breadcrumbs=array(
-		Shop::t('Orders')=>array('index'),
+		Shop::t('Đơn hàng')=>array('index'),
 		$model->order_id,
 		);
 
 ?>
 
-<h2> <?php echo Shop::t('Order') ?> #<?php echo $model->order_id; ?></h2>
+<h2> <?php echo Shop::t('Đơn hàng') ?> #<?php echo $model->order_id; ?></h2>
 
-<h3> <?php echo Shop::t('Ordering Info'); ?> </h3>
+<h3> <?php echo Shop::t('Thông tin đơn hàng'); ?> </h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 			'data'=>$model,
+			'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 			'attributes'=>array(
 				'order_id',
 				'customer_id',
 					array(
-						'label' => Shop::t('Ordering Date'),
+						'label' => Shop::t('Ngày đặt hàng'),
 						'value' => date('d. m. Y G:i',$model->ordering_date)
 					),
 				'ordering_done',
@@ -25,10 +26,11 @@ $this->breadcrumbs=array(
 				),
 			)); ?>
 
-<h3> <?php echo Shop::t('Customer Info'); ?> </h3>
+<h3> <?php echo Shop::t('Thông tin khách hàng'); ?> </h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 			'data'=>$model->customer,
+			'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 			'attributes'=>array(
 				'email',
 				),
@@ -38,6 +40,7 @@ $this->breadcrumbs=array(
 <h3> <?php echo Shop::t('Địa chỉ giao hàng'); ?> </h3>
 <?php $this->widget('zii.widgets.CDetailView', array(
 			'data'=>$model->deliveryAddress,
+			'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 			'attributes'=>array(
 				'firstname',
 				'phone',
@@ -53,6 +56,7 @@ $this->breadcrumbs=array(
 <h3> <?php echo Shop::t('Địa chỉ thanh toán'); ?> </h3>
 <?php $this->widget('zii.widgets.CDetailView', array(
 			'data'=>$model->billingAddress,
+			'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 			'attributes'=>array(
 				'firstname',
 				'phone',
@@ -72,18 +76,19 @@ $this->renderPartial('/shippingMethod/view', array(
 ?>
 
 
-<h3> <?php echo Shop::t('Ordered Products'); ?> </h3>
+<h3> <?php echo Shop::t('Sản phẩm đã đặt hàng'); ?> </h3>
 
 <?php foreach($model->products as $product) {
 	$this->widget('zii.widgets.CDetailView', array(
 				'data'=>$product,
+				'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 				'attributes'=> array(
 					'product.title',
-					'amount',
+					'amount'/*,
 					array(
 						'label' => Shop::t('Specifications'),
 						'type' => 'raw',
-						'value' => $product->renderSpecifications())
+						'value' => $product->renderSpecifications())*/
 					)
 				)
 			); 
@@ -98,14 +103,14 @@ $this->renderPartial('/shippingMethod/view', array(
 <div class="buttons"> 
 <?php
 
-echo CHtml::link(Shop::t('Delivery slip'), array(
-			'//shop/order/slip', 'id' => $model->order_id )); 
+echo CHtml::link(Shop::t('Phiếu giao hàng'), array(
+			'//shop/order/slip', 'id' => $model->order_id ), array('class'=>'btn btn-primary'));
 
-echo CHtml::link(Shop::t('Invoice'), array(
-			'//shop/order/invoice', 'id' => $model->order_id)); 
+echo CHtml::link(Shop::t('Hóa đơn'), array(
+			'//shop/order/invoice', 'id' => $model->order_id), array('class'=>'btn btn-success'));
 
-echo CHtml::link(Shop::t('Back to Orders'), array(
-			'//shop/order/admin')); 
+echo CHtml::link(Shop::t('Trở về đơn hàng'), array(
+			'//shop/order/admin'), array('class'=>'btn btn-default'));
 
 ?>
 </div>

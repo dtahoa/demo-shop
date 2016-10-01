@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
-	'Orders'=>array('index'),
-	Yii::t('ShopModule.shop', 'Manage'),
+	'Đơn hàng'=>array('admin'),
+	Yii::t('ShopModule.shop', 'Quản lý đơn hàng'),
 );
 
 ?>
@@ -13,6 +13,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'order-grid',
 	'dataProvider'=>$model->search(),
 	/*'filter'=>$model,*/
+	'template'=>'{pager}{items}{pager}',
 	'cssFile'=>'/resources/assets/css/gridview.css',
 	'columns'=>array(
 		'order_id',
@@ -24,6 +25,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 		array(
 			'class'=>'CButtonColumn', 
 			'template' => '{view}',
+			'viewButtonUrl'=>'Yii::app()->createUrl(\'shop/order/view/id/\'. $data->order_id)',
 		),
 
 	),

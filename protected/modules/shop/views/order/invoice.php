@@ -11,11 +11,11 @@ Yii::app()->clientScript->registerScript('print',  " $('#slip').printElement(); 
         <tr> 
           <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><?php $model->deliveryAddress->renderAddress(); ?><br>
             <br>
-            <strong><?php echo Shop::t('Payment Method'); ?></strong> 
+            <strong><?php echo Shop::t('Phương thức giao hàng'); ?></strong>
 						<?php echo $model->paymentMethod->title; ?><br>
-            <strong><?php echo Shop::t('Order number'); ?></strong> 
+            <strong><?php echo Shop::t('Mã đơn hàng'); ?></strong>
 						<?php echo $model->order_id; ?><br>
-            <strong><?php echo Shop::t('date'); ?></strong> 
+            <strong><?php echo Shop::t('Ngày giao hàng'); ?></strong>
 						<?php echo date(Shop::module()->dateFormat, $model->ordering_date); ?><br>
             </font></td>
           <td width="1"><?php echo CHtml::image(Shop::module()->logoPath, ''); ?></td>
@@ -26,12 +26,12 @@ Yii::app()->clientScript->registerScript('print',  " $('#slip').printElement(); 
         <tr bgcolor="#f1f1f1"> 
           <td width="50%"> 
             <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong>
-							<?php echo Shop::t('Delivery address'); ?>
+							<?php echo Shop::t('Địa chỉ giao hàng'); ?>
             </strong><br>
           </font></p></td>
           <td> 
             <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong>              </strong><strong>
-							<?php echo Shop::t('Billing address'); ?>
+							<?php echo Shop::t('Địa chỉ thanh toán'); ?>
             </strong><br>
           </font> </p></td>
         </tr>
@@ -49,16 +49,16 @@ Yii::app()->clientScript->registerScript('print',  " $('#slip').printElement(); 
 </table>
 <table style="border-bottom:1px solid;" width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr> 
-    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><?php echo Shop::t('Products'); ?></strong></font></td>
+    <td><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><strong><?php echo Shop::t('Sản phẩm'); ?></strong></font></td>
   </tr>
   <tr>
     <td>
 	<table width="100%" border="0" cellpadding="3" cellspacing="0" bgcolor="f1f1f1">
         <tr> 
-          <td colspan="2" style="border-right: 2px solid; border-bottom: 2px solid; border-color: #ffffff;"><div align="center"><strong><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><?php echo Shop::t('Amount'); ?></font></strong></div></td>
-          <td style="border-right: 2px solid; border-bottom: 2px solid; border-color: #ffffff;"><strong><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><?php echo Shop::t('Product'); ?></font></strong></td>
-		  <td style="border-right: 2px solid; border-bottom: 2px solid; border-color: #ffffff;"><strong><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><?php echo Shop::t('Product number'); ?></font></strong></td>
-		  <td style="border-right: 2px solid; border-bottom: 2px solid; border-color: #ffffff;"><strong><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><?php echo Shop::t('Price'); ?></font></strong></td>
+          <td colspan="2" style="border-right: 2px solid; border-bottom: 2px solid; border-color: #ffffff;"><div align="center"><strong><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><?php echo Shop::t('Số lượng'); ?></font></strong></div></td>
+          <td style="border-right: 2px solid; border-bottom: 2px solid; border-color: #ffffff;"><strong><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><?php echo Shop::t('Sản phẩm'); ?></font></strong></td>
+		  <td style="border-right: 2px solid; border-bottom: 2px solid; border-color: #ffffff;"><strong><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><?php echo Shop::t('Mã sản phẩm'); ?></font></strong></td>
+		  <td style="border-right: 2px solid; border-bottom: 2px solid; border-color: #ffffff;"><strong><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><?php echo Shop::t('Giá'); ?></font></strong></td>
         </tr>
 <?php foreach($model->products as $position) { ?>
         <tr> 
@@ -90,8 +90,8 @@ Yii::app()->clientScript->registerScript('print',  " $('#slip').printElement(); 
   <tr> 
     <td nowrap> <table width="100%" border="0" cellpadding="3" cellspacing="0">
         <tr> 
-          <td nowrap width="100%" style="border-right: 2px solid; border-bottom: 2px solid; border-color: #ffffff;"><div align="right"><font size="1" face="Arial, Helvetica, sans-serif"><?php echo Shop::t('Total value'); ?>
-              <?php echo Shop::priceFormat($model->getTotalPrice()); ?></font></div></td>
+          <td nowrap width="100%" style="border-right: 2px solid; border-bottom: 2px solid; border-color: #ffffff;"><div align="right"><font size="1" face="Arial, Helvetica, sans-serif"><?php echo Shop::t('Thành tiền'); ?>
+              <strong><?php echo Shop::priceFormat($model->getTotalPrice()); ?></strong></font></div></td>
         </tr>
         </table></td>
   </tr>

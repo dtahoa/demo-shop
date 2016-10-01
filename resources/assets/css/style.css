@@ -120,3 +120,8 @@ li .first {
 li.page.selected > a {
   background-color: #e7e7e7;
 }
+
+/* Product images */
+.image-item {
+  text-align: center;
+}

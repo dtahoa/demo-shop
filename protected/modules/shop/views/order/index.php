@@ -1,10 +1,10 @@
 <?php
 $this->breadcrumbs=array(
-	Yii::t('ShopModule.shop','Orders'),
+	Yii::t('ShopModule.shop','Đơn hàng'),
 );
 
 ?>
-<h1>My Orders</h1>
+<h1>Đơn hàng của tôi</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -14,7 +14,7 @@ if(!isset($customer))
 if(!isset($this->breadcrumbs))
 	$this->breadcrumbs = array(
 			Shop::t('Order'),
-			Shop::t('Payment method'));
+			Shop::t('Phương thức giao hàng'));
 			
 $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'customer-form',
@@ -45,7 +45,7 @@ $form=$this->beginWidget('CActiveForm', array(
 /*echo CHtml::checkBox('toggle_billing',
 			$customer->billingAddress !== NULL, array(
 				'style' => 'float: left')); 
-	echo CHtml::label(Shop::t('alternative billing address'), 'toggle_billing', array(
+	echo CHtml::label(Shop::t('alternative Địa chỉ thanh toán'), 'toggle_billing', array(
 				'style' => 'cursor:pointer'));*/
 ?>
 <div class="form">

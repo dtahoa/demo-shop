@@ -8,6 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Văn phòng phẩm Minh Tú',
+    'theme'=>'bootstrap',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -100,6 +101,8 @@ return array(
                     'cssFile' => false,
                     'nextPageLabel'=>'Trang kế',
                     'prevPageLabel'=>'Trang trước',
+                    'lastPageLabel'=>'Trang cuối',
+                    'firstPageLabel'=>'Trang đầu',
                 ),
                 'CGridView' => array(
                     'htmlOptions' => array(

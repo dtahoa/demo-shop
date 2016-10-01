@@ -4,12 +4,8 @@ $this->breadcrumbs=array(
 	'Create',
 );
 
-$this->menu=array(
-	array('label'=>'List ShippingMethod', 'url'=>array('index')),
-	array('label'=>'Manage ShippingMethod', 'url'=>array('admin')),
-);
 ?>
 
-<h1>Create ShippingMethod</h1>
+<h1>Thêm phương thức giao hàng</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

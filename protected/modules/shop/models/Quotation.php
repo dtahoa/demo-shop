@@ -27,7 +27,7 @@ class Quotation extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('filename', 'required'),
-			array('filename', 'numerical', 'integerOnly'=>true),
+			array('filename', 'length', 'max'=>255),
 			array('created_at', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -52,9 +52,9 @@ class Quotation extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'filename' => 'Filename',
-			'created_at' => 'Created At',
+			'id' => 'No.',
+			'filename' => 'Tên file',
+			'created_at' => 'Ngày tạo',
 		);
 	}
 

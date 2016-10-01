@@ -3,16 +3,12 @@
 /* @var $model ShopInformation */
 
 $this->breadcrumbs=array(
-	'Shop Informations'=>array('index'),
-	'Create',
+	'Thông tin cửa hàng'=>array('index'),
+	'Thêm mới',
 );
 
-$this->menu=array(
-	array('label'=>'List ShopInformation', 'url'=>array('index')),
-	array('label'=>'Manage ShopInformation', 'url'=>array('admin')),
-);
 ?>
 
-<h1>Create ShopInformation</h1>
+<h1>Tạo mới thông tin shop</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

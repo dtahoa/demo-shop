@@ -1,21 +1,18 @@
 <?php
 $this->breadcrumbs=array(
-	Shop::t('Taxes')=>array('index'),
-	Shop::t('Manage'),
-);
-
-$this->menu=array(
-	array('label'=>Shop::t('Create Tax'), 'url'=>array('create')),
+	Shop::t('Thuế')=>array('index'),
+	Shop::t('Quản lý'),
 );
 
 ?>
 
-<h2> <?php echo Shop::t('Manage Taxes'); ?></h2>
+<h2> <?php echo Shop::t('Quản lý % thuế'); ?></h2>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'tax-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+	/*'filter'=>$model,*/
+	'template'=>'{pager}{items}{pager}',
 	'columns'=>array(
 		'id',
 		'title',

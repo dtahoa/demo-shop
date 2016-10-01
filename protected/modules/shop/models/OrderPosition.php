@@ -106,9 +106,9 @@ class OrderPosition extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'order_id' => Shop::t('Order'),
-			'product_id' => Shop::t('Product'),
-			'amount' => Shop::t('Amount'),
+			'order_id' => Shop::t('Mã đơn hàng'),
+			'product_id' => Shop::t('Mã sản phẩm'),
+			'amount' => Shop::t('Số lượng'),
 			'specifications' => Shop::t('Specifications'),
 		);
 	}

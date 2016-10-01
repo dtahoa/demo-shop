@@ -40,7 +40,7 @@ function renderVariation($variation, $i)
         'enableAjaxValidation' => true,
     )); ?>
 
-    <?php echo $form->errorSummary($model); ?>
+    <?php echo $form->errorSummary($model, $header='Thông báo lỗi:'); ?>
 
     <div style="">
         <fieldset>
@@ -51,19 +51,20 @@ function renderVariation($variation, $i)
                     'model' => $model,
                     'relation' => 'category',
                     'fields' => 'title',
-                    'showAddButton' => false)); ?>
+                    'showAddButton' => false,
+                    'htmlOptions'=>array('class'=>'form-control'))); ?>
                 <?php echo $form->error($model, 'category_id'); ?>
             </div>
 
             <div class="row">
                 <?php echo $form->labelEx($model, 'title'); ?>
-                <?php echo $form->textField($model, 'title', array('size' => 45, 'maxlength' => 45)); ?>
+                <?php echo $form->textField($model, 'title', array('size' => 45, 'maxlength' => 45, 'class'=>'form-control')); ?>
                 <?php echo $form->error($model, 'title'); ?>
             </div>
 
             <div class="row">
                 <?php echo $form->labelEx($model, 'description'); ?>
-                <?php echo $form->textArea($model, 'description', array('rows' => 6, 'cols' => 50)); ?>
+                <?php echo $form->textArea($model, 'description', array('rows' => 6, 'cols' => 50, 'class'=>'form-control')); ?>
                 <?php echo $form->error($model, 'description'); ?>
             </div>
         </fieldset>
@@ -75,7 +76,7 @@ function renderVariation($variation, $i)
 
         <div class="row">
             <?php echo $form->labelEx($model, 'price'); ?>
-            <?php echo $form->textField($model, 'price', array('size' => 45, 'maxlength' => 45)); ?>
+            <?php echo $form->textField($model, 'price', array('size' => 45, 'maxlength' => 45, 'class'=>'form-control')); ?>
             <?php echo $form->error($model, 'price'); ?>
         </div>
 
@@ -126,8 +127,9 @@ function renderVariation($variation, $i)
 
     <div class="row buttons">
         <?php echo CHtml::submitButton($model->isNewRecord ?
-            Yii::t('ShopModule.shop', 'Create')
-            : Yii::t('ShopModule.shop', 'Save')); ?>
+            Yii::t('ShopModule.shop', 'Thêm')
+            : Yii::t('ShopModule.shop', 'Lưu'),
+            array('class'=>'btn-next btn-upper btn btn-primary checkout-page-button checkout-continue')); ?>
     </div>
 
     <?php $this->endWidget(); ?>

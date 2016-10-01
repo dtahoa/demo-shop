@@ -1,4 +1,11 @@
-<?php 
+<?php
+$this->breadcrumbs=array(
+	'Sản phẩm'=>array('admin'),
+	Yii::t('ShopModule.shop', 'Quản lý sản phẩm'),
+);
+
+?>
+<?php
 
 $model = new Products();
 
@@ -6,6 +13,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'products-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+	'template'=>'{pager}{items}{pager}',
 	'columns'=>array(
 		'title',
 		'price',
@@ -20,7 +28,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 			array("id" => $data->product_id))',
 			'buttons' => array(
 				'images' => array(
-					'label' => Yii::t('ShopModule.shop', 'images'),
+					'label' => Yii::t('ShopModule.shop', 'Hình ảnh'),
 					'url' => 'Yii::app()->createUrl("/shop/image/admin",
 					array("product_id" => $data->product_id))',
 				),
@@ -31,5 +39,5 @@ $this->widget('zii.widgets.grid.CGridView', array(
 ); 
 
 
-echo CHtml::link(Shop::t('Create a new Product'), array('products/create'));
+echo CHtml::link(Shop::t('Thêm sản phẩm mới'), array('products/create'), array('class'=>'btn btn-primary'));
 ?>

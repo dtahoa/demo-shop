@@ -35,7 +35,7 @@ class CategoryController extends Controller
 		{
 			$model->attributes=$_POST['Category'];
 			if($model->save())
-				$this->redirect(array('shop/admin'));
+				$this->redirect(array('//shop/products/admin'));
 		}
 
 		$this->render('create',array(

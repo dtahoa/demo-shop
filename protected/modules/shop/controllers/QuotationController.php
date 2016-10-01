@@ -6,7 +6,7 @@ class QuotationController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	//public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -18,7 +18,13 @@ class QuotationController extends Controller
 			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
-
+    public function beforeAction($action) {
+        if(!Yii::app()->user->isGuest)
+            $this->layout = Shop::module()->adminLayout;
+        else
+            $this->layout = Shop::module()->layout;
+        return parent::beforeAction($action);
+    }
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.
@@ -36,7 +42,7 @@ class QuotationController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','importQuotation'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -62,7 +68,9 @@ class QuotationController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Quotation;
+        $model=Quotation::model()->findByPk(1);
+        if (!$model)
+	        $model=new Quotation;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -71,13 +79,13 @@ class QuotationController extends Controller
 		{
 			$model->attributes=$_POST['Quotation'];
             $model->filename = CUploadedFile::getInstance($model, 'filename');
+            $model->id = 1;
 			if($model->save()) {
                 $folder = Yii::app()->controller->module->dataFolder;
                 $filePath = $folder . '/' . $model->filename;
                 $model->filename->saveAs($filePath);
 
                 $this->importQuotation($filePath);
-
                 $this->redirect(array('view','id'=>$model->id));
             }
 
@@ -90,10 +98,25 @@ class QuotationController extends Controller
 
 	public function importQuotation($filePath) {
         $sheet_array = Yii::app()->yexcel->readActiveSheet($filePath);
-        echo ("<pre>");
-        print_r($sheet_array);
-        echo ("</pre>");
-        die();
+        unset($sheet_array[1]);
+        foreach ($sheet_array as $key => $value) {
+            $model=Products::model()->findByPk($value['A']);
+            if (!$model) {
+                $model = new Products();
+            }
+            $model->product_id = $value['A'];
+            $model->category_id = $value['B'];
+            $model->tax_id = $value['C'];
+            $model->title = $value['D'];
+            $model->description = $value['E'];
+            $model->price = $value['F'];
+            $model->language = $value['G'];
+            $model->specifications = $value['H'];
+            $model->is_discount = $value['I'];
+            $model->is_highlight = $value['J'];
+            $model->save();
+        }
+        return true;
     }
 
 	/**

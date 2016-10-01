@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	Shop::t('Payment Methods')=>array('index'),
+	Shop::t('Phương thức giao hàngs')=>array('index'),
 	$model->title=>array('view','id'=>$model->id),
 	Shop::t('Update'),
 );

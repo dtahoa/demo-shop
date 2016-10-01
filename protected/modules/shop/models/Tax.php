@@ -35,7 +35,7 @@ class Tax extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, percent', 'required'),
+			array('title, percent', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin'),
 			array('percent', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
@@ -62,8 +62,8 @@ class Tax extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'percent' => 'Percent',
+			'title' => 'Loại thuế',
+			'percent' => '%',
 		);
 	}
 

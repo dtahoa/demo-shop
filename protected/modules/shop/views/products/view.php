@@ -3,7 +3,6 @@ $this->breadcrumbs=array(
 	Shop::t('Products')=>array('index'),
 	$model->title,
 );
-
 ?>
 
 <div class="row wow fadeInUp">

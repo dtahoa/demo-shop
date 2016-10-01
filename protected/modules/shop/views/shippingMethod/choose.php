@@ -46,7 +46,7 @@ $form=$this->beginWidget('CActiveForm', array(
 /*echo CHtml::checkBox('toggle_delivery',
 			$customer->deliveryAddress !== NULL, array(
 				'style' => 'float: left')); 
-	echo CHtml::label(Shop::t('alternative delivery address'), 'toggle_delivery', array(
+	echo CHtml::label(Shop::t('alternative Địa chỉ giao hàng'), 'toggle_delivery', array(
 				'style' => 'cursor:pointer'));*/
 	
 ?>

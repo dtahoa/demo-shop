@@ -8,6 +8,7 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'quotation-form',
+    'htmlOptions'=>array('enctype' => 'multipart/form-data'),
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
@@ -15,28 +16,16 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<?php echo $form->errorSummary($model, $header = 'Thông báo lỗi:'); ?>
 
-	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
+	<div class="row" style="height: 70px;">
 		<?php echo $form->labelEx($model,'filename'); ?>
-		<?php echo $form->fileField($model,'filename',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->fileField($model,'filename',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'filename'); ?>
 	</div>
 
-	<?php
-	if($model->filename !== null) {?>
-	<div class="row">
-		<?php
-			echo $form->labelEx($model,'filename');
-			echo $form->textField($model,'filename');
-		?>
-	</div>
-	<?php } ?>
-
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Thêm mới' : 'Lưu', array('class'=>'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

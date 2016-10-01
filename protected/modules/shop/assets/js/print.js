@@ -7,7 +7,7 @@
 * Inspired by PrintArea (http://plugins.jquery.com/project/PrintArea) and
 * http://stackoverflow.com/questions/472951/how-do-i-print-an-iframe-from-javascript-in-safari-chrome
 *
-*  Home Page : http://projects.erikzaadi/jQueryPlugins/jQuery.printElement 
+*  Trang chủ Page : http://projects.erikzaadi/jQueryPlugins/jQuery.printElement
 *  Issues (bug reporting) : http://github.com/erikzaadi/jQueryPlugins/issues/labels/printElement
 *  jQuery plugin page : http://plugins.jquery.com/project/printElement 
 *  

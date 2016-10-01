@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-    Shop::t('Products'),
+    Shop::t('Sản phẩm'),
 );
 Shop::renderFlash();
 ?>

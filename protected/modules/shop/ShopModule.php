@@ -53,6 +53,7 @@ class ShopModule extends CWebModule
 
 	public $layout = 'application.modules.shop.views.layouts.minhtu-v1';
     public $adminLayout = 'application.modules.shop.views.layouts.shop';
+    public $onlyContentLayout = 'application.modules.shop.views.layouts.only-content';
 
 	public function init()
 	{

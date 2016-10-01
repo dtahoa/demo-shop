@@ -1,4 +1,7 @@
-<?php 
+<div class="col-md-4 image-item">
+
+<?php
+echo "<label> {$model->title} </label><br />";
 $folder = Shop::module()->productImagesFolder;
 
 if($model->filename) 
@@ -14,8 +17,9 @@ echo CHtml::image($path,
 			'style' => '',
 			'width' => isset($thumb) && $thumb ? Shop::module()->imageWidthThumb : Shop::module()->imageWidth)
 		); ?>
-<?php 
+<?php
 
-if(Shop::module()->useWithYum && Yii::app()->user->isAdmin()) 
-	echo CHtml::link(Yii::t('ShopModule.shop', 'Delete Image'),
+if(!Yii::app()->user->isGuest)
+	echo CHtml::link(Yii::t('ShopModule.shop', 'Xóa'),
 			array('delete', 'id' => $model->id)); ?>
+</div>

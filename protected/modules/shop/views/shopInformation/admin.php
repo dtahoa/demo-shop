@@ -3,8 +3,8 @@
 /* @var $model ShopInformation */
 
 $this->breadcrumbs=array(
-	'Shop Informations'=>array('index'),
-	'Manage',
+	'Thông tin cửa hàng'=>array('index'),
+	'Quản lý',
 );
 
 /*$this->menu=array(
@@ -26,13 +26,14 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Shop Informations</h1>
+<h1>Quản lý thông tin cửa hàng</h1>
 
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'shop-information-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+	/*'filter'=>$model,*/
+	'template'=>'{pager}{items}{pager}',
 	'columns'=>array(
 		/*'id',*/
 		'name',
@@ -51,6 +52,7 @@ $('.search-form form').submit(function(){
 		*/
 		array(
 			'class'=>'CButtonColumn',
+			'template'=>'{update}{view}'
 		),
 	),
 )); ?>

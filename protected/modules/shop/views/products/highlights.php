@@ -6,9 +6,7 @@
 				'condition'=>'is_highlight=1',
 				'order'=>'title DESC',
 			),
-			'pagination'=>array(
-				'pageSize'=>10,
-			)
+			'pagination'=>false
 		));
 
 		$this->widget('zii.widgets.CListView', array(

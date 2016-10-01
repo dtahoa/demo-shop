@@ -28,11 +28,13 @@ class OrderController extends Controller
 	}
 
 	public function actionSlip($id) {
+        $this->layout = Shop::module()->onlyContentLayout;
 		if($model = $this->loadModel($id))
 			$this->render(Shop::module()->slipView, array('model' => $model));
 	}
 
 	public function actionInvoice($id) {
+        $this->layout = Shop::module()->onlyContentLayout;
 		if($model = $this->loadModel($id))
 			$this->render(Shop::module()->invoiceView, array('model' => $model));
 	}
@@ -77,7 +79,7 @@ class OrderController extends Controller
 
 		if(isset($_POST['DeliveryAddress']) && $_POST['DeliveryAddress'] === true) {
 			if(Address::isEmpty($_POST['DeliveryAddress'])) {
-				Shop::setFlash(Shop::t('Delivery address is not complete! Please fill in all fields to set the Delivery address'));
+				Shop::setFlash(Shop::t('Địa chỉ giao hàng is not complete! Please fill in all fields to set the Địa chỉ giao hàng'));
 			} else {
 				$deliveryAddress = new DeliveryAddress;
 				$deliveryAddress->attributes = $_POST['DeliveryAddress'];

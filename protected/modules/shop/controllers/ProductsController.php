@@ -38,9 +38,14 @@ class ProductsController extends Controller
 
 	public function actionView()
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel(),
-		));
+        if(!Yii::app()->user->isGuest)
+            $this->render('_viewAdmin',array(
+                'data'=>$this->loadModel(),
+            ));
+        else
+            $this->render('view',array(
+                'model'=>$this->loadModel(),
+            ));
 	}
 
 	public function actionCreate()
@@ -57,7 +62,7 @@ class ProductsController extends Controller
 
 
 			if($model->save())
-				$this->redirect(array('shop/admin'));
+				$this->redirect(array('//shop/products/admin'));
 		}
 
 		$this->render('create',array(

@@ -41,7 +41,7 @@ echo '<p>';
 	$payment = 	PaymentMethod::model()->findByPk(Yii::app()->user->getState('payment_method'));
 	echo '<strong>'.Shop::t('Phương thức thanh toán').': </strong>'.' '.$payment->title.' ('.$payment->description.')';
 	echo '<br />';
-	/*echo CHtml::link(Shop::t('Edit payment method'), array(
+	/*echo CHtml::link(Shop::t('Edit Phương thức giao hàng'), array(
 			'//shop/paymentMethod/choose', 'order' => true));*/
 echo '</p>';
 

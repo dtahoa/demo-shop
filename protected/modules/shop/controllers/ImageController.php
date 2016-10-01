@@ -30,7 +30,7 @@ class ImageController extends Controller
 			if($model->save()) {
 				$folder = Yii::app()->controller->module->productImagesFolder; 
 				$model->filename->saveAs($folder . '/' . $model->filename);
-				$this->redirect(array('//shop/products/admin'));
+				$this->redirect(array('//shop/image/admin/product_id/'.$_POST['Image']['product_id']));
 			}
 		}
 
@@ -62,7 +62,8 @@ class ImageController extends Controller
 			$this->loadModel()->delete();
 
 			if(!isset($_POST['ajax']))
-				$this->redirect(array('//shop/products/admin'));
+                $this->redirect(Yii::app()->user->returnUrl);
+				//$this->redirect(array('//shop/products/admin'));
 	}
 
 	/**

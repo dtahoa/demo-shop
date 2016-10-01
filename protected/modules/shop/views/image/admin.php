@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
-	Yii::t('ShopModule.shop', 'Images') =>array('index'),
-	Yii::t('ShopModule.shop', 'Manage'),
+	Yii::t('ShopModule.shop', 'Sản phẩm') =>array('//shop/products/admin'),
+	Yii::t('ShopModule.shop', 'Quản lý hình ảnh sản phẩm'),
 );
 
 ?>
@@ -15,19 +15,20 @@ echo '&nbsp;' . $product->title;
 ?>
 </h1>
 
+<div class="row" style="margin-left: 0px; margin-right: 0px;">
+
 <?php
 if($images)
 	foreach($images as $image) {
-		echo "<label> {$image->title} </label><br />";
 		$this->renderPartial('view', array('model' => $image));
 	}
 
+echo '</div><br />';
 
-echo '<br />';
-
-echo CHtml::link(Yii::t('ShopModule.shop', 'Cancel'), array('/shop/shop/admin')) . '<br />';
-echo CHtml::link(Yii::t('ShopModule.shop', 'Upload new Image'), array('create', 'product_id' => $product->product_id));
+echo CHtml::link(Yii::t('ShopModule.shop', 'Hủy'), array('/shop/products/admin'), array('class'=>'btn btn-default')). '&nbsp&nbsp';
+echo CHtml::link(Yii::t('ShopModule.shop', 'Upload hình mới'), array('create', 'product_id' => $product->product_id), array('class'=>'btn btn-primary'));
 
 
 ?>
+
 </div>

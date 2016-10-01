@@ -1,29 +1,28 @@
 <?php
 $this->breadcrumbs=array(
-	'Shipping Methods'=>array('index'),
-	'Manage',
-);
-
-$this->menu=array(
-	array('label'=>'List ShippingMethod', 'url'=>array('index')),
-	array('label'=>'Create ShippingMethod', 'url'=>array('create')),
+	'Phương thức giao hàng'=>array('index'),
+	'Quản lý',
 );
 
 ?>
 
-<h1>Manage Shipping Methods</h1>
+<h1>Quản lý phương thức giao hàng</h1>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'shipping-method-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+	/*'filter'=>$model,*/
+	'template'=>'{pager}{items}{pager}',
 	'columns'=>array(
 		'id',
 		'title',
 		'tax_id',
 		'price',
 		array(
-			'class'=>'CButtonColumn',
+			'class'=>'CButtonColumn'
 		),
 	),
-)); ?>
+));
+echo CHtml::link(Shop::t('Thêm phương thức giao hàng'), array('shippingMethod/create'), array('class'=>'btn btn-primary'));
+?>
+
