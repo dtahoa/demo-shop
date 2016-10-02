@@ -1,6 +1,16 @@
-<?php 
-
-$model = new Category();
+<?php
+Yii::app()->clientScript->registerScript('search', "
+$('.search-button').click(function(){
+	$('.search-form').toggle();
+	return false;
+});
+$('.search-form form').submit(function(){
+	$('#category-grid').yiiGridView('update', {
+		data: $(this).serialize()
+	});
+	return false;
+});
+");
 
 $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'category-grid',

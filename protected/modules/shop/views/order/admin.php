@@ -19,7 +19,8 @@ $this->widget('zii.widgets.grid.CGridView', array(
 		'order_id',
 		'customer.address.firstname',
 		'customer.address.phone',
-		'customer.address.street',
+		'ordering_confirmed',
+		'ordering_done',
 		array('name' => 'ordering_date',
 			'value' => 'date("M j, Y", $data->ordering_date)'),
 		array(

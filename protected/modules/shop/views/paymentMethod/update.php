@@ -5,11 +5,11 @@ $this->breadcrumbs=array(
 	Shop::t('Update'),
 );
 
-$this->menu=array(
+/*$this->menu=array(
 	array('label'=>'Create PaymentMethod', 'url'=>array('create')),
 	array('label'=>'View PaymentMethod', 'url'=>array('view', 'id'=>$model->id)),
 	array('label'=>'Manage PaymentMethod', 'url'=>array('admin')),
-);
+);*/
 ?>
 
 <h2><?php echo $model->title; ?></h2>

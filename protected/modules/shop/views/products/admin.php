@@ -4,10 +4,18 @@ $this->breadcrumbs=array(
 	Yii::t('ShopModule.shop', 'Quản lý sản phẩm'),
 );
 
-?>
-<?php
-
-$model = new Products();
+Yii::app()->clientScript->registerScript('search', "
+$('.search-button').click(function(){
+	$('.search-form').toggle();
+	return false;
+});
+$('.search-form form').submit(function(){
+	$('#products-grid').yiiGridView('update', {
+		data: $(this).serialize()
+	});
+	return false;
+});
+");
 
 $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'products-grid',

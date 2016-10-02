@@ -129,7 +129,8 @@ function renderVariation($variation, $i)
         <?php echo CHtml::submitButton($model->isNewRecord ?
             Yii::t('ShopModule.shop', 'Thêm')
             : Yii::t('ShopModule.shop', 'Lưu'),
-            array('class'=>'btn-next btn-upper btn btn-primary checkout-page-button checkout-continue')); ?>
+            array('class'=>'btn btn-primary')); ?>
+        <?php echo CHtml::link('Hủy', array('//shop/products/admin'), array('class' => 'btn btn-default')); ?>
     </div>
 
     <?php $this->endWidget(); ?>

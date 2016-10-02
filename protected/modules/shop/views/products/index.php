@@ -5,11 +5,31 @@ $this->breadcrumbs = array(
 Shop::renderFlash();
 ?>
 <div id="hero">
-    <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
-        <div class="item" style="background-image: url(<?php echo Yii::app()->getBaseUrl(true) . '/productimages/img-news.jpg'?>");"></div>
-        <div class="item" style="background-image: url(<?php echo Yii::app()->getBaseUrl(true) . '/productimages/img-news.jpg'?>");"/></div>
-        <div class="item" style="background-image: url(<?php echo Yii::app()->getBaseUrl(true) . '/productimages/img-news.jpg'?>");"/></div>
-    </div>
+
+    <?php
+    $banners = Banner::model()->findAll();
+    $images = array();
+    $alts = array();
+    foreach ($banners as $banner) {
+        array_push($images, $banner->filename);
+        array_push($alts, $banner->title);
+    }
+
+    $this->widget('ext.slider.slider', array(
+            'sliderBase'=>'/images/',
+            'imagesPath'=>'banners',
+            'container'=>'slideshow',
+            'width'=>"100%",
+            'height'=>"100%",
+            'timeout'=>6000,
+            'infos'=>false,
+            'constrainImage'=>true,
+            'images'=>$images,
+            'alts'=>$alts,
+            'defaultUrl'=>Yii::app()->request->hostInfo
+        )
+    );
+    ?>
 </div>
 <div class="more-info-tab clearfix ">
     <h3 class="new-product-title pull-left"><?php echo Shop::t('Sản phẩm mới'); ?></h3>

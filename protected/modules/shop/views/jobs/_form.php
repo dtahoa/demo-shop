@@ -15,30 +15,32 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<?php echo $form->errorSummary($model, $header='Thông báo lỗi:'); ?>
 
-	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
+	<div class="row" style="height: 70px">
 		<?php echo $form->labelEx($model,'title'); ?>
-		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>255, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+		<?php $this->widget('application.extensions.extckeditor.ExtCKEditor', array(
+			'model'=>$model,
+			'attribute'=>'content',
+			'language'=>'en',
+			'editorTemplate'=>'basic'
+		)); ?>
 		<?php echo $form->error($model,'content'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'updated'); ?>
-		<?php echo $form->textField($model,'updated'); ?>
-		<?php echo $form->error($model,'updated'); ?>
-	</div>
-
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ?
+			Yii::t('ShopModule.shop', 'Thêm')
+			: Yii::t('ShopModule.shop', 'Lưu'),
+			array('class'=>'btn btn-primary')); ?>
+		<?php echo CHtml::link('Hủy', array('//shop/jobs/admin'), array('class' => 'btn btn-default')); ?>
+	</div>
 	</div>
 
 <?php $this->endWidget(); ?>

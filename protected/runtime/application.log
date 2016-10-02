@@ -2099,3 +2099,1899 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
 ---
+2016/10/02 13:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/10/02 13:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/10/02 13:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:07:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:08:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:09:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:09:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:09:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slider/banners/logo2.jpg".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('slider/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/slider/banners/logo2.jpg
+HTTP_REFERER=http://shop.minhtu.com/
+---
+2016/10/02 13:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slider/banners/logo3.jpg".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('slider/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/slider/banners/logo3.jpg
+HTTP_REFERER=http://shop.minhtu.com/
+---
+2016/10/02 13:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slider/banners/logo2.jpg".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('slider/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/slider/banners/logo2.jpg
+HTTP_REFERER=http://shop.minhtu.com/
+---
+2016/10/02 13:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slider/banners/logo3.jpg".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('slider/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/slider/banners/logo3.jpg
+HTTP_REFERER=http://shop.minhtu.com/
+---
+2016/10/02 13:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:12:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/logo2.jpg".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/logo2.jpg
+HTTP_REFERER=http://shop.minhtu.com/
+---
+2016/10/02 13:12:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/logo3.jpg".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/logo3.jpg
+HTTP_REFERER=http://shop.minhtu.com/
+---
+2016/10/02 13:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:12:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:12:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://shop.minhtu.com/images/logo2.jpg
+---
+2016/10/02 13:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:16:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:16:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/logo2.jpg".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/logo2.jpg
+HTTP_REFERER=http://shop.minhtu.com/
+---
+2016/10/02 13:17:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/logo3.jpg".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/logo3.jpg
+HTTP_REFERER=http://shop.minhtu.com/
+---
+2016/10/02 13:17:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:17:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:22:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:22:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:22:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:22:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:22:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:22:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:22:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:22:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:23:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:23:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:23:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:25:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:25:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:26:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:26:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:26:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:28:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:28:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:28:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 13:30:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 13:30:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 13:30:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 15:29:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 15:29:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 15:29:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 15:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/10/02 15:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/10/02 15:30:43 [error] [php] Undefined variable: images (E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\admin.php:15)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): BannerController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): BannerController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php(88): BannerController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): BannerController->actionAdmin()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\CController.php(286): BannerController->runAction()
+#6 E:\TMA\Project\yii\framework\web\CController.php(265): BannerController->runActionWithFilters()
+#7 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): BannerController->run()
+#8 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/banner/admin
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\admin.php (15)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php (88)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 15:33:17 [error] [php] Trying to get property of non-object (E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\view.php:4)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): BannerController->renderFile()
+#1 E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\admin.php(16): BannerController->renderPartial()
+#2 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require()
+#3 E:\TMA\Project\yii\framework\web\CBaseController.php(95): BannerController->renderInternal()
+#4 E:\TMA\Project\yii\framework\web\CController.php(869): BannerController->renderFile()
+#5 E:\TMA\Project\yii\framework\web\CController.php(782): BannerController->renderPartial()
+#6 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php(89): BannerController->render()
+#7 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): BannerController->actionAdmin()
+#8 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 E:\TMA\Project\yii\framework\web\CController.php(286): BannerController->runAction()
+#10 E:\TMA\Project\yii\framework\web\CController.php(265): BannerController->runActionWithFilters()
+#11 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): BannerController->run()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/banner/admin
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\view.php (4)
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\admin.php (16)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php (89)
+2016/10/02 15:36:39 [error] [php] Trying to get property of non-object (E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\view.php:4)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): BannerController->renderFile()
+#1 E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\admin.php(17): BannerController->renderPartial()
+#2 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require()
+#3 E:\TMA\Project\yii\framework\web\CBaseController.php(95): BannerController->renderInternal()
+#4 E:\TMA\Project\yii\framework\web\CController.php(869): BannerController->renderFile()
+#5 E:\TMA\Project\yii\framework\web\CController.php(782): BannerController->renderPartial()
+#6 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php(89): BannerController->render()
+#7 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): BannerController->actionAdmin()
+#8 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 E:\TMA\Project\yii\framework\web\CController.php(286): BannerController->runAction()
+#10 E:\TMA\Project\yii\framework\web\CController.php(265): BannerController->runActionWithFilters()
+#11 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): BannerController->run()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/banner/admin
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\view.php (4)
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\admin.php (17)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php (89)
+2016/10/02 15:43:57 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.0" is not defined.' in E:\TMA\Project\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\TMA\Project\yii\framework\YiiBase.php(220): CComponent->__set('0', 'title')
+#1 E:\TMA\Project\yii\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 E:\TMA\Project\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 E:\TMA\Project\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 E:\TMA\Project\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\admin.php(41): CBaseController->widget('zii.widgets.gri...', Array)
+#6 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require('E:\\TMA\\Project\\...')
+#7 E:\TMA\Project\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\TMA\\Project\\...', Array, true)
+#8 E:\TMA\Project\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\TMA\\Project\\...', Array, true)
+#9 E:\TMA\Project\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php(89): CController->render('admin', Array)
+#11 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): BannerController->actionAdmin()
+#12 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 E:\TMA\Project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 E:\TMA\Project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#16 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/banner/adm...')
+#17 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/shop/banner/admin
+HTTP_REFERER=http://shop.minhtu.com/shop/products/admin
+---
+2016/10/02 15:48:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:56:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:56:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 15:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 15:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 15:57:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 15:57:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:57:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:59:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 15:59:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 15:59:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 15:59:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:01:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:01:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:01:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:01:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:03:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:03:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:03:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 16:03:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 16:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 16:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/jquery.rateit.min.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/jquery.rateit.min.js.map
+---
+2016/10/02 16:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 16:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 16:03:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 16:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:03:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 16:04:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/banners/containers-vs-Vms.png".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/banners/...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/banners/containers-vs-Vms.png
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/view/id/2
+---
+2016/10/02 16:25:36 [error] [php] Undefined variable: model (E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\_view.php:15)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\zii\widgets\CListView.php(291): BannerController->renderFile()
+#1 E:\TMA\Project\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 E:\TMA\Project\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 E:\TMA\Project\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 E:\TMA\Project\yii\framework\web\CBaseController.php(181): CListView->run()
+#6 E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\index.php(11): BannerController->widget()
+#7 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require()
+#8 E:\TMA\Project\yii\framework\web\CBaseController.php(95): BannerController->renderInternal()
+#9 E:\TMA\Project\yii\framework\web\CController.php(869): BannerController->renderFile()
+#10 E:\TMA\Project\yii\framework\web\CController.php(782): BannerController->renderPartial()
+#11 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php(77): BannerController->render()
+#12 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): BannerController->actionIndex()
+#13 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 E:\TMA\Project\yii\framework\web\CController.php(286): BannerController->runAction()
+#15 E:\TMA\Project\yii\framework\web\CController.php(265): BannerController->runActionWithFilters()
+#16 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): BannerController->run()
+#17 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/banner/index
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\_view.php (15)
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\index.php (11)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php (77)
+2016/10/02 16:29:42 [error] [exception.CException] exception 'CException' with message 'Property "Banner.logo" is not defined.' in E:\TMA\Project\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\TMA\Project\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('logo')
+#1 E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\_form.php(21): CActiveRecord->__get('logo')
+#2 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require('E:\\TMA\\Project\\...')
+#3 E:\TMA\Project\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\TMA\\Project\\...', Array, true)
+#4 E:\TMA\Project\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\TMA\\Project\\...', Array, true)
+#5 E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\update.php(11): CController->renderPartial('_form', Array)
+#6 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require('E:\\TMA\\Project\\...')
+#7 E:\TMA\Project\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\TMA\\Project\\...', Array, true)
+#8 E:\TMA\Project\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\TMA\\Project\\...', Array, true)
+#9 E:\TMA\Project\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#10 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php(57): CController->render('update', Array)
+#11 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): BannerController->actionUpdate()
+#12 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 E:\TMA\Project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 E:\TMA\Project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/banner/upd...')
+#17 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/shop/banner/update/id/2
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:29:53 [error] [exception.CException] exception 'CException' with message 'Property "Banner.logo" is not defined.' in E:\TMA\Project\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 E:\TMA\Project\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('logo')
+#1 E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\_form.php(27): CActiveRecord->__get('logo')
+#2 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require('E:\\TMA\\Project\\...')
+#3 E:\TMA\Project\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\TMA\\Project\\...', Array, true)
+#4 E:\TMA\Project\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\TMA\\Project\\...', Array, true)
+#5 E:\TMA\Project\demo-shop\protected\modules\shop\views\banner\update.php(11): CController->renderPartial('_form', Array)
+#6 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require('E:\\TMA\\Project\\...')
+#7 E:\TMA\Project\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\TMA\\Project\\...', Array, true)
+#8 E:\TMA\Project\yii\framework\web\CController.php(869): CBaseController->renderFile('E:\\TMA\\Project\\...', Array, true)
+#9 E:\TMA\Project\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#10 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\BannerController.php(57): CController->render('update', Array)
+#11 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): BannerController->actionUpdate()
+#12 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 E:\TMA\Project\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 E:\TMA\Project\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#16 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/banner/upd...')
+#17 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/shop/banner/update/id/2
+HTTP_REFERER=http://shop.minhtu.com/shop/banner/admin
+---
+2016/10/02 16:38:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 16:38:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 16:39:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 16:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 16:50:26 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:50:48 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:50:49 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:50:49 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:50:49 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:50:49 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:51:07 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:51:08 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:51:08 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:51:08 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:53:58 [error] [php] Creating default object from empty value (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php:10)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (10)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php (134)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 16:55:41 [error] [php] Object of class Banner could not be converted to string (E:\TMA\Project\demo-shop\protected\extensions\slider\slider.php:205)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CBaseController.php(180): ProductsController->createWidget()
+#1 E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php(27): ProductsController->widget()
+#2 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require()
+#3 E:\TMA\Project\yii\framework\web\CBaseController.php(95): ProductsController->renderInternal()
+#4 E:\TMA\Project\yii\framework\web\CController.php(869): ProductsController->renderFile()
+#5 E:\TMA\Project\yii\framework\web\CController.php(782): ProductsController->renderPartial()
+#6 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ProductsController.php(134): ProductsController->render()
+#7 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ProductsController->actionIndex()
+#8 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#10 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#13 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 E:\TMA\Project\yii\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#16 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ProductsController->run()
+#17 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in E:\TMA\Project\demo-shop\protected\extensions\slider\slider.php (205)
+in E:\TMA\Project\demo-shop\protected\extensions\slider\slider.php (159)
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\index.php (27)
+2016/10/02 17:00:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/css/images/delete.gif".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/css/images/delete.gif
+HTTP_REFERER=http://shop.minhtu.com/resources/assets/css/rateit.css
+---
+2016/10/02 17:01:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 17:01:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 17:02:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 17:02:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 17:18:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view_".' in E:\TMA\Project\yii\framework\web\CController.php:483
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(270): CController->missingAction('view_')
+#1 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): CController->run('view_')
+#2 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('shop/jobs/view_...')
+#3 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/shop/jobs/view_/id/1
+HTTP_REFERER=http://shop.minhtu.com/shop/jobs/index
+---
+2016/10/02 17:31:43 [error] [php] Undefined variable: model (E:\TMA\Project\demo-shop\protected\modules\shop\views\category\admin.php:18)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 E:\TMA\Project\demo-shop\protected\modules\shop\views\shop\admin.php(8): ShopController->renderPartial()
+#2 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require()
+#3 E:\TMA\Project\yii\framework\web\CBaseController.php(95): ShopController->renderInternal()
+#4 E:\TMA\Project\yii\framework\web\CController.php(869): ShopController->renderFile()
+#5 E:\TMA\Project\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#6 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ShopController.php(54): ShopController->render()
+#7 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionAdmin()
+#8 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ShopController->runAction()
+#10 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ShopController->filterAccessControl()
+#13 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 E:\TMA\Project\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#16 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#17 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/shop/admin
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\category\admin.php (18)
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\shop\admin.php (8)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ShopController.php (54)
+2016/10/02 17:32:28 [error] [php] Undefined variable: model (E:\TMA\Project\demo-shop\protected\modules\shop\views\category\admin.php:17)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 E:\TMA\Project\demo-shop\protected\modules\shop\views\shop\admin.php(8): ShopController->renderPartial()
+#2 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require()
+#3 E:\TMA\Project\yii\framework\web\CBaseController.php(95): ShopController->renderInternal()
+#4 E:\TMA\Project\yii\framework\web\CController.php(869): ShopController->renderFile()
+#5 E:\TMA\Project\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#6 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ShopController.php(54): ShopController->render()
+#7 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionAdmin()
+#8 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ShopController->runAction()
+#10 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ShopController->filterAccessControl()
+#13 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 E:\TMA\Project\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#16 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#17 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/shop/admin
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\category\admin.php (17)
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\shop\admin.php (8)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ShopController.php (54)
+2016/10/02 17:33:57 [error] [php] Undefined variable: model (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\admin.php:25)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 E:\TMA\Project\demo-shop\protected\modules\shop\views\shop\admin.php(15): ShopController->renderPartial()
+#2 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require()
+#3 E:\TMA\Project\yii\framework\web\CBaseController.php(95): ShopController->renderInternal()
+#4 E:\TMA\Project\yii\framework\web\CController.php(869): ShopController->renderFile()
+#5 E:\TMA\Project\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#6 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ShopController.php(54): ShopController->render()
+#7 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionAdmin()
+#8 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ShopController->runAction()
+#10 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ShopController->filterAccessControl()
+#13 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 E:\TMA\Project\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#16 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#17 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/shop/admin
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\admin.php (25)
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\shop\admin.php (15)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ShopController.php (54)
+2016/10/02 17:42:50 [error] [php] Undefined variable: model (E:\TMA\Project\demo-shop\protected\modules\shop\views\products\admin.php:22)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 E:\TMA\Project\demo-shop\protected\modules\shop\views\shop\admin.php(15): ShopController->renderPartial()
+#2 E:\TMA\Project\yii\framework\web\CBaseController.php(126): require()
+#3 E:\TMA\Project\yii\framework\web\CBaseController.php(95): ShopController->renderInternal()
+#4 E:\TMA\Project\yii\framework\web\CController.php(869): ShopController->renderFile()
+#5 E:\TMA\Project\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#6 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ShopController.php(54): ShopController->render()
+#7 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionAdmin()
+#8 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ShopController->runAction()
+#10 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ShopController->filterAccessControl()
+#13 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 E:\TMA\Project\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#16 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#17 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/shop/admin
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\products\admin.php (22)
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\shop\admin.php (15)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ShopController.php (54)
+2016/10/02 17:52:08 [error] [php] Use of undefined constant modelOrder - assumed 'modelOrder' (E:\TMA\Project\demo-shop\protected\modules\shop\views\shop\admin.php:23)
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CController.php(869): ShopController->renderFile()
+#1 E:\TMA\Project\yii\framework\web\CController.php(782): ShopController->renderPartial()
+#2 E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ShopController.php(69): ShopController->render()
+#3 E:\TMA\Project\yii\framework\web\actions\CInlineAction.php(49): ShopController->actionAdmin()
+#4 E:\TMA\Project\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(133): ShopController->runAction()
+#6 E:\TMA\Project\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\TMA\Project\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 E:\TMA\Project\yii\framework\web\filters\CInlineFilter.php(58): ShopController->filterAccessControl()
+#9 E:\TMA\Project\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 E:\TMA\Project\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\TMA\Project\yii\framework\web\CController.php(265): ShopController->runActionWithFilters()
+#12 E:\TMA\Project\yii\framework\web\CWebApplication.php(282): ShopController->run()
+#13 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\TMA\Project\demo-shop\index.php(13): CWebApplication->run()
+REQUEST_URI=/shop/shop/admin
+in E:\TMA\Project\demo-shop\protected\modules\shop\views\shop\admin.php (23)
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\ShopController.php (69)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 17:56:47 [warning] [application] Failed to set unsafe attribute "id" of "Jobs".
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\JobsController.php (162)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 17:56:50 [warning] [application] Failed to set unsafe attribute "id" of "Jobs".
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\JobsController.php (162)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 17:56:52 [warning] [application] Failed to set unsafe attribute "id" of "Jobs".
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\JobsController.php (162)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 17:56:55 [warning] [application] Failed to set unsafe attribute "id" of "Jobs".
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\JobsController.php (162)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 17:57:00 [warning] [application] Failed to set unsafe attribute "id" of "Jobs".
+in E:\TMA\Project\demo-shop\protected\modules\shop\controllers\JobsController.php (162)
+in E:\TMA\Project\demo-shop\index.php (13)
+2016/10/02 18:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 18:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---
+2016/10/02 18:17:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/lightbox.min.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/lightbox.min.map
+---
+2016/10/02 18:17:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/assets/js/bootstrap-select.js.map".' in E:\TMA\Project\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\TMA\Project\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/asset...')
+#1 E:\TMA\Project\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\TMA\Project\demo-shop\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/assets/js/bootstrap-select.js.map
+---

@@ -27,6 +27,7 @@ class ShopModule extends CWebModule
 	public $taxTable = 'shop_tax';
 	public $productSpecificationTable = 'shop_product_specification';
 	public $productVariationTable = 'shop_product_variation';
+    public $bannerTable = 'shop_banner';
 	public $currencySymbol = 'VNĐ';
 
 	public $logoPath = 'logo.jpg';
@@ -50,6 +51,7 @@ class ShopModule extends CWebModule
 	// Where the uploaded product images are stored:
 	public $productImagesFolder = 'productimages'; // Approot/...
     public $dataFolder = 'data'; // Approot/...
+    public $bannerFolder = 'images/banners'; // Approot/...
 
 	public $layout = 'application.modules.shop.views.layouts.minhtu-v1';
     public $adminLayout = 'application.modules.shop.views.layouts.shop';

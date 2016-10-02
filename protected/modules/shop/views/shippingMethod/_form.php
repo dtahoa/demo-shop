@@ -34,6 +34,7 @@
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Thêm mới' : 'Lưu', array('class'=>'btn btn-primary')); ?>
+		<?php echo CHtml::link('Hủy', array('//shop/shippingMethod/admin'), array('class' => 'btn btn-default')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

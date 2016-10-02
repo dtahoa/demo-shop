@@ -97,6 +97,7 @@ class CategoryController extends Controller
 	public function actionAdmin()
 	{
 		$model=new Category('search');
+        $model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Category']))
 			$model->attributes=$_GET['Category'];
 

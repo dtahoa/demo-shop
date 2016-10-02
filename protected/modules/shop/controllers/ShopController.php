@@ -51,7 +51,22 @@ class ShopController extends Controller
 
 	public function actionAdmin()
 	{
-		$this->render('admin', array( ));
+        $modelProduct=new Products('search');
+        $modelProduct->unsetAttributes();  // clear any default values
+        if(isset($_GET['Products']))
+            $modelProduct->attributes=$_GET['Products'];
+
+        $modelCategory=new Category('search');
+        $modelCategory->unsetAttributes();  // clear any default values
+        if(isset($_GET['Category']))
+            $modelCategory->attributes=$_GET['Category'];
+
+        $modelOrder=new Order('search');
+        $modelOrder->unsetAttributes();  // clear any default values
+        if(isset($_GET['Order']))
+            $modelOrder->attributes=$_GET['Order'];
+
+	    $this->render('admin', array('modelProduct'=>$modelProduct, 'modelCategory'=>$modelCategory, 'modelOrder'=>$modelOrder));
 	}
 
 	public function actionIndex()

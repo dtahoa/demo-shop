@@ -68,7 +68,7 @@
   font-style: italic;
 }
 .btn-primary {
-  background-color: #428bca;
+  background-color: #99c432;
   border-color: #357ebd;
 }
 .btn-process-cart {
@@ -124,4 +124,10 @@ li.page.selected > a {
 /* Product images */
 .image-item {
   text-align: center;
+}
+.product .cart .action ul li.add-cart-button .btn.btn-primary.icon {
+  background: #658c0a ;
+}
+.main-header .top-search-holder .search-area .search-field {
+  width: 100%;
 }

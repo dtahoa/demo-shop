@@ -41,8 +41,8 @@ class Order extends CActiveRecord
 			'order_id' => Shop::t('No.'),
 			'customer_id' => Shop::t('Mã khách hàng'),
 			'ordering_date' => Shop::t('Ngày đặt'),
-			'ordering_done' => Shop::t('Đã thực hiện'),
-			'ordering_confirmed' => Shop::t('Đã xác nhận'),
+			'ordering_done' => Shop::t('Hoàn tất'),
+			'ordering_confirmed' => Shop::t('Xác nhận'),
 		);
 	}
 

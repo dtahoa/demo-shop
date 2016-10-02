@@ -3,16 +3,12 @@
 /* @var $model Pages */
 
 $this->breadcrumbs=array(
-	'Pages'=>array('index'),
-	'Create',
+	'Tin tức'=>array('index'),
+	'Thêm mới',
 );
 
-$this->menu=array(
-	array('label'=>'List Pages', 'url'=>array('index')),
-	array('label'=>'Manage Pages', 'url'=>array('admin')),
-);
 ?>
 
-<h1>Create Pages</h1>
+<h1>Thêm tin tức</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

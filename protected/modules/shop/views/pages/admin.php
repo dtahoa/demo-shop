@@ -3,14 +3,14 @@
 /* @var $model Pages */
 
 $this->breadcrumbs=array(
-	'Pages'=>array('index'),
-	'Manage',
+	'Tin tức'=>array('admin'),
+	'Quản lý',
 );
 
-$this->menu=array(
-	array('label'=>'List Pages', 'url'=>array('index')),
-	array('label'=>'Create Pages', 'url'=>array('create')),
-);
+/*$this->menu=array(
+	array('label'=>'Danh sách tin tức', 'url'=>array('index')),
+	array('label'=>'Thêm tin tức', 'url'=>array('create')),
+);*/
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -26,29 +26,16 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Pages</h1>
-
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+<h1>Quản lý tin tức</h1>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'pages-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+	/*'filter'=>$model,*/
+	'template'=>'{pager}{items}{pager}',
 	'columns'=>array(
-		'id',
 		'title',
 		'content',
-		'updated',
 		array(
 			'class'=>'CButtonColumn',
 		),

@@ -134,7 +134,7 @@ class ProductsController extends Controller
             ));
 	}
 
-    public function actionIndexAdmin()
+    /*public function actionIndexAdmin()
     {
         $dataProvider = new CActiveDataProvider('Products', array(
             'pagination'=>array(
@@ -145,7 +145,7 @@ class ProductsController extends Controller
         $this->render('indexAdmin',array(
             'dataProvider'=>$dataProvider,
         ));
-    }
+    }*/
 
     public function actionList()
     {
@@ -166,6 +166,7 @@ class ProductsController extends Controller
 	public function actionAdmin()
 	{
 		$model=new Products('search');
+        $model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Products']))
 			$model->attributes=$_GET['Products'];
 

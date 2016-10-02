@@ -52,13 +52,13 @@ class Pages extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'title' => 'Title',
-			'content' => 'Content',
+			'id' => 'No.',
+			'title' => 'Tiêu đề',
+			'content' => 'Nội dung',
             'image_1' => 'Hình 1',
             'image_2' => 'Hình 2',
             'image_3' => 'Hình 3',
-			'updated' => 'Updated',
+			'updated' => 'Cập nhật',
 		);
 	}
 

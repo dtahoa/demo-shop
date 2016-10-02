@@ -4,9 +4,9 @@ $this->breadcrumbs=array(
 	Shop::t('Quản lý'),
 );
 
-$this->menu=array(
+/*$this->menu=array(
 	array('label'=>Shop::t('Thêm mới phương thức thanh toán'), 'url'=>array('create')),
-);
+);*/
 
 ?>
 

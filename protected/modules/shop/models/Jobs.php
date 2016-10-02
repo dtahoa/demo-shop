@@ -31,7 +31,7 @@ class Jobs extends CActiveRecord
 			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, content, updated', 'safe', 'on'=>'search'),
+			array('title, content', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,10 +52,10 @@ class Jobs extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'title' => 'Title',
-			'content' => 'Content',
-			'updated' => 'Updated',
+			'id' => 'No.',
+			'title' => 'Vị trí',
+			'content' => 'Mô tả công việc',
+			'updated' => 'Cập nhật',
 		);
 	}
 
@@ -77,10 +77,8 @@ class Jobs extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('content',$this->content,true);
-		$criteria->compare('updated',$this->updated,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
