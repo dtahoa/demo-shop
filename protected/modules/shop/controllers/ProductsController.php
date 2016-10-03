@@ -149,7 +149,16 @@ class ProductsController extends Controller
 
     public function actionList()
     {
+        $criteria = array();
+        if(isset($_GET['search']))
+            $criteria = new CDbCriteria( array(
+                'condition' => "title LIKE :match",
+                'params'    => array(':match' => "%". $_GET['search']['name'] ."%")
+            ));
+
+
         $dataProvider = new CActiveDataProvider('Products', array(
+            'criteria'=>$criteria,
             'pagination'=>array(
                 'pageSize'=>12,
             ),
