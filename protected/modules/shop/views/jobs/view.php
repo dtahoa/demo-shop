@@ -22,9 +22,10 @@ $this->breadcrumbs=array(
 	'data'=>$model,
 	'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 	'attributes'=>array(
-		'id',
 		'title',
-		'content',
+		array('name'=>'content',
+			'type'=>'html'
+		),
 		'updated',
 	),
 )); ?>

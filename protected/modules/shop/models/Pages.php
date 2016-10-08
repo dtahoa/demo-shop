@@ -27,11 +27,11 @@ class Pages extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content, updated', 'required'),
+			array('title, content', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin.'),
 			array('title', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, content, updated', 'safe', 'on'=>'search'),
+			array('id, title, content', 'safe', 'on'=>'search'),
 		);
 	}
 

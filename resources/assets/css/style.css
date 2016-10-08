@@ -128,6 +128,9 @@ li.page.selected > a {
 .product .cart .action ul li.add-cart-button .btn.btn-primary.icon {
   background: #658c0a ;
 }
+.main-header .top-search-holder .search-area .search-button {
+  width: 9%;
+}
 .main-header .top-search-holder .search-area .search-field {
-  width: 100%;
+  width: 91%;
 }

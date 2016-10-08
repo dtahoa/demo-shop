@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Quản lý tin tức</h1>
+<h1>Quản lý trang tin</h1>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'pages-grid',
@@ -35,9 +35,10 @@ $('.search-form form').submit(function(){
 	'template'=>'{pager}{items}{pager}',
 	'columns'=>array(
 		'title',
-		'content',
 		array(
 			'class'=>'CButtonColumn',
 		),
 	),
-)); ?>
+));
+echo CHtml::link(Shop::t('Thêm bài viết mới'), array('pages/create'), array('class'=>'btn btn-primary'));
+?>

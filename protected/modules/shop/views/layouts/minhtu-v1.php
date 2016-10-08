@@ -43,37 +43,7 @@
     <div class="main-header">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
-                    <!-- ============================================================= LOGO ============================================================= -->
-                    <div class="logo">
-                        <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">
-
-                            <img style="height: 90px;" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/logo3.png"
-                                 alt="">
-
-                        </a>
-                    </div><!-- /.logo -->
-                    <!-- ============================================================= LOGO : END ============================================================= -->
-                </div><!-- /.logo-holder -->
-
-                <div class="col-xs-12 col-sm-12 col-md-6 top-search-holder">
-                    <div class="contact-row">
-                        <?php $this->renderPartial('application.modules.shop.views.shopInformation.info-header', array()); ?>
-                    </div><!-- /.contact-row -->
-                    <!-- ============================================================= SEARCH AREA ============================================================= -->
-                    <div class="search-area">
-                        <form>
-                            <div class="control-group">
-
-                                <input class="search-field" placeholder="Nhập sản phẩm cần tìm..."/>
-
-                                <a class="search-button" href="#"></a>
-
-                            </div>
-                        </form>
-                    </div><!-- /.search-area -->
-                    <!-- ============================================================= SEARCH AREA : END ============================================================= -->
-                </div><!-- /.top-search-holder -->
+                <?php $this->renderPartial('application.modules.shop.views.shopInformation.info-header', array()); ?>
 
                 <div class="col-xs-12 col-sm-12 col-md-3 animate-dropdown top-cart-row">
                     <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
@@ -141,7 +111,7 @@
                                     <a href="/shop/contact/create">Liên hệ</a>
                                 </li>
                                 <li class="<?php if (Yii::app()->controller->id == "jobs") echo "active";?> dropdown yamm">
-                                    <a href="/shop/jobs/list">Tuyển dụng</a>
+                                    <a href="/shop/jobs/list">Việc làm</a>
                                 </li>
                             </ul><!-- /.navbar-nav -->
                             <div class="clearfix"></div>

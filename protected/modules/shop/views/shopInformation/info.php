@@ -28,9 +28,15 @@
 
 						<div class="social-icons">
 
-							<a href="<?php echo $model->facebook; ?>" class='active'><i
+							<!--<a href="<?php /*echo $model->facebook; */?>" class='active'><i
 									class="icon fa fa-facebook"></i></a>
-							<a href="<?php echo $model->google_plus; ?>"><i class="icon fa fa-google-plus"></i></a>
+							<a href="<?php /*echo $model->google_plus; */?>"><i class="icon fa fa-google-plus"></i></a>-->
+							<?php
+							$this->widget('application.extensions.SocialShareButton.SocialShareButton', array(
+								'style'=>'horizontal',
+								'networks' => array('facebook','googleplus'),
+								'data_via'=>'', //twitter username (for twitter only, if exists else leave empty)
+							));?>
 						</div><!-- /.social-icons -->
 					</div><!-- /.module-body -->
 
@@ -113,29 +119,20 @@
 <div class="footer-bottom inner-bottom-sm">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-6">
+			<div class="col-xs-12 col-sm-4 col-md-4">
 				<div class="module-heading outer-bottom-xs">
-					<h4 class="module-title">DỊCH VỤ</h4>
+					<h4 class="module-title">Về vanphongphamminhtu.vn</h4>
 				</div><!-- /.module-heading -->
 
 				<div class="module-body">
 					<ul class='list-unstyled'>
-						<li><a href="#">Dịch vụ</a></li>
+						<li><a href="/shop/pages/index">Giới thiệu vanphongphamminhtu.vn</a></li>
+						<li><a href="/shop/jobs/list">Tuyển dụng</a></li>
+						<li><a href="/shop/pages/view/id/2">Chính sách bảo mật</a></li>
+						<li><a href="/shop/pages/view/id/3">Điều khoản sử dụng</a></li>
 					</ul>
 				</div><!-- /.module-body -->
 			</div><!-- /.col -->
-
-			<div class="col-xs-12 col-sm-6 col-md-6">
-				<div class="module-heading outer-bottom-xs">
-					<h4 class="module-title">HƯỚNG DẪN & HỖ TRỢ</h4>
-				</div><!-- /.module-heading -->
-
-				<div class="module-body">
-					<ul class='list-unstyled'>
-						<li><a href="#">Điều khoản sử dụng</a></li>
-					</ul>
-				</div><!-- /.module-body -->
-			</div>
 		</div>
 	</div>
 </div>

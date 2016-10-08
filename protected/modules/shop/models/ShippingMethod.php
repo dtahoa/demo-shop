@@ -64,7 +64,7 @@ class ShippingMethod extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => Shop::t('ID'),
+			'id' => Shop::t('Mã số'),
 			'title' => Shop::t('Hình thức'),
 			'description' => Shop::t('Mô tà'),
 			'tax_id' => Shop::t('Thuế'),

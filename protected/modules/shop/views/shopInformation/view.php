@@ -9,23 +9,26 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Xem thông tin cửa hàng #<?php echo $model->id; ?></h1>
+<h1>Thông tin cửa hàng # <?php echo $model->name; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 	'attributes'=>array(
-		'id',
 		'name',
 		'logo',
-		'working_time',
+		array('name'=>'working_time',
+			'type'=>'html',
+		),
+		'hotline',
 		'phone',
 		'fax',
 		'email',
 		'email_kinhdoanh',
 		'address',
-		'map',
-		'description',
-		'hotline',
+		array('name'=>'description',
+			'type'=>'html',
+			'value'=>substr($data->description, 0, 100)
+		)
 	),
 )); ?>

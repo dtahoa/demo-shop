@@ -3,13 +3,8 @@
 /* @var $model Contact */
 
 $this->breadcrumbs=array(
-	'Contacts'=>array('index'),
-	'Manage',
-);
-
-$this->menu=array(
-	array('label'=>'List Contact', 'url'=>array('index')),
-	array('label'=>'Create Contact', 'url'=>array('create')),
+	'Liên hệ'=>array('index'),
+	'Quản lý',
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,12 +21,8 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Contacts</h1>
+<h1>Quản lý thông tin liên hệ</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
@@ -44,15 +35,15 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'id'=>'contact-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+	'template'=>'{pager}{items}{pager}',
 	'columns'=>array(
-		'id',
 		'name',
 		'email',
 		'subject',
-		'body',
 		'updated',
 		array(
 			'class'=>'CButtonColumn',
+			'template'=>'{view}{delete}'
 		),
 	),
 )); ?>

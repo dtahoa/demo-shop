@@ -5,6 +5,7 @@
 			'criteria'=>array(
 				'condition'=>'is_highlight=1',
 				'order'=>'title DESC',
+				'limit' => 5
 			),
 			'pagination'=>false
 		));

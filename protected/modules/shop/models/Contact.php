@@ -63,7 +63,7 @@ class Contact extends CActiveRecord
 			'body' => 'Nội dung',
             'phone' => 'Điện thoại',
             'address' => 'Địa chỉ',
-			'updated' => 'Updated',
+			'updated' => 'Ngày tạo',
 		);
 	}
 

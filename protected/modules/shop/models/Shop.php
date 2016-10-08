@@ -94,7 +94,7 @@
 			$price_total .= '<br /><hr>';
 			$price_total .= Shop::t('Giá đã bao gồm <strong>10%</strong> VAT: <strong class="text-blue">{vat}</strong>', array(
 						'{vat}' => Shop::priceFormat($tax_total))) . '<br />';
-			$price_total .= Shop::t('Giá đã bao gồm phí vận chuyển') . '<br />';
+			/*$price_total .= Shop::t('Giá đã bao gồm phí vận chuyển') . '<br />';*/
 
 			return $price_total;
 		}

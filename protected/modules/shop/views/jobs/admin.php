@@ -30,10 +30,10 @@ $('.search-form form').submit(function(){
 	'template'=>'{pager}{items}{pager}',
 	'columns'=>array(
 		'title',
-		'content',
-		'updated',
 		array(
 			'class'=>'CButtonColumn',
 		),
 	),
-)); ?>
+));
+echo CHtml::link(Shop::t('Thêm thông tin tuyển dụng'), array('jobs/create'), array('class'=>'btn btn-primary'));
+?>

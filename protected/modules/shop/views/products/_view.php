@@ -65,7 +65,7 @@
                         <button class="btn btn-primary btn-add-cart" alt="<?php echo $data->product_id; ?>" type="button">Mua hàng</button>
                     </li>
 
-                    <li class="lnk">
+                    <!--<li class="lnk">
                         <a class="add-to-cart" href="/" title="Share FB">
                             <i class="icon fa fa-facebook"></i>
                         </a>
@@ -74,7 +74,7 @@
                         <a class="add-to-cart" href="detail.html" title="Share Google Plus">
                             <i class="icon fa fa-google-plus"></i>
                         </a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div><!-- /.cart -->

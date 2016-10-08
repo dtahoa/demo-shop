@@ -69,11 +69,14 @@ $this->breadcrumbs=array(
 			</div><!-- /.quantity-container -->
 
 			<div class="product-social-link m-t-20 text-right">
-				<span class="social-label">Share :</span>
 				<div class="social-icons">
 					<ul class="list-inline">
-						<li><a class="fa fa-facebook" href="http://facebook.com/transvelo"></a></li>
-						<li><a class="fa fa-google-plus" href="#"></a></li>
+						<?php
+						$this->widget('application.extensions.SocialShareButton.SocialShareButton', array(
+							'style'=>'horizontal',
+							'networks' => array('facebook','googleplus'),
+							'data_via'=>'', //twitter username (for twitter only, if exists else leave empty)
+						));?>
 					</ul><!-- /.social-icons -->
 				</div>
 			</div>

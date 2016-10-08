@@ -3,9 +3,8 @@
 /* @var $model Pages */
 
 $this->breadcrumbs=array(
-	'Tin tức'=>array('admin
+	'Tin tức'=>array('admin')
 );
-
 /*$this->menu=array(
 	array('label'=>'List Pages', 'url'=>array('index')),
 	array('label'=>'Create Pages', 'url'=>array('create')),
@@ -15,15 +14,16 @@ $this->breadcrumbs=array(
 );*/
 ?>
 
-<h1>Thông tin #<?php echo $model->id; ?></h1>
+<h1>#<?php echo $model->title; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 	'attributes'=>array(
-		'id',
 		'title',
-		'content',
+		array('name'=>'content',
+            'type'=>'html'
+        ),
 		'updated',
-	),
+	)
 )); ?>

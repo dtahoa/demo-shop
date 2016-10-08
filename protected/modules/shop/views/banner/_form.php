@@ -17,6 +17,7 @@
 
     <?php
     $path = Shop::register('no-pic.jpg');
+    $folder = Shop::module()->bannerFolder;
     if($model->filename) {
         $path = Yii::app()->baseUrl. '/' . $folder . '/' . $model->filename;
         ?>
