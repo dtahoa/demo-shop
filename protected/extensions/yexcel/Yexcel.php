@@ -49,6 +49,17 @@
 
 			return $sheetData;
 		}
+
+		public function readSheetByName($file) {
+            $objPHPExcel = PHPExcel_IOFactory::load($file);
+            $objPHPExcel->setActiveSheetIndex(2);
+            $sheetData = $objPHPExcel->getActiveSheet()->toArray(null, true, true, true);
+            echo "<pre>";
+            print_r($sheetData);
+            echo "</pre>";
+
+            return $sheetData;
+        }
 	}
 
 ?>

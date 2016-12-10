@@ -97,23 +97,26 @@ class QuotationController extends Controller
 	}
 
 	public function importQuotation($filePath) {
-        $sheet_array = Yii::app()->yexcel->readActiveSheet($filePath);
+        $sheet_array = Yii::app()->yexcel->readSheetByName($filePath);
         unset($sheet_array[1]);
+        unset($sheet_array[2]);
+        unset($sheet_array[3]);
+
         foreach ($sheet_array as $key => $value) {
-            $model=Products::model()->findByPk($value['A']);
+            $model=Products::model()->findByPk($value['B']);
             if (!$model) {
                 $model = new Products();
             }
-            $model->product_id = $value['A'];
-            $model->category_id = $value['B'];
-            $model->tax_id = $value['C'];
-            $model->title = $value['D'];
+            $model->product_id = $value['B'];
+            $model->category_id = 1;
+            $model->tax_id = 1;
+            $model->title = $value['C'];
             $model->description = $value['E'];
             $model->price = $value['F'];
-            $model->language = $value['G'];
-            $model->specifications = $value['H'];
-            $model->is_discount = $value['I'];
-            $model->is_highlight = $value['J'];
+            $model->language = "A";
+            $model->specifications = "A";
+            $model->is_discount = 1;
+            $model->is_highlight = 1;
             $model->save();
         }
         return true;

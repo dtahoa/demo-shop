@@ -20,7 +20,7 @@ $this->breadcrumbs=array(
 						$path = Shop::register('no-pic.jpg');
 					?>
 					<a data-lightbox="image-1" data-title="Gallery" href="<?php echo $path; ?>">
-						<img class="img-responsive" alt="" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/blank.gif"
+						<img width="100%" alt="" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/blank.gif"
 							 data-echo="<?php echo $path; ?>"/>
 					</a>
 				</div><!-- /.single-product-gallery-item -->

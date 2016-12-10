@@ -299,7 +299,7 @@ CREATE TABLE `shop_image` (
   `id` int(11) NOT NULL,
   `title` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   `filename` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `product_id` int(11) NOT NULL
+  `product_id` VARCHAR(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -370,7 +370,7 @@ INSERT INTO `shop_order` (`order_id`, `customer_id`, `delivery_address_id`, `bil
 CREATE TABLE `shop_order_position` (
   `id` int(11) NOT NULL,
   `order_id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
+  `product_id` VARCHAR(45) NOT NULL,
   `amount` int(11) NOT NULL,
   `specifications` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -415,7 +415,7 @@ INSERT INTO `shop_payment_method` (`id`, `title`, `description`, `tax_id`, `pric
 --
 
 CREATE TABLE `shop_products` (
-  `product_id` int(11) NOT NULL,
+  `product_id` VARCHAR(45) NOT NULL,
   `category_id` int(11) NOT NULL,
   `tax_id` int(11) NOT NULL,
   `title` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
@@ -477,7 +477,7 @@ CREATE TABLE `shop_product_specification` (
 
 CREATE TABLE `shop_product_variation` (
   `id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
+  `product_id` VARCHAR(45) NOT NULL,
   `specification_id` int(11) NOT NULL,
   `position` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
@@ -738,7 +738,7 @@ ALTER TABLE `shop_payment_method`
 -- AUTO_INCREMENT for table `shop_products`
 --
 ALTER TABLE `shop_products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `product_id` VARCHAR(45) NOT NULL;
 --
 -- AUTO_INCREMENT for table `shop_product_specification`
 --

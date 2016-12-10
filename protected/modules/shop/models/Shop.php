@@ -102,13 +102,17 @@
         public static function getPriceTotalNumber() {
             $price_total = 0;
             $tax_total = 0;
+            /*Yii::app()->user->setState('cart', array());
+            Yii::app()->user->setState('shipping_method', null);
+            Yii::app()->user->setState('payment_method', null);
+            Yii::app()->user->setState('order_comment', null);
+            Yii::app()->user->setState('customer_id', null);*/
 
             if (Shop::getCartContent()) {
                 foreach(Shop::getCartContent() as $product)  {
                     $model = Products::model()->findByPk($product['product_id']);
-                    $price_total += $model->getPrice(@$product['Variations'], @$product['amount']);
-                    $tax_total += $model->getTaxRate(@$product['Variations'], @$product['amount']);
-
+                    $price_total += $model->getPrice(/*@$product['Variations']*/null, @$product['amount']);
+                    $tax_total += $model->getTaxRate(/*@$product['Variations']*/null, @$product['amount']);
                 }
 
                 if($shipping_method = Shop::getShippingMethod())

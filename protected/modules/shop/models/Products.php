@@ -23,7 +23,7 @@ class Products extends CActiveRecord
 	{
 		return array(
 			array('title, category_id, price', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin sản phẩm'),
-			array('product_id, category_id', 'numerical', 'integerOnly'=>true),
+			//array('product_id, category_id', 'numerical', 'integerOnly'=>true),
 			array('title, price, language', 'length', 'max'=>45),
 			array('description, specifications', 'safe'),
 			array('product_id, title, description, price, category_id', 'safe', 'on'=>'search'),

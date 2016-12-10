@@ -69,16 +69,23 @@ return array(
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
-				array(
-					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
-				),
-				// uncomment the following to show log messages on web pages
-				/*
-				array(
-					'class'=>'CWebLogRoute',
-				),
-				*/
+                // uncomment the following to show log messages on web pages
+                array(
+                    'class'=>'CFileLogRoute',
+                    'levels'=>'trace, info',
+                    'categories'=>'system.*',
+                ),
+                // uncomment the following to show log messages on web pages
+                array(
+                    'class'=>'CWebLogRoute',
+                    'levels'=>'trace',
+                    'showInFireBug'=>true
+                ),
+                array(
+                    'class'=>'CEmailLogRoute',
+                    'levels'=>'error, warning',
+                    'emails'=>array('jnguyenhoa@gmail.com'),
+                ),
 			),
 		),
         'userCounter' => array(
