@@ -123,6 +123,7 @@ li.page.selected > a {
 
 /* Product images */
 .image-item {
+  width: 100%;
   text-align: center;
 }
 .product .cart .action ul li.add-cart-button .btn.btn-primary.icon {

@@ -16,7 +16,7 @@ class Image extends CActiveRecord
 	{
 		return array(
 			array('title, filename, product_id', 'required'),
-			array('id, product_id', 'numerical', 'integerOnly'=>true),
+			//array('id, product_id', 'numerical', 'integerOnly'=>true),
 			array('title, filename', 'length', 'max'=>45),
 			//array('filename' => 'file', 'types' => 'png,gif,jpg,jpeg'),
 			array('id, title, filename, product_id', 'safe', 'on'=>'search'),

@@ -1,13 +1,16 @@
 <div class="col-md-4 image-item">
 
 <?php
-echo "<label> {$model->title} </label><br />";
+if(!Yii::app()->user->isGuest) {
+    echo "<label> {$model->title} </label><br />";
+}
 $folder = Shop::module()->productImagesFolder;
 
-if($model->filename) 
-	$path = Yii::app()->baseUrl. '/' . $folder . '/' . $model->filename;
-	else
-	$path = Shop::register('no-pic.jpg');
+if($model->filename) {
+    $path = Yii::app()->baseUrl. '/' . $folder . '/' . $model->filename;
+} else {
+    $path = Shop::register('no-pic.jpg');
+}
 
 echo CHtml::image($path,
 		$model->title,
@@ -15,9 +18,8 @@ echo CHtml::image($path,
 			'class'=> 'img-responsive',
 			'title' => $model->title,
 			'style' => '',
-			'width' => isset($thumb) && $thumb ? Shop::module()->imageWidthThumb : Shop::module()->imageWidth)
-		); ?>
-<?php
+			'width' => isset($thumb) && $thumb ? Shop::module()->imageWidthThumb :  Shop::module()->imageWidth)
+		);
 
 if(!Yii::app()->user->isGuest)
 	echo CHtml::link(Yii::t('ShopModule.shop', 'Xóa'),

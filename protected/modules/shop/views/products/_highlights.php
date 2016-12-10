@@ -12,8 +12,7 @@
 							else
 								$path = Shop::register('no-pic.jpg');
 						?>
-						<a href="<?php echo Yii::app()->request->baseUrl . '/shop/products/view/id/' . $data->product_id; ?>"
-						   data-lightbox="image-1" data-title="<?php echo $data->title; ?>">
+						<a href="<?php echo Yii::app()->request->baseUrl . '/shop/products/view/id/' . $data->product_id; ?>">
 							<img class='img-responsive'
 								data-echo="<?php echo $path; ?>"
 								src="<?php echo $path; ?>"
