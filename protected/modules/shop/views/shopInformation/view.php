@@ -3,7 +3,7 @@
 /* @var $model ShopInformation */
 
 $this->breadcrumbs=array(
-	'Thông tin cửa hàng'=>array('index'),
+	'Thông tin cửa hàng'=>array('admin'),
 	$model->name,
 );
 
@@ -28,7 +28,7 @@ $this->breadcrumbs=array(
 		'address',
 		array('name'=>'description',
 			'type'=>'html',
-			'value'=>substr($data->description, 0, 100)
+			'value'=>substr($model->description, 0, 100)
 		)
 	),
 )); ?>

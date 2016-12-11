@@ -18,7 +18,7 @@
     <li> <?php echo CHtml::link(Shop::t('Quản lý banner'), array('//shop/banner/admin')); ?> </li>
     <li></li>
     <li style="border-top:solid black 1px;"></li>
-    <li> <?php echo CHtml::link(Shop::t('Thông tin liên hệ'), array('//shop/contact/admin')); ?> </li>
+    <li> <?php echo CHtml::link(Shop::t('Hộp thư khách hàng'), array('//shop/contact/admin')); ?> </li>
     <li></li>
     <li style="border-top:solid black 1px;"></li>
     <li> <?php echo CHtml::link(Shop::t('Cập nhật báo giá'), array('//shop/quotation/admin')); ?> </li>

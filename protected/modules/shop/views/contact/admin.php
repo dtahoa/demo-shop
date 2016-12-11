@@ -3,7 +3,7 @@
 /* @var $model Contact */
 
 $this->breadcrumbs=array(
-	'Liên hệ'=>array('index'),
+	'Liên hệ'=>array('admin'),
 	'Quản lý',
 );
 
@@ -21,7 +21,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Quản lý thông tin liên hệ</h1>
+<h1>Quản lý hộp thư khách hàng</h1>
 
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
