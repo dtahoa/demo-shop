@@ -50,14 +50,10 @@
 			return $sheetData;
 		}
 
-		public function readSheetByName($file) {
+		public function readSheetByName($file, $sheetNumber) {
             $objPHPExcel = PHPExcel_IOFactory::load($file);
-            $objPHPExcel->setActiveSheetIndex(2);
+            $objPHPExcel->setActiveSheetIndex($sheetNumber);
             $sheetData = $objPHPExcel->getActiveSheet()->toArray(null, true, true, true);
-            echo "<pre>";
-            print_r($sheetData);
-            echo "</pre>";
-
             return $sheetData;
         }
 	}

@@ -84,7 +84,7 @@ class QuotationController extends Controller
                 $folder = Yii::app()->controller->module->dataFolder;
                 $filePath = $folder . '/' . $model->filename;
                 $model->filename->saveAs($filePath);
-
+                $this->importCategory($filePath);
                 $this->importQuotation($filePath);
                 $this->redirect(array('view','id'=>$model->id));
             }
@@ -97,29 +97,65 @@ class QuotationController extends Controller
 	}
 
 	public function importQuotation($filePath) {
-        $sheet_array = Yii::app()->yexcel->readSheetByName($filePath);
-        unset($sheet_array[1]);
-        unset($sheet_array[2]);
-        unset($sheet_array[3]);
+        try {
+            $sheet_array = Yii::app()->yexcel->readSheetByName($filePath, 2);
+            unset($sheet_array[1]);
+            unset($sheet_array[2]);
+            unset($sheet_array[3]);
 
-        foreach ($sheet_array as $key => $value) {
-            $model=Products::model()->findByPk($value['B']);
-            if (!$model) {
-                $model = new Products();
+            foreach ($sheet_array as $key => $value) {
+                if (empty($value['C'])) {
+                    break;
+                }
+                $model=Products::model()->findByPk($value['C']);
+                if (!$model) {
+                    $model = new Products();
+                }
+                $model->product_id = $value['C'];
+                $model->category_id = $value['B'];
+                $model->tax_id = 1;
+                $model->title = $value['D'];
+                $model->description = $value['F'];
+                $model->price = $value['G'];
+                $model->language = "A";
+                $model->specifications = "A";
+                $model->is_discount = isset($value['H']) ? $value['H'] : 0;
+                $model->is_highlight = isset($value['I']) ? $value['I'] : 0;
+                $model->save();
             }
-            $model->product_id = $value['B'];
-            $model->category_id = 1;
-            $model->tax_id = 1;
-            $model->title = $value['C'];
-            $model->description = $value['E'];
-            $model->price = $value['F'];
-            $model->language = "A";
-            $model->specifications = "A";
-            $model->is_discount = 1;
-            $model->is_highlight = 1;
-            $model->save();
+            return true;
+        } catch(Exception $e) {
+            print_r($e);
         }
-        return true;
+    }
+
+    public function importCategory($filePath) {
+        try {
+            $sheet_array = Yii::app()->yexcel->readSheetByName($filePath, 3);
+            unset($sheet_array[1]);
+            unset($sheet_array[2]);
+            unset($sheet_array[3]);
+            foreach ($sheet_array as $key => $value) {
+                if (empty($value['A'])) {
+                    break;
+                }
+                $criteria = new CDbCriteria;
+                $criteria->condition ='category_id = '.$value['A']. ' AND parent_id='.$value['B'];
+                $model = Category::model()->find($criteria);
+                if (!$model) {
+                    $model = new Category();
+                }
+                $model->category_id = $value['A'];
+                $model->parent_id = $value['B'];
+                $model->title = $value['C'];
+                $model->description = isset($value['D']) ? $value['D'] : null;
+                $model->language = null;
+                $model->save();
+            }
+            return true;
+        } catch(Exception $e) {
+            print_r($e);
+        }
     }
 
 	/**

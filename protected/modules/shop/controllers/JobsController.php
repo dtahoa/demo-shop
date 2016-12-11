@@ -145,7 +145,11 @@ class JobsController extends Controller
 
     public function actionList()
     {
-        $dataProvider=new CActiveDataProvider('Jobs');
+        $dataProvider=new CActiveDataProvider('Jobs', array(
+            'sort'=>array(
+                'defaultOrder'=>'updated DESC',
+            ))
+        );
         $this->render('list',array(
             'dataProvider'=>$dataProvider,
         ));
