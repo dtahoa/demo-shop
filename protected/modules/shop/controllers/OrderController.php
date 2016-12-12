@@ -18,7 +18,7 @@ class OrderController extends Controller
 					'users' => array('*'),
 					),
 				array('allow',
-					'actions'=>array('admin','delete', 'view', 'slip', 'invoice'),
+					'actions'=>array('admin','delete', 'view', 'slip', 'invoice', 'update'),
 					'users' => array('admin'),
 					),
 				array('deny',  // deny all other users
@@ -56,6 +56,40 @@ class OrderController extends Controller
 					'model'=>$this->loadModel(),
 					));
 	}
+
+    public function actionUpdate()
+    {
+        $model=$this->loadModel();
+
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
+
+        if(isset($_POST['Order']))
+        {
+            $model->attributes=$_POST['Order'];
+            if($model->save()) {
+                $this->redirect(array('admin'));
+            }
+        }
+
+        $this->render('update',array(
+            'model'=>$model,
+        ));
+    }
+
+    /**
+     * Deletes a particular model.
+     * If deletion is successful, the browser will be redirected to the 'admin' page.
+     * @param integer $id the ID of the model to be deleted
+     */
+    public function actionDelete()
+    {
+        $this->loadModel()->delete();
+
+        // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+        if(!isset($_GET['ajax']))
+            $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+    }
 
 	/** Creation of a new Order 
 	 * Before we create a new order, we need to gather Customer information.

@@ -9,6 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Văn phòng phẩm Minh Tú',
     'theme'=>'bootstrap',
+    'timeZone' => 'Asia/Ho_Chi_Minh',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -76,7 +77,7 @@ return array(
                     'categories'=>'system.*',
                 ),
                 // uncomment the following to show log messages on web pages
-                array(
+                /*array(
                     'class'=>'CWebLogRoute',
                     'levels'=>'trace',
                     'showInFireBug'=>true
@@ -85,7 +86,7 @@ return array(
                     'class'=>'CEmailLogRoute',
                     'levels'=>'error, warning',
                     'emails'=>array('jnguyenhoa@gmail.com'),
-                ),
+                ),*/
 			),
 		),
         'userCounter' => array(

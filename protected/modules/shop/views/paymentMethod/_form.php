@@ -15,7 +15,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
+		<?php /*echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); */?>
+		<?php $this->widget('application.extensions.extckeditor.ExtCKEditor', array(
+			'model'=>$model,
+			'attribute'=>'description',
+			'language'=>'en',
+			'editorTemplate'=>'basic'
+		)); ?>
 		<?php echo $form->error($model,'description'); ?>
 	</div>
 

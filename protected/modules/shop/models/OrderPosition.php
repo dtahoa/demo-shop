@@ -26,7 +26,7 @@ class OrderPosition extends CActiveRecord
 	{
 		return array(
 			array('order_id, product_id, amount, specifications', 'required'),
-			array('order_id, product_id, amount', 'numerical', 'integerOnly'=>true),
+			array('order_id, amount', 'numerical', 'integerOnly'=>true),
 			array('id, order_id, product_id, amount, specifications', 'safe', 'on'=>'search'),
 		);
 	}

@@ -19,14 +19,31 @@ $this->widget('zii.widgets.grid.CGridView', array(
 		'order_id',
 		'customer.address.firstname',
 		'customer.address.phone',
-		'ordering_confirmed',
-		'ordering_done',
-		array('name' => 'ordering_date',
-			'value' => 'date("M j, Y", $data->ordering_date)'),
+
 		array(
-			'class'=>'CButtonColumn', 
-			'template' => '{view}',
+			'name' => 'ordering_confirmed',
+			'type'=>'html',
+			'value'=>function($data){
+				if ($data['ordering_confirmed'] == 1) {
+					return "<strong style='color:red'>X</strong>";
+				}
+			}),
+		array(
+			'name' => 'ordering_done',
+			'type'=>'html',
+			'value'=>function($data){
+				if ($data['ordering_done'] == 1) {
+					return "<strong style='color:red'>X</strong>";
+				}
+			}),
+		array('name' => 'ordering_date',
+			'value' => 'date("j/m/Y", $data->ordering_date)'),
+		array(
+			'class'=>'CButtonColumn',
+			'template' => '{view}{update}{delete}',
 			'viewButtonUrl'=>'Yii::app()->createUrl(\'shop/order/view/id/\'. $data->order_id)',
+			'updateButtonUrl'=>'Yii::app()->createUrl(\'shop/order/update/id/\'. $data->order_id)',
+			'deleteButtonUrl'=>'Yii::app()->createUrl(\'shop/order/delete/id/\'. $data->order_id)',
 		),
 
 	),

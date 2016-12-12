@@ -1,7 +1,7 @@
 <?php
 Shop::register('css/shop.css');
 $this->breadcrumbs=array(
-		Shop::t('Đơn hàng')=>array('index'),
+		Shop::t('Đơn hàng')=>array('admin'),
 		$model->order_id,
 		);
 
