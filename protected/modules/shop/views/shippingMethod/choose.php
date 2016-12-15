@@ -103,6 +103,7 @@ $form = $this->beginWidget('CActiveForm', array(
             echo '<div class="shipping-method">';
             echo CHtml::radioButton("ShippingMethod", $i == 0, array(
                 'value' => $method->id));
+            echo "&nbsp&nbsp&nbsp";
             echo CHtml::label($method->title, 'ShippingMethod');
             echo CHtml::tag('p', array(), $method->description);
             echo CHtml::tag('p', array(), Shop::t('Phí vận chuyển: ') . '<strong>' . Shop::priceFormat($method->price) . '</strong>');

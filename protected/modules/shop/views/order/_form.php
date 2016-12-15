@@ -9,11 +9,11 @@
 	<!--<p class="note">Fields with <span class="required">*</span> are required.</p>-->
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'order_id'); ?>
-		<?php echo $form->textField($model,'order_id', array('disabled' => 'true')); ?>
-		<?php echo $form->error($model,'order_id'); ?>
-	</div>
+	<!--<div class="row">
+		<?php /*echo $form->labelEx($model,'order_id'); */?>
+		<?php /*echo $form->textField($model,'order_id', array('disabled' => 'true')); */?>
+		<?php /*echo $form->error($model,'order_id'); */?>
+	</div>-->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ordering_confirmed'); ?>

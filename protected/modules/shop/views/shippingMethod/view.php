@@ -1,7 +1,7 @@
 <?php
 if(!isset($this->breadcrumbs))
 	$this->breadcrumbs=array(
-			'Shipping Methods'=>array('index'),
+			'Phương thức giao hàng'=>array('index'),
 			$model->title,
 			);
 
@@ -24,7 +24,9 @@ if($model)
 				'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 				'attributes'=>array(
 					'title',
-					'description',
+					array('name'=>'description',
+						'type'=>'html'
+					),
 					'price',
 					),
 				)); ?>

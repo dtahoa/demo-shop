@@ -21,7 +21,9 @@ $this->menu=array(
 	'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 	'attributes'=>array(
 		'title',
-		'description',
+		array('name'=>'description',
+			'type'=>'html'
+		),
 		'price',
 	),
 )); ?>
