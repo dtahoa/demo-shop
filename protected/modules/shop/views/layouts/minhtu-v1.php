@@ -174,47 +174,7 @@
                     <h3 class="section-title">NỔI BẬT</h3>
                     <div class="sidebar-widget-body outer-top-xs">
                         <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
-                            <?php //$this->renderPartial('application.modules.shop.views.products.highlights', array()); ?>
-                            <div class="demo">
-                                <ul id="lightSlider">
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-3.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-4.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-5.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-6.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-6.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-7.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-7.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-8.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-8.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-9.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-9.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-10.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-10.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-11.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-12.jpg" />
-                                    </li>
-                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-13.jpg">
-                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-13.jpg" />
-                                    </li>
-                                </ul>
-                            </div>
+                            <?php $this->renderPartial('application.modules.shop.views.products.highlights', array()); ?>
                         </div>
                     </div><!-- /.sidebar-widget-body -->
                 </div><!-- /.sidebar-widget -->

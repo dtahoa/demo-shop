@@ -135,3 +135,8 @@ li.page.selected > a {
 .main-header .top-search-holder .search-area .search-field {
   width: 91%;
 }
+
+/* Left product Slider */
+.lSPager.lSpg {
+  display: none;
+}

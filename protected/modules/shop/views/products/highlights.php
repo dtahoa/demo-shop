@@ -1,64 +1,31 @@
 <div class="item">
 	<div class="products special-product">
-		<?php
-		$dataProvider = new CActiveDataProvider('Products', array(
-			'criteria'=>array(
-				'condition'=>'is_highlight=1',
-				'order'=>'title DESC',
-				'limit' => 5
-			),
-			'pagination'=>false
-		));
-
-		$this->widget('zii.widgets.CListView', array(
-			'dataProvider'=>$dataProvider,
-			'summaryText'=>'',
-			'itemView'=>'application.modules.shop.views.products._highlights',
-		));
-		?>
+		<ul class="lightSlider">
+			<?php
+			$criteria = new CDbCriteria(array(
+				'condition' => 'is_highlight=1',
+				'limit' => 7,
+				'order' => 'title DESC'
+			));
+			foreach (Products::model()->findAll($criteria) as $item) {
+				$folder = Shop::module()->productImagesFolder;
+				if (isset($item->images[0]) && $item->images[0]->filename) {
+					$path = Yii::app()->baseUrl . '/' . $folder . '/' . $item->images[0]->filename;
+				} else {
+					$path = Shop::register('no-pic.jpg');
+				}
+				?>
+				<li data-thumb="<?php echo $path; ?>">
+					<a
+						href="<?php echo Yii::app()->request->baseUrl . '/shop/products/view/id/' . $item->product_id; ?>"
+						alt="<?php echo $item->title;?>">
+						<img style="width: 100%" src="<?php echo $path; ?>"/>
+					</a>
+				</li>
+				<?php
+			}
+			?>
+		</ul>
 	</div>
 </div>
-<!--Comment for small/vn project-->
-<!--<div class="item">
-	<div class="products special-product">
-		<?php
-/*		$dataProvider = new CActiveDataProvider('Products', array(
-			'criteria'=>array(
-				'condition'=>'price <= 200000',
-				'order'=>'title DESC',
-			),
-			'pagination'=>array(
-				'pageSize'=>10,
-			)
-		));
-
-		$this->widget('zii.widgets.CListView', array(
-			'dataProvider'=>$dataProvider,
-			'summaryText'=>'',
-			'itemView'=>'_highlights',
-		));
-		*/?>
-	</div>
-</div>
-<div class="item">
-	<div class="products special-product">
-		<?php
-/*		$dataProvider = new CActiveDataProvider('Products', array(
-			'criteria'=>array(
-				'condition'=>'price <= 100000',
-				'order'=>'title DESC',
-			),
-			'pagination'=>array(
-				'pageSize'=>10,
-			)
-		));
-
-		$this->widget('zii.widgets.CListView', array(
-			'dataProvider'=>$dataProvider,
-			'summaryText'=>'',
-			'itemView'=>'_highlights',
-		));
-		*/?>
-	</div>
-</div>-->
 

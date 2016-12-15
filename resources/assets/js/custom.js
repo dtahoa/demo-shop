@@ -25,7 +25,7 @@ $(document).ready(function () {
         window.location.href="/shop/products/list?search[name]=".$('.search-field').val();
     });
 
-    $('#lightSlider').lightSlider({
+    $('.lightSlider').lightSlider({
         auto:true,
         gallery: false,
         vertical: true,
