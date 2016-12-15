@@ -24,6 +24,16 @@ $(document).ready(function () {
         console.log($('.search-field').val());
         window.location.href="/shop/products/list?search[name]=".$('.search-field').val();
     });
+
+    $('#lightSlider').lightSlider({
+        auto:true,
+        gallery: false,
+        vertical: true,
+        item: 2,
+        loop: true,
+        slideMargin: 0,
+        thumbItem: 9
+    });
 });
 
 })(jQuery);

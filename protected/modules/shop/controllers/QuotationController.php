@@ -140,7 +140,7 @@ class QuotationController extends Controller
                     break;
                 }
                 $criteria = new CDbCriteria;
-                $criteria->condition ='category_id = '.$value['A']. ' AND parent_id='.$value['B'];
+                $criteria->condition ='category_id = '.$value['A'];
                 $model = Category::model()->find($criteria);
                 if (!$model) {
                     $model = new Category();

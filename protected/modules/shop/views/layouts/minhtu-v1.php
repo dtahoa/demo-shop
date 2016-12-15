@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/css/rateit.css">
     <link rel="stylesheet"
           href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/css/lightslider.min.css">
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/css/style.css">
 
     <!-- Icons/Glyphs -->
@@ -173,7 +174,47 @@
                     <h3 class="section-title">NỔI BẬT</h3>
                     <div class="sidebar-widget-body outer-top-xs">
                         <div class="owl-carousel sidebar-carousel special-offer custom-carousel owl-theme outer-top-xs">
-                            <?php $this->renderPartial('application.modules.shop.views.products.highlights', array()); ?>
+                            <?php //$this->renderPartial('application.modules.shop.views.products.highlights', array()); ?>
+                            <div class="demo">
+                                <ul id="lightSlider">
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-1.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-2.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-2.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-3.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-3.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-4.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-4.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-5.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-5.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-6.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-6.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-7.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-7.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-8.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-8.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-9.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-9.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-10.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-10.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-11.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-12.jpg" />
+                                    </li>
+                                    <li data-thumb="http://sachinchoolur.github.io/lightslider/img/thumb/cS-13.jpg">
+                                        <img class="img-responsive" src="http://sachinchoolur.github.io/lightslider/img/cS-13.jpg" />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div><!-- /.sidebar-widget-body -->
                 </div><!-- /.sidebar-widget -->
@@ -241,6 +282,7 @@
         src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/js/lightbox.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/js/bootstrap-select.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/js/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.3/js/lightslider.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/js/scripts.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/js/custom.js"></script>
 
