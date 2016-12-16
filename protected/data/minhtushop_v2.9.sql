@@ -204,7 +204,7 @@ INSERT INTO `shop_banner` (`id`, `title`, `filename`) VALUES
 CREATE TABLE `shop_category` (
   `category_id` int(11) NOT NULL,
   `parent_id` int(11) DEFAULT NULL,
-  `title` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `description` text COLLATE utf8_unicode_ci,
   `language` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -364,7 +364,7 @@ CREATE TABLE `shop_products` (
   `product_id` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   `category_id` int(11) DEFAULT NULL,
   `tax_id` int(11) DEFAULT NULL,
-  `title` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `description` text COLLATE utf8_unicode_ci,
   `price` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `language` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
