@@ -21,8 +21,8 @@ $(document).ready(function () {
         });
     });
     $('.search-button').click(function(){
-        console.log($('.search-field').val());
-        window.location.href="/shop/products/list?search[name]=".$('.search-field').val();
+        var keyword = $('.search-field').val();
+        window.location.href="/shop/products/list?search[name]=" + keyword;
     });
 
     $('.lightSlider').lightSlider({

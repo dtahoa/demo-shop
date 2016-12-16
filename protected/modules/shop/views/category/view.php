@@ -20,7 +20,7 @@ $this->breadcrumbs=array(
 <div class="search-result-container">
     <div id="myTabContent" class="tab-content">
         <div class="tab-pane active" id="grid-container">
-            <div class="category-product  inner-top-vs">
+            <div class="category-product inner-top-vs">
                 <div class="row">
                     <?php
                     // @TODO: should check ADMIN site
@@ -34,6 +34,7 @@ $this->breadcrumbs=array(
                         'dataProvider'=>$dataProvider,
                         'summaryText'=>'',
                         'itemView'=>'/products/_view',
+                        'itemsCssClass'=>'items is-flex',
                         'template'=>'{pager}{items}{pager}',
                     )); ?>
                 </div><!-- /.row -->

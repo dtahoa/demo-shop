@@ -1,31 +1,3 @@
-<?php /*
-*/ ?><!--
-<div class="view">
-    <h3>
-		<?php /*echo CHtml::link(CHtml::encode($data->title), array('products/view', 'id' => $data->product_id)); */ ?>
-    </h3>
-
-    <div class="product-overview-image">
-          	<?php /*
-		  	if($data->images){
-		   		$this->renderPartial('/image/view', array('thumb' =>true, 'model' => $data->images[0]));
-			}else {
-				echo CHtml::image(Shop::register('no-pic.jpg'));
-			}*/ ?>
-	</div>
-
-     <div class="product-overview-description">
-        <p> <?php /*echo CHtml::encode($data->description); */ ?> </p>
-        <p><strong> <?php /*echo Shop::priceFormat($data->price); */ ?></strong> <br />
-        <p><?php /*echo Shop::pricingInfo(); */ ?></p>
-
-        <p><?php /*echo CHtml::link(Shop::t('show product'), array('products/view', 'id' => $data->product_id), array('class' =>'show-product')); */ ?></p>
-    </div>
-
-    <div class="clear"></div>
-</div>
-<div class="view-bottom"></div>-->
-
 <div class="col-sm-6 col-md-4">
     <div class="product">
         <div class="product-image">
@@ -43,7 +15,9 @@
 
 
         <div class="product-info text-left">
-            <h3 class="name"><?php echo CHtml::link(CHtml::encode($data->title), array('products/view', 'id' => $data->product_id), array('class' => 'ellipses')); ?>
+            <h3 class="name"><?php echo CHtml::link(CHtml::encode($data->title),
+                    array('products/view', 'id' => $data->product_id),
+                    array('class' => 'ellipses', 'style' => 'white-space: normal;')); ?>
             </h3>
             <div class="rating rateit-small"></div>
             <div class="description"></div>
@@ -64,17 +38,6 @@
                         </button>
                         <button class="btn btn-primary btn-add-cart" alt="<?php echo $data->product_id; ?>" type="button">Mua hàng</button>
                     </li>
-
-                    <!--<li class="lnk">
-                        <a class="add-to-cart" href="/" title="Share FB">
-                            <i class="icon fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="lnk">
-                        <a class="add-to-cart" href="detail.html" title="Share Google Plus">
-                            <i class="icon fa fa-google-plus"></i>
-                        </a>
-                    </li>-->
                 </ul>
             </div>
         </div><!-- /.cart -->

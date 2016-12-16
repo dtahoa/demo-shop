@@ -17,6 +17,7 @@ Shop::renderFlash();
 						'dataProvider'=>$dataProvider,
 						'summaryText'=>'',
 						'itemView'=>'_view',
+						'itemsCssClass'=>'items is-flex',
 						'template'=>'{pager}{items}{pager}',
 					)); ?>
 				</div><!-- /.row -->

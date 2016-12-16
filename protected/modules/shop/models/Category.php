@@ -33,7 +33,7 @@ class Category extends CActiveRecord
 	{
 		return array(
 			array('category_id, parent_id', 'numerical', 'integerOnly'=>true),
-			array('title, description, language', 'length', 'max'=>45),
+			array('title, description, language', 'length', 'max'=>255),
 			array('title', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin.'),
 			array('category_id, parent_id, title, description, language', 'safe', 'on'=>'search'),
 		);
