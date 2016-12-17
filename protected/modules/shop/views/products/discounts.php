@@ -1,6 +1,6 @@
 <div class="item">
     <div class="products special-product">
-        <ul class="lightSlider">
+        <ul class="product-discount lightSlider">
             <?php
             $criteria = new CDbCriteria(array(
                 'condition' => 'is_discount=1',

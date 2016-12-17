@@ -25,11 +25,23 @@ $(document).ready(function () {
         window.location.href="/shop/products/list?search[name]=" + keyword;
     });
 
-    $('.lightSlider').lightSlider({
+    $('.product-discount.lightSlider').lightSlider({
         auto:true,
         gallery: false,
         vertical: true,
         item: 2,
+        loop: true,
+        slideMargin: 0,
+        thumbItem: 9
+    });
+
+    $('.product-highlight.lightSlider').lightSlider({
+        auto:true,
+        gallery: false,
+        vertical: false,
+        item: 1,
+        mode: 'fade',
+        speed: '2000',
         loop: true,
         slideMargin: 0,
         thumbItem: 9

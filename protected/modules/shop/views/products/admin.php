@@ -25,6 +25,8 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	'columns'=>array(
 		'title',
 		'price',
+		'is_discount',
+		'is_highlight',
 		array(
 			'class'=>'CButtonColumn', 
 			'template' => '{view}{update}{delete}{images}',

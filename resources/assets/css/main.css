@@ -57,6 +57,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'FjallaOneRegular';
+  background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-winter-noel.PNG) repeat-x scroll 0 0 rgba(0, 0, 0, 0);
 }
 ul {
   margin: 0;

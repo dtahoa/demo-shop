@@ -63,6 +63,18 @@ function renderVariation($variation, $i)
             </div>
 
             <div class="row">
+                <?php echo $form->labelEx($model,'is_highlight'); ?>
+                <?php echo $form->checkBox($model,'is_highlight'); ?>
+                <?php echo $form->error($model,'is_highlight'); ?>
+            </div>
+
+            <div class="row">
+                <?php echo $form->labelEx($model,'is_discount'); ?>
+                <?php echo $form->checkBox($model,'is_discount'); ?>
+                <?php echo $form->error($model,'is_discount'); ?>
+            </div>
+
+            <div class="row">
                 <?php echo $form->labelEx($model, 'description'); ?>
                 <?php echo $form->textArea($model, 'description', array('rows' => 6, 'cols' => 50, 'class'=>'form-control')); ?>
                 <?php echo $form->error($model, 'description'); ?>

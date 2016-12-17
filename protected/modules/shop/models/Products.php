@@ -24,7 +24,8 @@ class Products extends CActiveRecord
 		return array(
 			array('title, category_id, price', 'required', 'message'=>'Vui lòng điền đầy đủ thông tin sản phẩm'),
 			//array('product_id, category_id', 'numerical', 'integerOnly'=>true),
-			array('title, price, language', 'length', 'max'=>255),
+            array('is_highlight, is_discount', 'numerical', 'integerOnly'=>true),
+            array('title, price, language', 'length', 'max'=>255),
 			array('description, specifications', 'safe'),
 			array('product_id, title, description, price, category_id', 'safe', 'on'=>'search'),
 		);
@@ -120,6 +121,8 @@ class Products extends CActiveRecord
 			'description' => Yii::t('ShopModule.shop', 'Mô tả'),
 			'price' => Yii::t('ShopModule.shop', 'Đơn giá'),
 			'category_id' => Yii::t('ShopModule.shop', 'Danh mục'),
+            'is_highlight' => Yii::t('ShopModule.shop', 'Nổi bật'),
+            'is_discount' => Yii::t('ShopModule.shop', 'Giảm giá')
 		);
 	}
 
@@ -158,11 +161,13 @@ class Products extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('product_id',$this->product_id);
+		$criteria->compare('product_id',$this->product_id, true);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('price',$this->price,true);
 		$criteria->compare('category_id',$this->category_id);
+        $criteria->compare('is_highlight',$this->is_highlight);
+        $criteria->compare('is_discount',$this->is_discount);
 
 		return new CActiveDataProvider('Products', array(
 			'criteria'=>$criteria,
