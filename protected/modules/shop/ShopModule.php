@@ -40,7 +40,7 @@ class ShopModule extends CWebModule
 	public $imageWidthThumb = "100%"; // 100
 	public $imageWidth = "100%"; // 200
 
-	public $notifyAdminEmail = null;
+	public $notifyAdminEmail = 'jnguyenhoa@gmail.com';
 
 	public $termsView = '/order/terms';
 	public $successAction = array('//shop/order/success');
