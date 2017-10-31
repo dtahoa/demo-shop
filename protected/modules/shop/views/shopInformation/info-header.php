@@ -32,10 +32,9 @@
 		<form>
 			<div class="control-group">
 
-				<input class="search-field" placeholder="Nhập sản phẩm cần tìm..."
-					   onkeydown = "if (event.keyCode == 13) document.getElementById('btnSearch').click()"/>
+				<input class="search-field" placeholder="Nhập sản phẩm cần tìm..."/>
 
-				<a class="search-button" href="#" id="btnSearch"></a>
+				<a class="search-button" href="#"></a>
 
 			</div>
 		</form>

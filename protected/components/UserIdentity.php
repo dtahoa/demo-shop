@@ -20,7 +20,7 @@ class UserIdentity extends CUserIdentity
 		$users=array(
 			// username => password
 			'demo'=>'demo',
-			'admin'=>'12345678zxc'
+			'admin'=>'demo'
 		);
 		if(!isset($users[$this->username]))
 			$this->errorCode=self::ERROR_USERNAME_INVALID;

@@ -1,46 +1,19 @@
 <?php
-date_default_timezone_set('Etc/UTC');
-require '../extensions/PHPMailerAutoload.php';
 
 	class Shop {
 		public static function mailNotification ($order) {
-            $email = Shop::module()->notifyAdminEmail;
-            if($email !== null) {
-				$headers="From: vanphongphamminhtu.vn\r\nReply-To: {do@not-reply.org}";
+			$email = Shop::module()->notifyAdminEmail;
+			if($email !== null) {
+				$appTitle = Yii::app()->name;
+				$headers="From: {$title}\r\nReply-To: {do@not-reply.org}";
 
-				/*mail($email,
+				mail($email,
 						Shop::t('Order #{order_id} has been made in your Webshop', array(
 								'{order_id}' => $order->id)),
 						CHtml::link(Shop::t('direct link'), array(
-								'//shop/order/view', 'id' => $order->id)));*/
-
-                // Construct the message
-                $subject = Shop::t('Đơn hàng mang mã số #{order_id} đã được đặt hàng tại website vanphongphamminhtu.com', array(
-                    '{order_id}' => $order->order_id));
-                $message = CHtml::link(Shop::t('Xác nhận đơn hàng: '), array(
-                    '//shop/order/view', 'id' => $order->order_id));
-                return Shop::sendEmail($email, $subject, $message, $headers);
+								'//shop/order/view', 'id' => $order->id)));
 			}
 		}
-
-        private function sendEmail($toAddress, $subject, $content, $fromName) {
-            try {
-                if (!empty($toAddress)) {
-                    $mailer = Yii::app()->mailer;
-                    $mailer->ClearAddresses();
-                    $mailer->sendEmail($toAddress, $subject, $content, $fromName);
-                }
-            }
-            catch (Exception $e) {
-                $error = $e->getMessage();
-                print_r($error);
-                return false;
-            }
-            if(!empty($mailer->mailer->ErrorInfo)) {
-                return false;
-            }
-            return true;
-        }
 
 		public static function pricingInfo() {
 			Shop::register('js/jquery.tools.min.js');
@@ -227,79 +200,4 @@ require '../extensions/PHPMailerAutoload.php';
 						"); 
 			}
 		}
-
-		public static function gmail() {
-
-            /**
-             * This example shows settings to use when sending via Google's Gmail servers.
-             */
-
-            //SMTP needs accurate times, and the PHP time zone MUST be set
-            //This should be done in your php.ini, but this is how to do it if you don't have access to that
-
-            //Create a new PHPMailer instance
-            $mail = new PHPMailer;
-
-            //Tell PHPMailer to use SMTP
-            $mail->isSMTP();
-
-            //Enable SMTP debugging
-            // 0 = off (for production use)
-            // 1 = client messages
-            // 2 = client and server messages
-            $mail->SMTPDebug = 2;
-
-            //Ask for HTML-friendly debug output
-            $mail->Debugoutput = 'html';
-
-            //Set the hostname of the mail server
-            $mail->Host = 'smtp.gmail.com';
-            // use
-            // $mail->Host = gethostbyname('smtp.gmail.com');
-            // if your network does not support SMTP over IPv6
-
-            //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-            $mail->Port = 587;
-
-            //Set the encryption system to use - ssl (deprecated) or tls
-            $mail->SMTPSecure = 'tls';
-
-            //Whether to use SMTP authentication
-            $mail->SMTPAuth = true;
-
-            //Username to use for SMTP authentication - use full email address for gmail
-            $mail->Username = "hoatest01@gmail.com";
-
-            //Password to use for SMTP authentication
-            $mail->Password = "12345678z@Z  ";
-
-            //Set who the message is to be sent from
-            $mail->setFrom('from@example.com', 'First Last');
-
-            //Set an alternative reply-to address
-            $mail->addReplyTo('replyto@example.com', 'First Last');
-
-            //Set who the message is to be sent to
-            $mail->addAddress('whoto@example.com', 'John Doe');
-
-            //Set the subject line
-            $mail->Subject = 'PHPMailer GMail SMTP test';
-
-            //Read an HTML message body from an external file, convert referenced images to embedded,
-            //convert HTML into a basic plain-text alternative body
-            $mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
-
-            //Replace the plain text body with one created manually
-            $mail->AltBody = 'This is a plain-text message body';
-
-            //Attach an image file
-            $mail->addAttachment('images/phpmailer_mini.png');
-
-            //send the message, check for errors
-            if (!$mail->send()) {
-                echo "Mailer Error: " . $mail->ErrorInfo;
-            } else {
-                echo "Message sent!";
-            }
-        }
 	}

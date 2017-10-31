@@ -40,7 +40,7 @@ class ShopModule extends CWebModule
 	public $imageWidthThumb = "100%"; // 100
 	public $imageWidth = "100%"; // 200
 
-	public $notifyAdminEmail = 'jnguyenhoa@gmail.com';
+	public $notifyAdminEmail = null;
 
 	public $termsView = '/order/terms';
 	public $successAction = array('//shop/order/success');
@@ -53,7 +53,7 @@ class ShopModule extends CWebModule
     public $dataFolder = 'data'; // Approot/...
     public $bannerFolder = 'images/banners'; // Approot/...
 
-	public $layout = 'application.modules.shop.views.layouts.minhtu-v1';
+	public $layout = 'application.modules.shop.views.layouts.maicuoi';
     public $adminLayout = 'application.modules.shop.views.layouts.shop';
     public $onlyContentLayout = 'application.modules.shop.views.layouts.only-content';
 

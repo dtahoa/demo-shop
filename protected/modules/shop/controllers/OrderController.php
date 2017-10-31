@@ -248,7 +248,7 @@ class OrderController extends Controller
 
 	public function actionSuccess()
 	{
-        $this->render('/order/success');
+		$this->render('/order/success');
 	}
 
 	public function actionFailure()

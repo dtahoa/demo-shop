@@ -12,8 +12,8 @@
 	<?php echo CHtml::encode($data->filename); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('product_id')); ?>:</b>
-	<?php echo CHtml::encode($data->product_id); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('album_id')); ?>:</b>
+	<?php echo CHtml::encode($data->album_id); ?>
 	<br />
 
 

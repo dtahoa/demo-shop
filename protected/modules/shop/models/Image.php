@@ -15,18 +15,18 @@ class Image extends CActiveRecord
 	public function rules()
 	{
 		return array(
-			array('title, filename, product_id', 'required'),
+			array('title, filename, album_id', 'required'),
 			//array('id, product_id', 'numerical', 'integerOnly'=>true),
 			array('title, filename', 'length', 'max'=>45),
 			//array('filename' => 'file', 'types' => 'png,gif,jpg,jpeg'),
-			array('id, title, filename, product_id', 'safe', 'on'=>'search'),
+			array('id, title, filename, album_id', 'safe', 'on'=>'search'),
 		);
 	}
 
 	public function relations()
 	{
 		return array(
-			'Product' => array(self::BELONGS_TO, 'Products', 'product_id'),
+			'Album' => array(self::BELONGS_TO, 'Albums', 'album_id'),
 		);
 	}
 
@@ -36,7 +36,7 @@ class Image extends CActiveRecord
 			'id' => 'Id',
 			'title' => Yii::t('shop', 'Mô tả'),
 			'filename' => Yii::t('shop', 'Tên file'),
-			'product_id' => Yii::t('shop', 'Mã sẩn phẩm'),
+			'album_id' => Yii::t('shop', 'Mã album'),
 		);
 	}
 
@@ -50,7 +50,7 @@ class Image extends CActiveRecord
 
 		$criteria->compare('filename',$this->filename,true);
 
-		$criteria->compare('product_id',$this->product_id);
+		$criteria->compare('album_id',$this->album_id);
 
 		return new CActiveDataProvider('Image', array(
 			'criteria'=>$criteria,

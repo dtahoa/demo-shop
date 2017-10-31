@@ -19,7 +19,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 	),
-	'defaultController'=>'shop/products/index',
+	'defaultController'=>'shop/home/index',
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 
@@ -53,14 +53,14 @@ return array(
                 '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                'admin/dang-nhap' =>'site/login',
+                'danh-muc/san-pham/<id:\d+>' => array('shop/category/view', 'urlSuffix'=>'.html')
             ),
         ),
         'yexcel' => array(
             'class' => 'application.extensions.yexcel.Yexcel'
         ),
-        'mailer' => array(
-            'class' => 'application.components.Mailer',
-        ),
+
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
 
@@ -79,7 +79,7 @@ return array(
                     'categories'=>'system.*',
                 ),
                 // uncomment the following to show log messages on web pages
-                array(
+                /*array(
                     'class'=>'CWebLogRoute',
                     'levels'=>'trace',
                     'showInFireBug'=>true
@@ -88,7 +88,7 @@ return array(
                     'class'=>'CEmailLogRoute',
                     'levels'=>'error, warning',
                     'emails'=>array('jnguyenhoa@gmail.com'),
-                ),
+                ),*/
 			),
 		),
         'userCounter' => array(
@@ -134,19 +134,5 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
-        'baseUrl'=>'https://vanphongphamminhtu.vn',
-        // This is used for sending email use SMTP
-        'fromEmail'=>'hoatest01@gmail.com',
-        'razSupportFromName' => 'Hỗ trợ văn phòng phẩm Minh Tú',
-        'razFromName' => 'Văn phòng phẩm Minh Tú',
-        'supportEmail'=>'hoatest01@gmail.com',
-        'useSmtp'=>true,
-        'SmtpHost'=>'ssl://smtp.gmail.com',
-        'SmtpPort'=>465,
-        'SmtpSecure'=>'SSL',
-        'SmtpAuth'=>true,
-        'SmtpUser'=>'hoatest01@gmail.com',
-        'SmtpPassword'=>'12345678x@X',
-        'infoEmail'=>'info@vanphongphamminhtu.vn'
 	),
 );

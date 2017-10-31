@@ -17,10 +17,11 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'filename'); ?>
-		<?php echo $form->fileField($model,'filename',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
+		<?php echo CHtml::activeFileField($model,'files[]',array("id"=>"files","multiple"=>true,'size'=>45,'maxlength'=>45, 'class'=>'form-control'));; ?>
+		<?php echo $form->error($model,'filename'); ?>
+
 		<?php echo $form->error($model,'filename'); ?>
 	</div>
-
 		<?php echo $form->hiddenField($model,'product_id', array('value' => $_GET['product_id'])); ?>
 
 	<div class="row buttons">
