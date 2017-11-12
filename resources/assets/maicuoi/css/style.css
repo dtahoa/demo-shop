@@ -14,6 +14,10 @@ body{
     background:#f2fcff;
 }
 
+.album-container {
+    margin-top: 90px;
+}
+
 .sbzoff {
     z-index: 9998 !important;
 }
