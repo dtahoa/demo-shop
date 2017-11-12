@@ -56,6 +56,7 @@
         <div class="header">
             <?php $this->renderPartial('application.modules.shop.views.home.menu', array()); ?>
         </div>
+        <?php if (Yii::app()->controller->id != 'albumAnhCuoiDep') {?>
         <div class="bxslider">
             <div><img src="http://tuarts.net/wp-content/uploads/2016/06/banner-web-tuart.jpg" width="100%" title="Funky roots"></div>
             <div><img src="http://tuarts.net/wp-content/uploads/2015/07/chup-anh-cuoi-dep3.png" width="100%" title="The long and winding road"></div>
@@ -70,11 +71,13 @@
                 });
             </script>
         </div>
+        <?php } ?>
 
         <!--end slideshow-->
 
         <div class="content-incl">
-            <div class="thongbao">
+            <?php if (Yii::app()->controller->id != 'albumAnhCuoiDep') {?>
+                <div class="thongbao">
                 <div class="content-tb">
                     <div class="firstline" style="margin-top:20px">
                         <span style="font-size: 15px; font-weight: bold; color: red; background: transparent url('http://tuarts.net/wp-content/themes/moreno-2/images/Loa2.png') no-repeat 0; height: 30px; padding-left: 35px; display: block;">Loa loa:</span>
@@ -88,22 +91,13 @@ Xem chi tiết <a href="http://tuarts.net/bao-gia-khuyen-mai/">tại đây</a>.<
 <p><i class="_3kkw"><span class="accessible_elem">☎&nbsp;</span></i>Hotline: 0888 696 888 – 0236 261 6666 – 02423 483 999</p>
 <p>———————————————————————–</p>
 <p><strong>15.07.2017 – 20.07.2017</strong>, TuArt Team sẽ có mặt tại Sing.</p>
-<p><strong>13.09.2017 – 20.09.2017</strong>, TuArt Team sẽ có mặt tại&nbsp;Nha Trang</p>
-<p><strong>05.11.2017 – 15.11.2017</strong>, TuArt Team sẽ có mặt tại Đà Lạt.</p>
-<p><strong>15.12.2017 – 20.12.2017</strong>, TuArt Team sẽ có mặt tại Mộc Châu.</p>
-<p><strong>21.12.2017 – 31.12.2017</strong>, TuArt Team sẽ có mặt tại Châu Âu.</p>
-<p><strong>10.01.2018 – 20.01.2018</strong>, TuArt Team sẽ có mặt tại Sapa.</p>
-<p><strong>12.03.2018 – 20.03.2018</strong>, TuArt Team sẽ có mặt tại&nbsp;Phú Quốc</p>
-<p><strong>05.04.2018 – 15.04.2018</strong>, TuArt Team sẽ có mặt tại Nhật Bản.</p>
-<p><strong>12.04.2018 – 23.04.2018</strong>, TuArt Team sẽ có mặt Paris (Pháp) –&nbsp;các nước EU</p>
-<p><strong>15.05.2018 – 25.05.2018</strong>, TuArt Team sẽ có mặt tại&nbsp;Nha Trang</p>
-<p><strong>26.05.2018 – 05.06.2018</strong>, TuArt Team sẽ có mặt tại&nbsp;Nha Trang</p>
 <p>Quý khách hàng muốn có bộ ảnh đẹp lung linh, đẳng cấp tại các địa điểm kể trên mà không phải lo thêm chi phí đi lại, ăn ở cho đoàn chụp ảnh. Vui lòng liên hệ TuArt Team để biết thêm thông tin chi tiết.</p>
 </span>
                     </div>
                 </div>
 
             </div>
+            <?php } ?>
         </div>
 
         <!--end content-incl-->
