@@ -8,6 +8,7 @@ $this->breadcrumbs=array(
 ?>
 
 <div class="container album-container">
+    <h2 class="cat-title">Album Ảnh Cưới Đẹp</h2>
 	<div class="row">
 		<?php $this->widget('zii.widgets.CListView', array(
 			'dataProvider'=>$dataProvider,

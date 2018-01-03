@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=.12, user-scalable=yes">
     <meta name="author" content="bignet">
     <title>MaiCuoi Studio - Studio chụp ảnh cưới đẹp nhất tại Củ Chi</title>
-    <link rel="shortcut icon" href="http://tuarts.net/wp-content/uploads/2015/03/logo-tuart.png">
+    <link rel="shortcut icon" href="http://maicuoistudio.com/wp-content/uploads/2015/03/logo-tuart.png">
 
     <meta name="keywords" content="">
 
@@ -56,7 +56,7 @@
         <div class="header">
             <?php $this->renderPartial('application.modules.shop.views.home.menu', array()); ?>
         </div>
-        <?php if (Yii::app()->controller->id != 'albumAnhCuoiDep') {?>
+        <?php if (!in_array(Yii::app()->controller->id, ['albumAnhCuoiDep', 'videoWedding'])) {?>
         <div class="bxslider">
             <div><img src="http://tuarts.net/wp-content/uploads/2016/06/banner-web-tuart.jpg" width="100%" title="Funky roots"></div>
             <div><img src="http://tuarts.net/wp-content/uploads/2015/07/chup-anh-cuoi-dep3.png" width="100%" title="The long and winding road"></div>
@@ -76,16 +76,16 @@
         <!--end slideshow-->
 
         <div class="content-incl">
-            <?php if (Yii::app()->controller->id != 'albumAnhCuoiDep') {?>
+            <?php if (!in_array(Yii::app()->controller->id, ['albumAnhCuoiDep', 'videoWedding'])) {?>
                 <div class="thongbao">
                 <div class="content-tb">
                     <div class="firstline" style="margin-top:20px">
-                        <span style="font-size: 15px; font-weight: bold; color: red; background: transparent url('http://tuarts.net/wp-content/themes/moreno-2/images/Loa2.png') no-repeat 0; height: 30px; padding-left: 35px; display: block;">Loa loa:</span>
+                        <span style="font-size: 15px; font-weight: bold; color: red; background: transparent url('http://maicuoistudio.com/wp-content/themes/moreno-2/images/Loa2.png') no-repeat 0; height: 30px; padding-left: 35px; display: block;">Loa loa:</span>
                     </div>
                     <div class="content-tb1" tabindex="5000" style="overflow: hidden; outline: none;">
 													<span style="font-style:italic; font-family: Times New Roman;"><p><strong>Khuyến mại lớn “RỘN RÀNG MÙA CƯỚI&nbsp;– NGẬP TRÀN QUÀ TẶNG&nbsp;“</strong></p>
 <p><strong>Từ ngày 20/09&nbsp;đến 30/09 Khi đăng ký chụp và quay tại TuArt&nbsp;Wedding.<br>
-Xem chi tiết <a href="http://tuarts.net/bao-gia-khuyen-mai/">tại đây</a>.</strong></p>
+Xem chi tiết <a href="http://maicuoistudio.com/bao-gia-khuyen-mai/">tại đây</a>.</strong></p>
 <p><strong><i class="_3kkw _4-k1"><span class="accessible_elem">🏡</span></i>&nbsp;TuArt Wedding chi nhánh Hà Nội: 17 Đại Cồ Việt – Hai Bà Trưng – Hà Nội.</strong></p>
 <p><strong><i class="_3kkw _4-k1"><span class="accessible_elem">🏡</span></i>&nbsp;TuArt Wedding chi nhánh Đà Nẵng: 99A Đường Núi Thành – Hải Châu – Đà Nẵng.</strong></p>
 <p><i class="_3kkw"><span class="accessible_elem">☎&nbsp;</span></i>Hotline: 0888 696 888 – 0236 261 6666 – 02423 483 999</p>

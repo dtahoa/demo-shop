@@ -54,7 +54,15 @@ return array(
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
                 'admin/dang-nhap' =>'site/login',
-                'danh-muc/san-pham/<id:\d+>' => array('shop/category/view', 'urlSuffix'=>'.html')
+                'danh-muc/san-pham/<id:\d+>' => array('shop/category/view', 'urlSuffix'=>'.html'),
+                'albums/anh-cuoi-dep' => array('shop/albumAnhCuoiDep/index', 'urlSuffix'=>'.html'),
+                'albums/anh-phong-su-cuoi-dep' => array('shop/albumAnhPSCDep/index', 'urlSuffix'=>'.html'),
+                'albums/anh-gia-dinh' => array('shop/albumAnhGiaDinh/index', 'urlSuffix'=>'.html'),
+                'albums/anh-be-yeu' => array('shop/albumAnhBeYeu/index', 'urlSuffix'=>'.html'),
+                'albums/chup-anh-thoi-trang-dep' => array('shop/albumAnhThoiTrang/index', 'urlSuffix'=>'.html'),
+                'gioi-thieu-studio-mai-cuoi' => array('shop/pages/index', 'urlSuffix'=>'.html'),
+                'bao-gia-khuyen-mai' => array('shop/quotation/view/id/1', 'urlSuffix'=>'.html'),
+                'video/video-wedding' => array('shop/videoWedding/index', 'urlSuffix'=>'.html'),
             ),
         ),
         'yexcel' => array(

@@ -432,7 +432,7 @@ ul li{
 }
 .view:hover .mask {
     opacity: 1;
-    background:rgba(255,255,255,0.8) url(images/logohover.png) no-repeat center center;
+    background:rgba(255,255,255,0.8) url(/images/logos/logohover.jpg) no-repeat center center;
     background-size: 150px 150px;
     -webkit-background-size: 150px 150px;
     -moz-background-size: 150px 150px;
@@ -806,4 +806,13 @@ a, a:hover, a:focus {
 }
 footer .container-footer ul li a{
     color:#fff;
+}
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+li.page.selected > a {
+    background-color: #e7e7e7;
 }
