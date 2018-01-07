@@ -6,12 +6,12 @@
 		<a href="<?php echo Yii::app()->getBaseUrl(true); ?>">
 
 			<img style="height: 90px;" src="<?php
-			$folder = Shop::module()->productImagesFolder;
+			$folder = Shop::module()->uploadImagesFolder;
 			if (!$model->logo)
 				echo Yii::app()->baseUrl. '/resources/assets/images/logo3.png;';
 			else
 				echo Yii::app()->baseUrl. '/' . $folder . '/' . $model->logo;
-			?>" alt="Văn phòng phẩm Minh Tú">
+			?>" alt="Mai Cưới Studio">
 
 		</a>
 	</div><!-- /.logo -->

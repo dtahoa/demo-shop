@@ -40,7 +40,7 @@
 			Yii::t('ShopModule.shop', 'Thêm')
 			: Yii::t('ShopModule.shop', 'Lưu'),
 			array('class'=>'btn btn-primary')); ?>
-		<?php echo CHtml::link('Hủy', array('//shop/videoWedding/admin'), array('class' => 'btn btn-default')); ?>
+		<?php echo CHtml::button('Hủy', array('submit' => array('//shop/videoWedding/admin'), 'class'=>'btn btn-default')); ?>
 	</div>
 </div>
 

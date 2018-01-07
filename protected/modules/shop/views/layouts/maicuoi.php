@@ -14,15 +14,13 @@
 
     <meta name="keywords" content="">
 
-
-    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/maicuoi/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/css/bootstrap.min.css">
 
     <!-- Customizable CSS -->
-
+    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/maicuoi/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/maicuoi/css/font-awesome.min.css">
 
     <!--[if lt IE 9]>
     <script src="http://net-frontier.vn/wp-content/themes/nfvsite/inc/js/html5shiv.min.js"></script>
@@ -35,7 +33,7 @@
     <script async="" src="//www.google-analytics.com/analytics.js"></script>
 
     <!-- Icons/Glyphs -->
-    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/maicuoi/css/fontawesome-all.min.css">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
@@ -56,11 +54,22 @@
         <div class="header">
             <?php $this->renderPartial('application.modules.shop.views.home.menu', array()); ?>
         </div>
-        <?php if (!in_array(Yii::app()->controller->id, ['albumAnhCuoiDep', 'videoWedding'])) {?>
+        <?php if (!in_array(Yii::app()->controller->id, [
+            'albumAnhCuoiDep', 'albumAnhBeYeu', 'albumAnhPSCDep', 'albumAnhThoiTrang','albumAnhGiaDinh','videoWedding', 'videoTVC',
+            'thongTinChupAnhCuoi',
+            'quotation',
+            'dichVuChupAnhChoBe','dichVuVayCuoi','gocBaoChi','tintuc',
+            'galeryCoDau', 'galeryVayCuoi', 'pages', 'shopInformation'
+        ])) {?>
         <div class="bxslider">
-            <div><img src="http://tuarts.net/wp-content/uploads/2016/06/banner-web-tuart.jpg" width="100%" title="Funky roots"></div>
-            <div><img src="http://tuarts.net/wp-content/uploads/2015/07/chup-anh-cuoi-dep3.png" width="100%" title="The long and winding road"></div>
-            <div><img src="http://tuarts.net/wp-content/uploads/2015/07/1.jpg" width="100%" title="Happy trees"></div>
+            <<!--div><img src="http://maicuoistudio.com/images/banners/IMG_9717.jpg" width="100%" title="Funky roots"></div>
+            <div><img src="http://maicuoistudio.com/images/banners/IMG_9717.jpg" width="100%" title="The long and winding road"></div>
+            <div><img src="http://maicuoistudio.com/images/banners/IMG_9717.jpg" width="100%" title="Happy trees"></div>-->
+            <?php
+            $banners = Banner::model()->findAll();
+            foreach ($banners as $banner) {?>
+                <div><img src="http://maicuoistudio.com/images/banners/<?php echo $banner->filename; ?>" width="100%" alt="<?php echo $banner->title;?>"></div>
+            <?php } ?>
             <script type="text/javascript" style="float: left; list-style: none; position: relative; width: 1391px;" class="bx-clone">
                 $(document).ready(function() {
                     $('.bxslider').bxSlider({
@@ -76,27 +85,33 @@
         <!--end slideshow-->
 
         <div class="content-incl">
-            <?php if (!in_array(Yii::app()->controller->id, ['albumAnhCuoiDep', 'videoWedding'])) {?>
-                <div class="thongbao">
+            <?php if (!in_array(Yii::app()->controller->id, [
+                'albumAnhCuoiDep', 'albumAnhBeYeu', 'albumAnhPSCDep', 'albumAnhThoiTrang','albumAnhGiaDinh','videoWedding', 'videoTVC',
+                'thongTinChupAnhCuoi',
+                'quotation',
+                'dichVuChupAnhChoBe','dichVuVayCuoi','gocBaoChi','tintuc',
+                'galeryCoDau', 'galeryVayCuoi', 'pages', 'shopInformation'
+            ])) {?>
+            <!--<div class="thongbao">
                 <div class="content-tb">
                     <div class="firstline" style="margin-top:20px">
                         <span style="font-size: 15px; font-weight: bold; color: red; background: transparent url('http://maicuoistudio.com/wp-content/themes/moreno-2/images/Loa2.png') no-repeat 0; height: 30px; padding-left: 35px; display: block;">Loa loa:</span>
                     </div>
                     <div class="content-tb1" tabindex="5000" style="overflow: hidden; outline: none;">
-													<span style="font-style:italic; font-family: Times New Roman;"><p><strong>Khuyến mại lớn “RỘN RÀNG MÙA CƯỚI&nbsp;– NGẬP TRÀN QUÀ TẶNG&nbsp;“</strong></p>
-<p><strong>Từ ngày 20/09&nbsp;đến 30/09 Khi đăng ký chụp và quay tại TuArt&nbsp;Wedding.<br>
-Xem chi tiết <a href="http://maicuoistudio.com/bao-gia-khuyen-mai/">tại đây</a>.</strong></p>
-<p><strong><i class="_3kkw _4-k1"><span class="accessible_elem">🏡</span></i>&nbsp;TuArt Wedding chi nhánh Hà Nội: 17 Đại Cồ Việt – Hai Bà Trưng – Hà Nội.</strong></p>
-<p><strong><i class="_3kkw _4-k1"><span class="accessible_elem">🏡</span></i>&nbsp;TuArt Wedding chi nhánh Đà Nẵng: 99A Đường Núi Thành – Hải Châu – Đà Nẵng.</strong></p>
-<p><i class="_3kkw"><span class="accessible_elem">☎&nbsp;</span></i>Hotline: 0888 696 888 – 0236 261 6666 – 02423 483 999</p>
-<p>———————————————————————–</p>
-<p><strong>15.07.2017 – 20.07.2017</strong>, TuArt Team sẽ có mặt tại Sing.</p>
-<p>Quý khách hàng muốn có bộ ảnh đẹp lung linh, đẳng cấp tại các địa điểm kể trên mà không phải lo thêm chi phí đi lại, ăn ở cho đoàn chụp ảnh. Vui lòng liên hệ TuArt Team để biết thêm thông tin chi tiết.</p>
-</span>
+                        <span style="font-style:italic; font-family: Times New Roman;">
+                            <p><strong>Khuyến mại lớn “RỘN RÀNG MÙA CƯỚI&nbsp;– NGẬP TRÀN QUÀ TẶNG&nbsp;“</strong></p>
+                            <p><strong>Từ ngày 20/09&nbsp;đến 30/09 Khi đăng ký chụp và quay tại TuArt&nbsp;Wedding.<br>
+                            Xem chi tiết <a href="http://maicuoistudio.com/bao-gia-khuyen-mai/">tại đây</a>.</strong></p>
+                            <p><strong><i class="_3kkw _4-k1"><span class="accessible_elem">🏡</span></i>&nbsp;TuArt Wedding chi nhánh Hà Nội: 17 Đại Cồ Việt – Hai Bà Trưng – Hà Nội.</strong></p>
+                            <p><strong><i class="_3kkw _4-k1"><span class="accessible_elem">🏡</span></i>&nbsp;TuArt Wedding chi nhánh Đà Nẵng: 99A Đường Núi Thành – Hải Châu – Đà Nẵng.</strong></p>
+                            <p><i class="_3kkw"><span class="accessible_elem">☎&nbsp;</span></i>Hotline: 0888 696 888 – 0236 261 6666 – 02423 483 999</p>
+                            <p>———————————————————————–</p>
+                            <p><strong>15.07.2017 – 20.07.2017</strong>, TuArt Team sẽ có mặt tại Sing.</p>
+                            <p>Quý khách hàng muốn có bộ ảnh đẹp lung linh, đẳng cấp tại các địa điểm kể trên mà không phải lo thêm chi phí đi lại, ăn ở cho đoàn chụp ảnh. Vui lòng liên hệ TuArt Team để biết thêm thông tin chi tiết.</p>
+                        </span>
                     </div>
                 </div>
-
-            </div>
+            </div>-->
             <?php } ?>
         </div>
 
@@ -134,6 +149,7 @@ Xem chi tiết <a href="http://maicuoistudio.com/bao-gia-khuyen-mai/">tại đâ
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/maicuoi/js/jquery.nicescroll.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/maicuoi/js/masonry.pkgd.min.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
     </script>

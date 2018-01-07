@@ -9,6 +9,6 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Thêm Album Ảnh cưới đẹp</h1>
+<h1>Thêm Video Wedding</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

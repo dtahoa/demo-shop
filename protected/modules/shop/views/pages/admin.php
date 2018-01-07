@@ -3,7 +3,7 @@
 /* @var $model Pages */
 
 $this->breadcrumbs=array(
-	'Tin tức'=>array('admin'),
+	'Trang giới thiệu'=>array('admin'),
 	'Quản lý',
 );
 
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Quản lý trang tin</h1>
+<h1>Quản lý trang giới thiệu</h1>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'pages-grid',

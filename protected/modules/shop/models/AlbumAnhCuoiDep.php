@@ -55,7 +55,7 @@ class AlbumAnhCuoiDep extends CActiveRecord
 			'id' => 'No.',
 			'title' => 'Tên ALbum',
 			'content' => 'Mô tả',
-            'image_profile' => 'Ảnh đại diện nhúng từ Flickr',
+            'image_profile' => 'Ảnh đại diện album',
             'images_embed' => 'ALbum ảnh trên Flickr',
             'updated' => 'Ngày cập nhật',
 		);
@@ -83,6 +83,7 @@ class AlbumAnhCuoiDep extends CActiveRecord
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('content',$this->content,true);
         $criteria->compare('updated',$this->updated,true);
+        $criteria->order = 'updated DESC';
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

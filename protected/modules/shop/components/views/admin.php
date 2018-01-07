@@ -14,19 +14,22 @@
     <li> <?php echo CHtml::link(Shop::t('Video TVC'), array('//shop/videoTvc/admin')); ?> </li>
     <li></li>
     <li style="border-top:solid black 1px;"></li>
-    <li> <?php echo CHtml::link(Shop::t('Dịch vụ: Chụp ảnh cưới'), array('//shop/dichvuchupanhcuoi/admin')); ?> </li>
-    <li> <?php echo CHtml::link(Shop::t('Dịch vụ: Váy cưới cao cấp'), array('//shop/dichvuvaycuoi/admin')); ?> </li>
-    <li> <?php echo CHtml::link(Shop::t('Dịch vụ: Thiệp cưới độc lạ'), array('//shop/dichvuthiepcuoi/admin')); ?> </li>
-    <li> <?php echo CHtml::link(Shop::t('Dịch vụ: Chụp ảnh cho bé'), array('//shop/dichvuchupanhchobe/admin')); ?> </li>
+    <li> <?php echo CHtml::link(Shop::t('Dịch vụ: Chụp ảnh cưới'), array('//shop/thongTinChupAnhCuoi/admin')); ?> </li>
+    <li> <?php echo CHtml::link(Shop::t('Dịch vụ: Váy cưới cao cấp'), array('//shop/dichVuVayCuoi/admin')); ?> </li>
+    <li> <?php echo CHtml::link(Shop::t('Dịch vụ: Chụp ảnh cho bé'), array('//shop/dichVuChupAnhChoBe/admin')); ?> </li>
     <li></li>
     <li style="border-top:solid black 1px;"></li>
-    <li> <?php echo CHtml::link(Shop::t('Thông tin chup ảnh cưới'), array('//shop/thongtinChupAnhCuoi/admin')); ?> </li>
+    <li> <?php echo CHtml::link(Shop::t('Thông tin chup ảnh cưới'), array('//shop/thongTinChupAnhCuoi/admin')); ?> </li>
     <li> <?php echo CHtml::link(Shop::t('Tin tức'), array('//shop/tintuc/admin')); ?> </li>
     <li> <?php echo CHtml::link(Shop::t('Góc báo chí'), array('//shop/gocbaochi/admin')); ?> </li>
     <li></li>
     <li style="border-top:solid black 1px;"></li>
-    <li> <?php echo CHtml::link(Shop::t('Trang tuyển dụng'), array('//shop/jobs/admin')); ?> </li>
-    <li> <?php echo CHtml::link(Shop::t('Trang tin tức'), array('//shop/pages/admin')); ?> </li>
+    <li> <?php echo CHtml::link(Shop::t('Galery cô dâu'), array('//shop/galeryCoDau/admin')); ?> </li>
+    <li> <?php echo CHtml::link(Shop::t('Galery váy cưới'), array('//shop/galeryVayCuoi/admin')); ?> </li>
+    <li></li>
+    <li style="border-top:solid black 1px;"></li>
+    <!--<li> <?php /*echo CHtml::link(Shop::t('Trang tuyển dụng'), array('//shop/jobs/admin')); */?> </li>-->
+    <li> <?php echo CHtml::link(Shop::t('Trang giới thiệu'), array('//shop/pages/admin')); ?> </li>
     <li> <?php echo CHtml::link(Shop::t('Quản lý banner'), array('//shop/banner/admin')); ?> </li>
     <li></li>
     <li style="border-top:solid black 1px;"></li>

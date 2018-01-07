@@ -8,7 +8,7 @@
 				'order' => 'title DESC'
 			));
 			foreach (Products::model()->findAll($criteria) as $item) {
-				$folder = Shop::module()->productImagesFolder;
+				$folder = Shop::module()->uploadImagesFolder;
 				if (isset($item->images[0]) && $item->images[0]->filename) {
 					$path = Yii::app()->baseUrl . '/' . $folder . '/' . $item->images[0]->filename;
 				} else {

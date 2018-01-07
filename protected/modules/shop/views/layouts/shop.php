@@ -7,6 +7,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/maicuoi/css/fontawesome-all.min.css">
     <!-- blueprint CSS framework -->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css"
           media="screen, projection"/>
@@ -33,14 +34,14 @@
 
 
     <?php $this->widget('zii.widgets.CBreadcrumbs', array(
-        'homeLink'=>CHtml::link('Trang chủ', array('//shop/shop/admin')),
+        'homeLink'=>CHtml::link('Trang chủ', array('//shop/albumAnhCuoiDep/admin')),
         'links' => $this->breadcrumbs,
     )); ?><!-- breadcrumbs -->
     <div id="mainmenu">
         <?php
         $items = array();
-        $items[] = array('label' => 'Trang chủ', 'url' => array('/shop/shop/admin'));
-        $items[] = array('label' => 'Menu quản trị', 'url' => array('/shop/products/admin'));
+        $items[] = array('label' => 'Trang chủ', 'url' => array('/shop/albumAnhCuoiDep/admin'));
+        $items[] = array('label' => 'Menu quản trị', 'url' => array('/shop/albumAnhCuoiDep/admin'));
         $items[] = array('label' => 'Thoát (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest);
 
         $this->widget('zii.widgets.CMenu', array(

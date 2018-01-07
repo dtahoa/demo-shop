@@ -5,7 +5,7 @@
 				<div class="product-image">
 					<div class="image">
 						<?php
-							$folder = Shop::module()->productImagesFolder;
+							$folder = Shop::module()->uploadImagesFolder;
 
 							if(isset($data->images[0]) && $data->images[0]->filename)
 								$path = Yii::app()->baseUrl. '/' . $folder . '/' . $data->images[0]->filename;

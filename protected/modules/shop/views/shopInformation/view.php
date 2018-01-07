@@ -31,4 +31,7 @@ $this->breadcrumbs=array(
 			'value'=>substr($model->description, 0, 100)
 		)
 	),
-)); ?>
+));
+echo '</br>';
+echo CHtml::button('Trở về', array('submit' => array('//shop/shopInformation/admin'), 'class'=>'btn btn-primary'));
+?>

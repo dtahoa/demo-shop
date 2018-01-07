@@ -29,7 +29,7 @@ class AdminController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-        $this->redirect(array('//shop/products/admin'));
+        $this->redirect(array('//shop/albumAnhCuoiDep/admin'));
 	}
 
 	/**
@@ -93,7 +93,7 @@ class AdminController extends Controller
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
 				//$this->redirect(Yii::app()->user->returnUrl);
-                $this->redirect(array('//shop/products/admin'));
+                $this->redirect(array('//shop/albumAnhCuoiDep/admin'));
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));

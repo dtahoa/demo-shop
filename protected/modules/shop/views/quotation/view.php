@@ -1,22 +1,11 @@
-<?php
-/* @var $this QuotationController */
-/* @var $model Quotation */
-
-$this->breadcrumbs=array(
-	'Bảng báo giá'=>array('index'),
-	$model->id,
-);
-
-?>
-
-<h1>Thông tin file báo giá: #<?php echo $model->id; ?></h1>
-
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
-	'attributes'=>array(
-		'id',
-		'filename',
-		'created_at',
-	),
-)); ?>
+<div class="container album-container">
+	<div class="post-blog">
+		<?php echo $model->description;?>
+	</div>
+	<div class="post-desc">
+		<a href="<?php
+				$folder = Yii::app()->controller->module->dataFolder;
+				echo $filePath = $folder . '/' . $model->filename;?>"
+		   class="img-group-gallery cboxElement" title="file báo giá">File báo giá</a>
+	</div>
+</div>

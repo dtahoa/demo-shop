@@ -4,7 +4,7 @@
 if(!Yii::app()->user->isGuest) {
     echo "<label> {$model->title} </label><br />";
 }
-$folder = Shop::module()->productImagesFolder;
+$folder = Shop::module()->uploadImagesFolder;
 
 if($model->filename) {
     $path = Yii::app()->baseUrl. '/' . $folder . '/' . $model->filename;

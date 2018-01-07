@@ -44,7 +44,7 @@
 
 	<div class="row">
 		<?php
-			$folder = Shop::module()->productImagesFolder;
+			$folder = Shop::module()->uploadImagesFolder;
 			if($model->logo)
 				$path = Yii::app()->baseUrl. '/' . $folder . '/' . $model->logo;
 			else
@@ -117,7 +117,7 @@
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Thêm mới' : 'Lưu', array('class'=>'btn btn-primary')); ?>
-		<?php echo CHtml::link('Hủy', array('//shop/shopInformation/admin'), array('class' => 'btn btn-default')); ?>
+		<?php echo CHtml::button('Hủy', array('submit' => array('//shop/shopInformation/admin'), 'class'=>'btn btn-default')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

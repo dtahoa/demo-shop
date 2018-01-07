@@ -4,7 +4,7 @@
 			<a href="http://maicuoistudio.com"><img src="http://maicuoistudio.com/images/logos/logo.jpg" width="100%" style="border-radius: 50%"></a>
 		</div>
 		<div class="hotline" style="color:white;float:right;line-height:35px;">
-			Hotline Studio: <b style="color:#e75280">02423.483.999 - 01234.345.679 - 0888 696 888 - 0965.863.368 </b>
+			Hotline Studio: <b style="color:#e75280">097 898 90 67 </b>
 		</div>
 	</div>
 
@@ -22,18 +22,18 @@
 							<li id="menu-item-16641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16641"><a href="http://maicuoistudio.com/albums/chup-anh-thoi-trang-dep.html">Album ảnh thời trang</a></li>
 						</ul>
 					</li>
-					<li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-685"><a href="http://maicuoistudio.com/video/">Video</a>
+					<li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-685"><a href="http://maicuoistudio.com/video/video-wedding">Video</a>
 						<ul class="sub-menu">
 							<li id="menu-item-684" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-684"><a href="http://maicuoistudio.com/video/video-wedding/">VIDEO WEDDING</a></li>
 							<li id="menu-item-7489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7489"><a href="http://maicuoistudio.com/video/video-phong-su-cuoi/">VIDEO PHÓNG SỰ CƯỚI</a></li>
-							<li id="menu-item-682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-682"><a href="http://maicuoistudio.com/video-tvc/">VIDEO TVC</a></li>
+							<li id="menu-item-682" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-682"><a href="http://maicuoistudio.com/video/video-tvc/">VIDEO TVC</a></li>
 						</ul>
 					</li>
 					<li id="menu-item-647" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-647"><a href="http://maicuoistudio.com/thong-tin/">Thông Tin</a>
 						<ul class="sub-menu">
 							<li id="menu-item-642" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-642"><a href="http://maicuoistudio.com/chup-anh-cuoi/">Chụp Ảnh Cưới</a></li>
 							<li id="menu-item-648" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-648"><a href="http://maicuoistudio.com/tin-tuc/">Tin Tức</a></li>
-							<li id="menu-item-641" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-641"><a href="http://maicuoistudio.com/bao-chi-2/">Báo Chí</a></li>
+							<li id="menu-item-641" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-641"><a href="http://maicuoistudio.com/goc-bao-chi/">Báo Chí</a></li>
 						</ul>
 					</li>
 					<li id="menu-item-759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-759"><a href="http://maicuoistudio.com/bao-gia-khuyen-mai.html">Báo giá Khuyến mại</a>
@@ -42,17 +42,16 @@
 						<ul class="sub-menu">
 							<li id="menu-item-9464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9464"><a href="http://maicuoistudio.com/chup-anh-cuoi.html">Chụp ảnh cưới</a></li>
 							<li id="menu-item-9456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9456"><a href="http://maicuoistudio.com/vay-cuoi-cao-cap.html">Váy cưới cao cấp</a></li>
-							<li id="menu-item-9461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9461"><a href="http://maicuoistudio.com/thiep-cuoi-dep-doc-la.html">Thiệp cưới đẹp độc lạ</a></li>
 							<li id="menu-item-15392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15392"><a href="http://maicuoistudio.com/chup-anh-cho-be.html">Chụp Ảnh Cho Bé</a></li>
 						</ul>
 					</li>
-					<li id="menu-item-7102" class="menu-item menu-item-type-post_type menu-item-object-wpz_gallery menu-item-has-children menu-item-7102"><a href="http://maicuoistudio.com/gallery-link/feedback-cu%cc%89a-quy-khach-hang/">Ý kiến khách hàng</a>
+					<li id="menu-item-7102" class="menu-item menu-item-type-post_type menu-item-object-wpz_gallery menu-item-has-children menu-item-7102"><a href="http://maicuoistudio.com/gallery-link/co-dau-xinh-dep-cua-maicuoi.html">Ý kiến khách hàng</a>
 						<ul class="sub-menu">
-							<li id="menu-item-7972" class="menu-item menu-item-type-post_type menu-item-object-wpz_gallery menu-item-7972"><a href="http://maicuoistudio.com/gallery-link/co-dau-xinh-dep-cua-tuarts/">Cô dâu xinh đẹp</a></li>
-							<li id="menu-item-10319" class="menu-item menu-item-type-post_type menu-item-object-wpz_gallery menu-item-10319"><a href="http://maicuoistudio.com/gallery-link/vay-cuoi-dep-2/">Váy cưới đẹp</a></li>
+							<li id="menu-item-7972" class="menu-item menu-item-type-post_type menu-item-object-wpz_gallery menu-item-7972"><a href="http://maicuoistudio.com/gallery-link/co-dau-xinh-dep-cua-maicuoi.html">Cô dâu xinh đẹp</a></li>
+							<li id="menu-item-10319" class="menu-item menu-item-type-post_type menu-item-object-wpz_gallery menu-item-10319"><a href="http://maicuoistudio.com/gallery-link/vay-cuoi-dep.html">Váy cưới đẹp</a></li>
 						</ul>
 					</li>
-					<li id="menu-item-588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-588"><a href="http://maicuoistudio.com/lien-he-voi-tuarts/">Liên Hệ</a></li>
+					<li id="menu-item-588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-588"><a href="http://maicuoistudio.com/lien-he-voi-maicuoi/">Liên Hệ</a></li>
 				</ul></div></div><div class="clear" style="height:30px;"></div>
 	</div>
 	<a href="#" class="cate_mobi"><img src="http://maicuoistudio.com/images/ico_menu.png" width="30" height="20" style="margin-top:15px;margin-right:10px;"></a>
@@ -78,7 +77,7 @@
 		</div>
 		<div class="rightmenu">
 			<a class="btn btn-default" href="http://maicuoistudio.com/video-wedding/" role="button">VIDEO WEDDING</a>
-			<a class="btn btn-default" href="http://maicuoistudio.com/video-tvc/" role="button">VIDEO TVC</a>
+			<a class="btn btn-default" href="http://maicuoistudio.com/video/video-tvc/" role="button">VIDEO TVC</a>
 			<a class="btn btn-default" href="http://maicuoistudio.com/music-video/" role="button">MUSIC VIDEO</a>
 		</div>
 	</div>

@@ -40,5 +40,5 @@ $('.search-form form').submit(function(){
 		),
 	),
 ));
-echo CHtml::link(Shop::t('Thêm album'), array('albumAnhCuoiDep/create'), array('class'=>'btn btn-primary'));
+echo CHtml::link(Shop::t('Thêm album'), array('AlbumAnhCuoiDep/create'), array('class'=>'btn btn-primary'));
 ?>

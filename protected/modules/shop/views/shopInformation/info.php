@@ -89,8 +89,8 @@
         "streetAddress": null
     }
 }</script>
-<script type="text/javascript" src="http://maicuoistudio.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-<script type="text/javascript" src="http://maicuoistudio.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<!--<script type="text/javascript" src="http://maicuoistudio.com/resources/assets/js/jquery/jquery.js?ver=1.12.4"></script>-->
+<!--<script type="text/javascript" src="http://maicuoistudio.com/resources/assets/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>-->
 <!-- Facebook Comments Plugin for WordPress: http://peadig.com/wordpress-plugins/facebook-comments/ -->
 <div id="fb-root"></div>
     <script>(function(d, s, id) {

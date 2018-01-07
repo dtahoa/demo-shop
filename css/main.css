@@ -300,3 +300,7 @@ tr > td > a {
 	color: rgb(255,255,255) !important;
 	background: rgb(89,109,120);
 }
+
+.fa, .fas {
+	font-size: 19px !important;
+}

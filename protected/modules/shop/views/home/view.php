@@ -12,7 +12,7 @@ $this->breadcrumbs=array(
 			<div id="owl-single-product">
 				<div class="single-product-gallery-item-" id="slide1">
 					<?php
-					$folder = Shop::module()->productImagesFolder;
+					$folder = Shop::module()->uploadImagesFolder;
 
 					if(isset($model->images[0]) && $model->images[0]->filename)
 						$path = Yii::app()->baseUrl. '/' . $folder . '/' . $model->images[0]->filename;

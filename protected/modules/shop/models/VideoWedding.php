@@ -82,6 +82,7 @@ class VideoWedding extends CActiveRecord
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('content',$this->content,true);
         $criteria->compare('updated',$this->updated,true);
+        $criteria->order = 'updated DESC';
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

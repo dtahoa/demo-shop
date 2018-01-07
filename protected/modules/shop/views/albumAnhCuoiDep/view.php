@@ -3,7 +3,7 @@
 /* @var $model Pages */
 
 $this->breadcrumbs=array(
-	'Album Ảnh cưới đẹp'=>array('admin')
+	'Album Bé Yêu'=>array('admin')
 );
 /*$this->menu=array(
 	array('label'=>'List Pages', 'url'=>array('index')),
@@ -21,12 +21,20 @@ $this->breadcrumbs=array(
 	'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
 	'attributes'=>array(
 		'title',
-		array('name'=>'image_profile',
-			'type'=>'html'
+		array(
+			'label'=>'Ảnh đại diện',
+			'type'=>'raw',
+			'value'=>html_entity_decode(CHtml::image(
+				Yii::app()->baseUrl."/".Shop::module()->uploadImagesFolder."/".$model->image_profile,
+				'alt',
+				array('width'=>250)))
 		),
 		array('name'=>'content',
             'type'=>'html'
         ),
 		'updated',
 	)
-)); ?>
+));
+echo '</br>';
+echo CHtml::button('Trở về', array('submit' => array('//shop/AlbumAnhCuoiDep/admin'), 'class'=>'btn btn-primary'));
+?>

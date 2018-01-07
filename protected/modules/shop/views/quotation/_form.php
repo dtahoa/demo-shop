@@ -24,6 +24,17 @@
 		<?php echo $form->error($model,'filename'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'description'); ?>
+		<?php $this->widget('application.extensions.extckeditor.ExtCKEditor', array(
+			'model'=>$model,
+			'attribute'=>'description',
+			'language'=>'en',
+			'editorTemplate'=>'basic'
+		)); ?>
+		<?php echo $form->error($model,'mo_ta'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Thêm mới' : 'Lưu', array('class'=>'btn btn-primary')); ?>
 		<?php echo CHtml::link('Hủy', array('//shop/quotation/admin'), array('class' => 'btn btn-default')); ?>

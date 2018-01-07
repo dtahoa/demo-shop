@@ -57,10 +57,16 @@ class QuotationController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
-	}
+		if(!Yii::app()->user->isGuest)
+            $this->render('view_admin',array(
+                'model'=>$this->loadModel($id),
+            ));
+        else
+            $this->render('view',array(
+                'model'=>$this->loadModel($id),
+            ));
+
+    }
 
 	/**
 	 * Creates a new model.
