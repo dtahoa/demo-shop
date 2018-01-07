@@ -7,15 +7,20 @@
     margin: 0px;
 }
 body{
-    background: #fae4eb;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*background: #fae4eb;*/
+    background-color: #f7f7f7;
+    background-image: url("../../../../images/body-bg.png");
+    background-repeat: repeat;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: 'Lora', serif !important;
 }
 #wrapper{
-    background:#f2fcff;
+    /*background:#f2fcff;*/
 }
 
 .album-container {
     margin-top: 90px;
+    margin-bottom: 20px;
 }
 
 .sbzoff {
@@ -53,8 +58,9 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
 #wrapper .menu{
     height:50px;
     width: 100%;
-    background: rgba(19, 95, 116, 1);
-
+    /*background: rgba(19, 95, 116, 1);*/
+    background: #00c4cc;
+    background-image: linear-gradient(139deg, #00C4CC 0%, #7D2AE8 100%);
 }
 ul li{
     list-style: none;
@@ -282,7 +288,7 @@ ul li{
     width:220px;
     height:50px;
     margin-top:10px;
-    border-radius:10px;
+    border-radius: 50px;
     box-shadow: 0 0 5px #ccc;
 }
 .ch-grid li .title_cate h2 a{
@@ -815,4 +821,81 @@ footer .container-footer ul li a{
 }
 li.page.selected > a {
     background-color: #e7e7e7;
+}
+
+.fa, .fas {
+    font-size: 20px !important;
+}
+
+.paging_newline_center, .social-media {
+    clear: both;
+    vertical-align: bottom;
+    float: right;
+    padding-right: 10px;
+}
+
+.post-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 0 30px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 1px 1px #ddd;
+    -moz-box-shadow: 0 0 1px 1px #ddd;
+    -ms-box-shadow: 0 0 1px 1px #ddd;
+    -o-box-shadow: 0 0 1px 1px #ddd;
+    box-shadow: 0 0 1px 1px #ddd;
+}
+
+.post-image {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.post-desc {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.post-blog {
+    background-color: #fff;
+    padding: 25px;
+}
+
+.background {
+    background-color: #fff;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 4px 6px rgba(50, 50, 50, 0.32);
+    -moz-box-shadow: 0px 4px 6px rgba(50, 50, 50, 0.32);
+    box-shadow: 0px 4px 6px rgba(50, 50, 50, 0.32);
+}
+
+/* Masonry galery */
+.post-galery {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.gal {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.gal img {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .gal {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
 }
