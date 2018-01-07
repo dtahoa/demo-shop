@@ -2,9 +2,9 @@
 /* @var $this PagesController */
 /* @var $model Pages */
 
-$this->breadcrumbs=array(
-	'Ảnh bé yêu'=>array('admin'),
-	'Cập nhật',
+$this->breadcrumbs = array(
+    'Ảnh bé yêu' => array('admin'),
+    'Cập nhật',
 );
 
 /*$this->menu=array(
@@ -15,6 +15,6 @@ $this->breadcrumbs=array(
 );*/
 ?>
 
-<h1>Cập nhật Album Ảnh bé yêu <?php echo $model->title; ?></h1>
+    <h1>Cập nhật Album Ảnh bé yêu <?php echo $model->title; ?></h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model' => $model)); ?>

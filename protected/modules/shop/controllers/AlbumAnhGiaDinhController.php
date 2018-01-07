@@ -8,13 +8,15 @@ class AlbumAnhGiaDinhController extends Controller
      */
     //public $layout='//layouts/column2';
 
-    public function beforeAction($action) {
-        if(!Yii::app()->user->isGuest)
+    public function beforeAction($action)
+    {
+        if (!Yii::app()->user->isGuest)
             $this->layout = Shop::module()->adminLayout;
         else
             $this->layout = Shop::module()->layout;
         return parent::beforeAction($action);
     }
+
     /**
      * @return array action filters
      */
@@ -35,19 +37,19 @@ class AlbumAnhGiaDinhController extends Controller
     {
         return array(
             array('allow',  // allow all users to perform 'index' and 'view' actions
-                'actions'=>array('index','view'),
-                'users'=>array('*'),
+                'actions' => array('index', 'view'),
+                'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('create','update'),
-                'users'=>array('@'),
+                'actions' => array('create', 'update'),
+                'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions'=>array('admin','delete'),
-                'users'=>array('admin'),
+                'actions' => array('admin', 'delete'),
+                'users' => array('admin'),
             ),
             array('deny',  // deny all users
-                'users'=>array('*'),
+                'users' => array('*'),
             ),
         );
     }
@@ -58,8 +60,8 @@ class AlbumAnhGiaDinhController extends Controller
      */
     public function actionView($id)
     {
-        $this->render('view',array(
-            'model'=>$this->loadModel($id),
+        $this->render('view', array(
+            'model' => $this->loadModel($id),
         ));
     }
 
@@ -69,25 +71,24 @@ class AlbumAnhGiaDinhController extends Controller
      */
     public function actionCreate()
     {
-        $model=new AlbumAnhGiaDinh;
+        $model = new AlbumAnhGiaDinh;
 
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
 
-        if(isset($_POST['AlbumAnhGiaDinh']))
-        {
-            $model->attributes=$_POST['AlbumAnhGiaDinh'];
+        if (isset($_POST['AlbumAnhGiaDinh'])) {
+            $model->attributes = $_POST['AlbumAnhGiaDinh'];
             $model->id = Helper::genSlug($model->title) . date("Y-m-d-h.i.s");
             $model->image_profile = CUploadedFile::getInstance($model, 'image_profile');
-            if($model->save()) {
+            if ($model->save()) {
                 $folder = Yii::app()->controller->module->productImagesFolder;
                 $model->image_profile->saveAs($folder . '/' . $model->image_profile);
                 $this->redirect(array('admin'));
             }
         }
 
-        $this->render('create',array(
-            'model'=>$model,
+        $this->render('create', array(
+            'model' => $model,
         ));
     }
 
@@ -98,21 +99,20 @@ class AlbumAnhGiaDinhController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model=$this->loadModel($id);
+        $model = $this->loadModel($id);
 
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
 
-        if(isset($_POST['AlbumAnhGiaDinh']))
-        {
-            if($_POST['AlbumAnhGiaDinh']['image_profile'] == null) {
+        if (isset($_POST['AlbumAnhGiaDinh'])) {
+            if ($_POST['AlbumAnhGiaDinh']['image_profile'] == null) {
                 $_POST['AlbumAnhGiaDinh']['image_profile'] = $model->image_profile;
             }
 
-            $model->attributes=$_POST['AlbumAnhGiaDinh'];
+            $model->attributes = $_POST['AlbumAnhGiaDinh'];
             $uploadedFile = CUploadedFile::getInstance($model, 'image_profile');
-            if($model->save()) {
-                if($uploadedFile !== null) {
+            if ($model->save()) {
+                if ($uploadedFile !== null) {
                     $folder = Yii::app()->controller->module->productImagesFolder;
                     $uploadedFile->saveAs($folder . '/' . $model->image_profile);
                 }
@@ -122,8 +122,8 @@ class AlbumAnhGiaDinhController extends Controller
             }
         }
 
-        $this->render('update',array(
-            'model'=>$model,
+        $this->render('update', array(
+            'model' => $model,
         ));
     }
 
@@ -137,7 +137,7 @@ class AlbumAnhGiaDinhController extends Controller
         $this->loadModel($id)->delete();
 
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-        if(!isset($_GET['ajax']))
+        if (!isset($_GET['ajax']))
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
     }
 
@@ -146,9 +146,9 @@ class AlbumAnhGiaDinhController extends Controller
      */
     public function actionIndex()
     {
-        $dataProvider=new CActiveDataProvider('AlbumAnhGiaDinh');
-        $this->render('index',array(
-            'dataProvider'=>$dataProvider,
+        $dataProvider = new CActiveDataProvider('AlbumAnhGiaDinh');
+        $this->render('index', array(
+            'dataProvider' => $dataProvider,
         ));
     }
 
@@ -157,13 +157,13 @@ class AlbumAnhGiaDinhController extends Controller
      */
     public function actionAdmin()
     {
-        $model=new AlbumAnhGiaDinh('search');
+        $model = new AlbumAnhGiaDinh('search');
         $model->unsetAttributes();  // clear any default values
-        if(isset($_GET['AlbumAnhGiaDinh']))
-            $model->attributes=$_GET['AlbumAnhGiaDinh'];
+        if (isset($_GET['AlbumAnhGiaDinh']))
+            $model->attributes = $_GET['AlbumAnhGiaDinh'];
 
-        $this->render('admin',array(
-            'model'=>$model,
+        $this->render('admin', array(
+            'model' => $model,
         ));
     }
 
@@ -176,9 +176,9 @@ class AlbumAnhGiaDinhController extends Controller
      */
     public function loadModel($id)
     {
-        $model=AlbumAnhGiaDinh::model()->findByPk($id);
-        if($model===null)
-            throw new CHttpException(404,'The requested page does not exist.');
+        $model = AlbumAnhGiaDinh::model()->findByPk($id);
+        if ($model === null)
+            throw new CHttpException(404, 'The requested page does not exist.');
         return $model;
     }
 
@@ -188,8 +188,7 @@ class AlbumAnhGiaDinhController extends Controller
      */
     protected function performAjaxValidation($model)
     {
-        if(isset($_POST['ajax']) && $_POST['ajax']==='pages-form')
-        {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'pages-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }

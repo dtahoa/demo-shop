@@ -55,7 +55,7 @@
             </a>
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active"><a href="index.html">Home	</a></li>
+                    <li class="active"><a href="index.html">Home </a></li>
                     <li class=""><a href="special_offer.html">Specials Offer</a></li>
                     <li class=""><a href="normal.html">Delivery</a></li>
                     <li class=""><a href="contact.html">Contact</a></li>
@@ -94,8 +94,9 @@
         <div class="row">
             <div class="span12">
                 <a href="index.html"><img src="css/shop/img/logo.png" alt="Bootsshop"/></a>
-                <div class="pull-right"> <br/>
-                    <a href="product_summary.html"> <span class="btn btn-mini btn-warning"> <i class="icon-shopping-cart icon-white"></i> [ 3 ] </span> </a>
+                <div class="pull-right"><br/>
+                    <a href="product_summary.html"> <span class="btn btn-mini btn-warning"> <i
+                                class="icon-shopping-cart icon-white"></i> [ 3 ] </span> </a>
                     <a href="product_summary.html"><span class="btn btn-mini active">$155.00</span></a>
                     <span class="btn btn-mini">&pound;</span>
                     <span class="btn btn-mini">&euro;</span>
@@ -112,21 +113,24 @@
                 <img style="width:100%" src="css/shop/carousel/1.jpg" alt=""/>
                 <div class="carousel-caption">
                     <h4>Second Thumbnail label</h4>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                        at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
             </div>
             <div class="item">
                 <img style="width:100%" src="css/shop/carousel/2.jpg" alt=""/>
                 <div class="carousel-caption">
                     <h4>Second Thumbnail label</h4>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                        at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
             </div>
             <div class="item">
                 <img src="css/shop/carousel/3.jpg" alt=""/>
                 <div class="carousel-caption">
                     <h4>Second Thumbnail label</h4>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                        at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
 
             </div>
@@ -134,7 +138,8 @@
                 <img src="css/shop/carousel/4.jpg" alt=""/>
                 <div class="carousel-caption">
                     <h4>Second Thumbnail label</h4>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                        at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
 
             </div>
@@ -142,13 +147,14 @@
                 <img src="css/shop/carousel/5.jpg" alt=""/>
                 <div class="carousel-caption">
                     <h4>Second Thumbnail label</h4>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                        at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 </div>
             </div>
         </div>
         <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a> -->
-        <a href="special_offer.html" id="spcialBtn" class="btn btn-large pull-right btn-success" >Special Offer</a>
+        <a href="special_offer.html" id="spcialBtn" class="btn btn-large pull-right btn-success">Special Offer</a>
     </div>
 
 
@@ -168,7 +174,7 @@
                         <li><a href="products.html">Women's Clothing (45)</a></li>
                         <li><a href="products.html">Women's Shoes (8)</a></li>
                         <li><a href="products.html">Women's Hand Bags (5)</a></li>
-                        <li><a href="products.html">Men's Clothings  (45)</a></li>
+                        <li><a href="products.html">Men's Clothings (45)</a></li>
                         <li><a href="products.html">Men's Shoes (6)</a></li>
                         <li><a href="products.html">Kids Clothing (5)</a></li>
                         <li><a href="products.html">Kids Shoes (3)</a></li>
@@ -176,10 +182,10 @@
                 </li>
                 <li class="subMenu"><a>FOOD AND BEVERAGES [1000]</a>
                     <ul>
-                        <li><a href="products.html">Angoves  (35)</a></li>
+                        <li><a href="products.html">Angoves (35)</a></li>
                         <li><a href="products.html">Bouchard Aine & Fils (8)</a></li>
                         <li><a href="products.html">French Rabbit (5)</a></li>
-                        <li><a href="products.html">Louis Bernard  (45)</a></li>
+                        <li><a href="products.html">Louis Bernard (45)</a></li>
                         <li><a href="products.html">BIB Wine (Bag in Box) (8)</a></li>
                         <li><a href="products.html">Other Liquors & Wine (5)</a></li>
                         <li><a href="products.html">Garden (3)</a></li>
@@ -190,7 +196,9 @@
                 <li><a href="products.html">SPORTS & LEISURE [58]</a></li>
                 <li><a href="products.html">BOOKS & ENTERTAINMENTS [14]</a></li>
                 <li style="border:0"> &nbsp;</li>
-                <li> <a href="product_summary.html"><strong>3 Items in your cart  <span class="badge badge-warning pull-right" style="line-height:18px;">$155.00</span></strong></a></li>
+                <li><a href="product_summary.html"><strong>3 Items in your cart <span
+                                class="badge badge-warning pull-right" style="line-height:18px;">$155.00</span></strong></a>
+                </li>
                 <li style="border:0"> &nbsp;</li>
                 <li>
                     <div class="thumbnail">
@@ -200,7 +208,8 @@
                             <p>
                                 Lorem Ipsum is simply dummy text.
                             </p>
-                            <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                            <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                    class="pull-right">$222.00</span></h4>
                         </div>
                     </div>
                 </li>
@@ -213,7 +222,8 @@
                             <p>
                                 Lorem Ipsum is simply dummy text.
                             </p>
-                            <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                            <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                    class="pull-right">$222.00</span></h4>
                         </div>
                     </div>
                 </li>
@@ -231,51 +241,59 @@
                                     <li class="span3">
                                         <div class="thumbnail">
                                             <a href="#" class="tag" src="css/shop/products/new.png"></a>
-                                            <a  href="product_details.html"><img src="css/shop/products/1.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/1.jpg"
+                                                                                alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="span3">
                                         <div class="thumbnail">
                                             <a href="#" class="tag" src="css/shop/products/new.png"></a>
-                                            <a  href="product_details.html"><img src="css/shop/products/2.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/2.jpg"
+                                                                                alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="span3">
                                         <div class="thumbnail">
                                             <a href="#" class="tag" src="css/shop/products/new.png"></a>
-                                            <a  href="product_details.html"><img src="css/shop/products/3.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/3.jpg"
+                                                                                alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="span3">
                                         <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/4.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/4.jpg"
+                                                                                alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text .
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
@@ -285,101 +303,57 @@
                                 <ul class="thumbnails">
                                     <li class="span3">
                                         <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/5.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/5.jpg"
+                                                                                alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="span3">
                                         <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/6.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/6.jpg"
+                                                                                alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="span3">
                                         <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/7.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/7.jpg"
+                                                                                alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="span3">
                                         <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/8.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/8.jpg"
+                                                                                alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="item">
-                                <ul class="thumbnails">
-                                    <li class="span3">
-                                        <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/9.jpg" alt=""/></a>
-                                            <div class="caption">
-                                                <h5>Product name</h5>
-                                                <p>
-                                                    Lorem Ipsum is simply dummy text.
-                                                </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/10.jpg" alt=""/></a>
-                                            <div class="caption">
-                                                <h5>Product name</h5>
-                                                <p>
-                                                    Lorem Ipsum is simply dummy text.
-                                                </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/11.jpg" alt=""/></a>
-                                            <div class="caption">
-                                                <h5>Product name</h5>
-                                                <p>
-                                                    Lorem Ipsum is simply dummy text.
-                                                </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="span3">
-                                        <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/1.jpg" alt=""/></a>
-                                            <div class="caption">
-                                                <h5>Product name</h5>
-                                                <p>
-                                                    Lorem Ipsum is simply dummy text.
-                                                </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
@@ -389,49 +363,115 @@
                                 <ul class="thumbnails">
                                     <li class="span3">
                                         <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/2.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/9.jpg"
+                                                                                alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="span3">
                                         <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/3.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/10.jpg" alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="span3">
                                         <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/4.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/11.jpg" alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="span3">
                                         <div class="thumbnail">
-                                            <a  href="product_details.html"><img src="css/shop/products/5.jpg" alt=""/></a>
+                                            <a href="product_details.html"><img src="css/shop/products/1.jpg"
+                                                                                alt=""/></a>
                                             <div class="caption">
                                                 <h5>Product name</h5>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text.
                                                 </p>
-                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <ul class="thumbnails">
+                                    <li class="span3">
+                                        <div class="thumbnail">
+                                            <a href="product_details.html"><img src="css/shop/products/2.jpg"
+                                                                                alt=""/></a>
+                                            <div class="caption">
+                                                <h5>Product name</h5>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text.
+                                                </p>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="span3">
+                                        <div class="thumbnail">
+                                            <a href="product_details.html"><img src="css/shop/products/3.jpg"
+                                                                                alt=""/></a>
+                                            <div class="caption">
+                                                <h5>Product name</h5>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text.
+                                                </p>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="span3">
+                                        <div class="thumbnail">
+                                            <a href="product_details.html"><img src="css/shop/products/4.jpg"
+                                                                                alt=""/></a>
+                                            <div class="caption">
+                                                <h5>Product name</h5>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text.
+                                                </p>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="span3">
+                                        <div class="thumbnail">
+                                            <a href="product_details.html"><img src="css/shop/products/5.jpg"
+                                                                                alt=""/></a>
+                                            <div class="caption">
+                                                <h5>Product name</h5>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text.
+                                                </p>
+                                                <h4><a class="btn" href="product_details.html">VIEW</a> <span
+                                                        class="pull-right">$222.00</span></h4>
                                             </div>
                                         </div>
                                     </li>
@@ -447,37 +487,40 @@
                 <ul class="thumbnails">
                     <li class="span3">
                         <div class="thumbnail">
-                            <a  href="product_details.html"><img src="css/shop/products/6.jpg" alt=""/></a>
+                            <a href="product_details.html"><img src="css/shop/products/6.jpg" alt=""/></a>
                             <div class="caption">
                                 <h5>Product name</h5>
                                 <p>
                                     Lorem Ipsum is simply dummy text.
                                 </p>
-                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span
+                                        class="pull-right">$222.00</span></h4>
                             </div>
                         </div>
                     </li>
                     <li class="span3">
                         <div class="thumbnail">
-                            <a  href="product_details.html"><img src="css/shop/products/7.jpg" alt=""/></a>
+                            <a href="product_details.html"><img src="css/shop/products/7.jpg" alt=""/></a>
                             <div class="caption">
                                 <h5>Product name</h5>
                                 <p>
                                     Lorem Ipsum is simply dummy text.
                                 </p>
-                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span
+                                        class="pull-right">$222.00</span></h4>
                             </div>
                         </div>
                     </li>
                     <li class="span3">
                         <div class="thumbnail">
-                            <a  href="product_details.html"><img src="css/shop/products/8.jpg" alt=""/></a>
+                            <a href="product_details.html"><img src="css/shop/products/8.jpg" alt=""/></a>
                             <div class="caption">
                                 <h5>Product name</h5>
                                 <p>
                                     Lorem Ipsum is simply dummy text.
                                 </p>
-                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span
+                                        class="pull-right">$222.00</span></h4>
                             </div>
                         </div>
                     </li>
@@ -488,37 +531,40 @@
                 <ul class="thumbnails">
                     <li class="span3">
                         <div class="thumbnail">
-                            <a  href="product_details.html"><img src="css/shop/products/9.jpg" alt=""/></a>
+                            <a href="product_details.html"><img src="css/shop/products/9.jpg" alt=""/></a>
                             <div class="caption">
                                 <h5>Product name</h5>
                                 <p>
                                     Lorem Ipsum is simply dummy text.
                                 </p>
-                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span
+                                        class="pull-right">$222.00</span></h4>
                             </div>
                         </div>
                     </li>
                     <li class="span3">
                         <div class="thumbnail">
-                            <a  href="product_details.html"><img src="css/shop/products/10.jpg" alt=""/></a>
+                            <a href="product_details.html"><img src="css/shop/products/10.jpg" alt=""/></a>
                             <div class="caption">
                                 <h5>Product name</h5>
                                 <p>
                                     Lorem Ipsum is simply dummy text.
                                 </p>
-                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span
+                                        class="pull-right">$222.00</span></h4>
                             </div>
                         </div>
                     </li>
                     <li class="span3">
                         <div class="thumbnail">
-                            <a  href="product_details.html"><img src="css/shop/products/11.jpg" alt=""/></a>
+                            <a href="product_details.html"><img src="css/shop/products/11.jpg" alt=""/></a>
                             <div class="caption">
                                 <h5>Product name</h5>
                                 <p>
                                     Lorem Ipsum is simply dummy text.
                                 </p>
-                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span class="pull-right">$222.00</span></h4>
+                                <h4><a class="btn btn-large" href="product_details.html">VIEW</a> <span
+                                        class="pull-right">$222.00</span></h4>
                             </div>
                         </div>
                     </li>
@@ -528,15 +574,15 @@
     </div>
     <!-- Footer ------------------------------------------------------ -->
     <hr class="soft">
-    <div  id="footerSection">
+    <div id="footerSection">
         <div class="row">
             <div class="span3">
                 <h5>ACCOUNT</h5>
-                    <a href="login.html">YOUR ACCOUNT</a>
-                    <a href="login.html">PERSONAL INFORMATION</a>
-                    <a href="login.html">ADDRESSES</a>
-                    <a href="login.html">DISCOUNT</a>
-                    <a href="login.html">ORDER HISTORY</a>
+                <a href="login.html">YOUR ACCOUNT</a>
+                <a href="login.html">PERSONAL INFORMATION</a>
+                <a href="login.html">ADDRESSES</a>
+                <a href="login.html">DISCOUNT</a>
+                <a href="login.html">ORDER HISTORY</a>
             </div>
             <div class="span3">
                 <h5>INFORMATION</h5>
@@ -590,7 +636,7 @@
     <script src="css/shop/js/jquery.lightbox-0.5.js"></script>
     <script src="css/shop/js/bootsshoptgl.js"></script>
     <script type="text/javascript">
-        $(function() {
+        $(function () {
             $('#gallery a').lightBox();
         });
     </script>

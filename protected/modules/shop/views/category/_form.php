@@ -17,32 +17,32 @@
                 'fields' => 'title',
                 'showAddButton' => false,
                 'allowEmpty' => Shop::t('Danh mục gốc'),
-                'htmlOptions'=>array('class'=>'form-control'),
+                'htmlOptions' => array('class' => 'form-control'),
             )); ?>
         <?php echo $form->error($model, 'parent_id'); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model, 'title'); ?>
-        <?php echo $form->textField($model, 'title', array('size' => 45, 'maxlength' => 45, 'class'=>'form-control')); ?>
+        <?php echo $form->textField($model, 'title', array('size' => 45, 'maxlength' => 45, 'class' => 'form-control')); ?>
         <?php echo $form->error($model, 'title'); ?>
     </div>
 
     <!--<div class="row">
-        <?php /*echo $form->labelEx($model, 'language'); */?>
-        <?php /*echo $form->textField($model, 'language', array('size' => 45, 'maxlength' => 45, 'class'=>'form-control')); */?>
-        <?php /*echo $form->error($model, 'language'); */?>
+        <?php /*echo $form->labelEx($model, 'language'); */ ?>
+        <?php /*echo $form->textField($model, 'language', array('size' => 45, 'maxlength' => 45, 'class'=>'form-control')); */ ?>
+        <?php /*echo $form->error($model, 'language'); */ ?>
     </div>-->
 
     <div class="row">
         <?php echo $form->labelEx($model, 'description'); ?>
-        <?php echo $form->textArea($model, 'description', array('class'=>'form-control')); ?>
+        <?php echo $form->textArea($model, 'description', array('class' => 'form-control')); ?>
         <?php echo $form->error($model, 'description'); ?>
     </div>
 
 
     <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('ShopModule.shop', 'Tạo mới') : Yii::t('ShopModule.shop', 'Lưu'), array('class'=>'btn btn-primary')); ?>
+        <?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('ShopModule.shop', 'Tạo mới') : Yii::t('ShopModule.shop', 'Lưu'), array('class' => 'btn btn-primary')); ?>
     </div>
 
     <?php $this->endWidget(); ?>

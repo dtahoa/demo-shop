@@ -2,9 +2,9 @@
 /* @var $this PagesController */
 /* @var $model Pages */
 
-$this->breadcrumbs=array(
-	'Trang giới thiệu'=>array('admin'),
-	'Quản lý',
+$this->breadcrumbs = array(
+    'Trang giới thiệu' => array('admin'),
+    'Quản lý',
 );
 
 /*$this->menu=array(
@@ -29,16 +29,16 @@ $('.search-form form').submit(function(){
 <h1>Quản lý trang giới thiệu</h1>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'pages-grid',
-	'dataProvider'=>$model->search(),
-	/*'filter'=>$model,*/
-	'template'=>'{pager}{items}{pager}',
-	'columns'=>array(
-		'title',
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
+    'id' => 'pages-grid',
+    'dataProvider' => $model->search(),
+    /*'filter'=>$model,*/
+    'template' => '{pager}{items}{pager}',
+    'columns' => array(
+        'title',
+        array(
+            'class' => 'CButtonColumn',
+        ),
+    ),
 ));
-echo CHtml::link(Shop::t('Thêm bài viết mới'), array('pages/create'), array('class'=>'btn btn-primary'));
+echo CHtml::link(Shop::t('Thêm bài viết mới'), array('pages/create'), array('class' => 'btn btn-primary'));
 ?>

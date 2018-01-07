@@ -18,7 +18,7 @@
                 <li data-thumb="<?php echo $path; ?>">
                     <a
                         href="<?php echo Yii::app()->request->baseUrl . '/shop/products/view/id/' . $item->product_id; ?>"
-                        alt="<?php echo $item->title;?>">
+                        alt="<?php echo $item->title; ?>">
                         <img style="width: 100%" src="<?php echo $path; ?>"/>
                     </a>
                 </li>

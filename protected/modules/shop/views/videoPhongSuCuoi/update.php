@@ -2,9 +2,9 @@
 /* @var $this PagesController */
 /* @var $model Pages */
 
-$this->breadcrumbs=array(
-	'Video phóng sự cưới'=>array('admin'),
-	'Cập nhật',
+$this->breadcrumbs = array(
+    'Video phóng sự cưới' => array('admin'),
+    'Cập nhật',
 );
 
 /*$this->menu=array(
@@ -15,6 +15,6 @@ $this->breadcrumbs=array(
 );*/
 ?>
 
-<h1>Cập nhật Video phóng sự cưới <?php echo $model->title; ?></h1>
+    <h1>Cập nhật Video phóng sự cưới <?php echo $model->title; ?></h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model' => $model)); ?>

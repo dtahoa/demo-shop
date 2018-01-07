@@ -40,7 +40,7 @@ function renderVariation($variation, $i)
         'enableAjaxValidation' => true,
     )); ?>
 
-    <?php echo $form->errorSummary($model, $header='Thông báo lỗi:'); ?>
+    <?php echo $form->errorSummary($model, $header = 'Thông báo lỗi:'); ?>
 
     <div style="">
         <fieldset>
@@ -52,31 +52,31 @@ function renderVariation($variation, $i)
                     'relation' => 'category',
                     'fields' => 'title',
                     'showAddButton' => false,
-                    'htmlOptions'=>array('class'=>'form-control'))); ?>
+                    'htmlOptions' => array('class' => 'form-control'))); ?>
                 <?php echo $form->error($model, 'category_id'); ?>
             </div>
 
             <div class="row">
                 <?php echo $form->labelEx($model, 'title'); ?>
-                <?php echo $form->textField($model, 'title', array('size' => 45, 'maxlength' => 45, 'class'=>'form-control')); ?>
+                <?php echo $form->textField($model, 'title', array('size' => 45, 'maxlength' => 45, 'class' => 'form-control')); ?>
                 <?php echo $form->error($model, 'title'); ?>
             </div>
 
             <div class="row">
-                <?php echo $form->labelEx($model,'is_highlight'); ?>
-                <?php echo $form->checkBox($model,'is_highlight'); ?>
-                <?php echo $form->error($model,'is_highlight'); ?>
+                <?php echo $form->labelEx($model, 'is_highlight'); ?>
+                <?php echo $form->checkBox($model, 'is_highlight'); ?>
+                <?php echo $form->error($model, 'is_highlight'); ?>
             </div>
 
             <div class="row">
-                <?php echo $form->labelEx($model,'is_discount'); ?>
-                <?php echo $form->checkBox($model,'is_discount'); ?>
-                <?php echo $form->error($model,'is_discount'); ?>
+                <?php echo $form->labelEx($model, 'is_discount'); ?>
+                <?php echo $form->checkBox($model, 'is_discount'); ?>
+                <?php echo $form->error($model, 'is_discount'); ?>
             </div>
 
             <div class="row">
                 <?php echo $form->labelEx($model, 'description'); ?>
-                <?php echo $form->textArea($model, 'description', array('rows' => 6, 'cols' => 50, 'class'=>'form-control')); ?>
+                <?php echo $form->textArea($model, 'description', array('rows' => 6, 'cols' => 50, 'class' => 'form-control')); ?>
                 <?php echo $form->error($model, 'description'); ?>
             </div>
         </fieldset>
@@ -88,7 +88,7 @@ function renderVariation($variation, $i)
 
         <div class="row">
             <?php echo $form->labelEx($model, 'price'); ?>
-            <?php echo $form->textField($model, 'price', array('size' => 45, 'maxlength' => 45, 'class'=>'form-control')); ?>
+            <?php echo $form->textField($model, 'price', array('size' => 45, 'maxlength' => 45, 'class' => 'form-control')); ?>
             <?php echo $form->error($model, 'price'); ?>
         </div>
 
@@ -102,46 +102,46 @@ function renderVariation($variation, $i)
         <?php } ?>
 
     </fieldset>
-    <?php /*if (!$model->isNewRecord) { */?><!--
+    <?php /*if (!$model->isNewRecord) { */ ?><!--
         <fieldset>
-            <legend> <?php /*echo Shop::t('Article Variations'); */?> </legend>
+            <legend> <?php /*echo Shop::t('Article Variations'); */ ?> </legend>
             <div id="variations">
 
                 <table>
                     <?php
-/*                    printf('<tr><th>%s</th><th>%s</th><th colspan = 2>%s</th><th>%s</th></tr>',
-                        Shop::t('Specification'),
-                        Shop::t('Value'),
-                        Shop::t('Price adjustion'),
-                        Shop::t('Position'));
+    /*                    printf('<tr><th>%s</th><th>%s</th><th colspan = 2>%s</th><th>%s</th></tr>',
+                            Shop::t('Specification'),
+                            Shop::t('Value'),
+                            Shop::t('Price adjustion'),
+                            Shop::t('Position'));
 
 
-                    $i = 0;
-                    foreach ($model->variations as $variation) {
-                        echo renderVariation($variation, $i);
-                        $i++;
-                    }
+                        $i = 0;
+                        foreach ($model->variations as $variation) {
+                            echo renderVariation($variation, $i);
+                            $i++;
+                        }
 
-                    echo renderVariation(null, $i);
-                    */?>
+                        echo renderVariation(null, $i);
+                        */ ?>
                 </table>
                 <?php /*echo CHtml::button(Shop::t('Save specifications'), array(
                     'submit' => array(
                         '//shop/products/update',
                         'return' => 'product',
-                        'id' => $model->product_id))); */?>
+                        'id' => $model->product_id))); */ ?>
 
 
         </fieldset>
 
-    --><?php /*} */?>
+    --><?php /*} */ ?>
 
 
     <div class="row buttons">
         <?php echo CHtml::submitButton($model->isNewRecord ?
             Yii::t('ShopModule.shop', 'Thêm')
             : Yii::t('ShopModule.shop', 'Lưu'),
-            array('class'=>'btn btn-primary')); ?>
+            array('class' => 'btn btn-primary')); ?>
         <?php echo CHtml::link('Hủy', array('//shop/products/admin'), array('class' => 'btn btn-default')); ?>
     </div>
 

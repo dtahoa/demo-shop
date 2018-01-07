@@ -28,7 +28,7 @@
     <li> <?php echo CHtml::link(Shop::t('Galery váy cưới'), array('//shop/galeryVayCuoi/admin')); ?> </li>
     <li></li>
     <li style="border-top:solid black 1px;"></li>
-    <!--<li> <?php /*echo CHtml::link(Shop::t('Trang tuyển dụng'), array('//shop/jobs/admin')); */?> </li>-->
+    <!--<li> <?php /*echo CHtml::link(Shop::t('Trang tuyển dụng'), array('//shop/jobs/admin')); */ ?> </li>-->
     <li> <?php echo CHtml::link(Shop::t('Trang giới thiệu'), array('//shop/pages/admin')); ?> </li>
     <li> <?php echo CHtml::link(Shop::t('Quản lý banner'), array('//shop/banner/admin')); ?> </li>
     <li></li>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <title>Văn Phòng Phẩm Minh Tú</title>
 
     <!-- Bootstrap Core CSS -->
@@ -56,7 +56,7 @@
                                 <div class="total-price-basket">
                                     <span class="lbl">TỔNG -</span>
                                     <span class="total-price">
-                        <span class="value"><?php echo Shop::getPriceTotalNumber();?></span>
+                        <span class="value"><?php echo Shop::getPriceTotalNumber(); ?></span>
                     </span>
                                 </div>
                                 <div class="basket">
@@ -66,7 +66,8 @@
                                 if (!isset($products))
                                     $products = Shop::getCartContent();
                                 ?>
-                                <div class="basket-item-count"><span class="count"><?php echo count($products);?></span></div>
+                                <div class="basket-item-count"><span
+                                        class="count"><?php echo count($products); ?></span></div>
 
                             </div>
                         </a>
@@ -97,22 +98,22 @@
                     <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
                         <div class="nav-outer">
                             <ul class="nav navbar-nav">
-                                <li class="<?php if (Yii::app()->controller->id == "products" && Yii::app()->controller->action->id== "index") echo "active";?> dropdown yamm-fw">
+                                <li class="<?php if (Yii::app()->controller->id == "products" && Yii::app()->controller->action->id == "index") echo "active"; ?> dropdown yamm-fw">
                                     <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">Trang chủ</a>
                                 </li>
-                                <li class="<?php if (Yii::app()->controller->id == "pages") echo "active";?> dropdown yamm">
+                                <li class="<?php if (Yii::app()->controller->id == "pages") echo "active"; ?> dropdown yamm">
                                     <a href="/shop/pages/index">Giới thiệu</a>
                                 </li>
-                                <li class="<?php if (Yii::app()->controller->id == "products" && Yii::app()->controller->action->id== "list") echo "active";?> dropdown yamm">
+                                <li class="<?php if (Yii::app()->controller->id == "products" && Yii::app()->controller->action->id == "list") echo "active"; ?> dropdown yamm">
                                     <a href="/shop/products/list">Sản phẩm</a>
                                 </li>
-                                <li class="<?php if (Yii::app()->controller->id == "shoppingCart") echo "active";?> dropdown yamm">
+                                <li class="<?php if (Yii::app()->controller->id == "shoppingCart") echo "active"; ?> dropdown yamm">
                                     <a href="/shop/shoppingCart/view">Đặt hàng</a>
                                 </li>
-                                <li class="<?php if (Yii::app()->controller->id == "contact") echo "active";?> dropdown yamm">
+                                <li class="<?php if (Yii::app()->controller->id == "contact") echo "active"; ?> dropdown yamm">
                                     <a href="/shop/contact/create">Liên hệ</a>
                                 </li>
-                                <li class="<?php if (Yii::app()->controller->id == "jobs") echo "active";?> dropdown yamm">
+                                <li class="<?php if (Yii::app()->controller->id == "jobs") echo "active"; ?> dropdown yamm">
                                     <a href="/shop/jobs/list">Việc làm</a>
                                 </li>
                             </ul><!-- /.navbar-nav -->
@@ -143,26 +144,26 @@
                     <nav class="yamm megamenu-horizontal" role="navigation">
                         <ul class="nav">
                             <?php
-                                foreach (Category::getChilds(0) as $item) { ?>
-                                <li class="dropdown menu-item">
-                                    <?php echo $item['text'];?>
-                                    <ul class="dropdown-menu mega-menu">
-                                        <li class="yamm-content">
-                                            <div class="row">
-                                                <div class="col-sm-12 col-md-12">
-                                                    <ul class="links list-unstyled">
-                                                        <?php if (isset($item['children']) && count($item['children']) > 0) {
-                                                            foreach ($item['children'] as $val) {
-                                                                echo $val['text'];
-                                                            }
-                                                        }?>
-                                                    </ul>
-                                                </div><!-- /.col -->
-                                            </div><!-- /.row -->
-                                        </li><!-- /.yamm-content -->
-                                    </ul><!-- /.dropdown-menu
+                            foreach (Category::getChilds(0) as $item) { ?>
+                            <li class="dropdown menu-item">
+                                <?php echo $item['text']; ?>
+                                <ul class="dropdown-menu mega-menu">
+                                    <li class="yamm-content">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12">
+                                                <ul class="links list-unstyled">
+                                                    <?php if (isset($item['children']) && count($item['children']) > 0) {
+                                                        foreach ($item['children'] as $val) {
+                                                            echo $val['text'];
+                                                        }
+                                                    } ?>
+                                                </ul>
+                                            </div><!-- /.col -->
+                                        </div><!-- /.row -->
+                                    </li><!-- /.yamm-content -->
+                                </ul><!-- /.dropdown-menu
                                 </li><!-- /.menu-item -->
-                            <?php } ?>
+                                <?php } ?>
                         </ul><!-- /.nav -->
                     </nav><!-- /.megamenu-horizontal -->
                 </div><!-- /.side-menu -->

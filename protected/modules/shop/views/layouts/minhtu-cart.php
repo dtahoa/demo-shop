@@ -48,7 +48,8 @@
                     <div class="logo">
                         <a href="<?php echo Yii::app()->getBaseUrl(true); ?>">
 
-                            <img style="height: 90px;" src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/logo3.png"
+                            <img style="height: 90px;"
+                                 src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/logo3.png"
                                  alt="">
 
                         </a>
@@ -238,26 +239,26 @@
                     <nav class="yamm megamenu-horizontal" role="navigation">
                         <ul class="nav">
                             <?php
-                                foreach (Category::getChilds(0) as $item) { ?>
-                                <li class="dropdown menu-item">
-                                    <?php echo $item['text'];?>
-                                    <ul class="dropdown-menu mega-menu">
-                                        <li class="yamm-content">
-                                            <div class="row">
-                                                <div class="col-sm-12 col-md-12">
-                                                    <ul class="links list-unstyled">
-                                                        <?php if (isset($item['children']) && count($item['children']) > 0) {
-                                                            foreach ($item['children'] as $val) {
-                                                                echo $val['text'];
-                                                            }
-                                                        }?>
-                                                    </ul>
-                                                </div><!-- /.col -->
-                                            </div><!-- /.row -->
-                                        </li><!-- /.yamm-content -->
-                                    </ul><!-- /.dropdown-menu
+                            foreach (Category::getChilds(0) as $item) { ?>
+                            <li class="dropdown menu-item">
+                                <?php echo $item['text']; ?>
+                                <ul class="dropdown-menu mega-menu">
+                                    <li class="yamm-content">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12">
+                                                <ul class="links list-unstyled">
+                                                    <?php if (isset($item['children']) && count($item['children']) > 0) {
+                                                        foreach ($item['children'] as $val) {
+                                                            echo $val['text'];
+                                                        }
+                                                    } ?>
+                                                </ul>
+                                            </div><!-- /.col -->
+                                        </div><!-- /.row -->
+                                    </li><!-- /.yamm-content -->
+                                </ul><!-- /.dropdown-menu
                                 </li><!-- /.menu-item -->
-                            <?php } ?>
+                                <?php } ?>
                         </ul><!-- /.nav -->
                     </nav><!-- /.megamenu-horizontal -->
                 </div><!-- /.side-menu -->
@@ -289,8 +290,8 @@
                                 <a href="home.html">
 
                                     <img style="height: 90px;"
-                                        src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/logo3.png"
-                                        alt="">
+                                         src="<?php echo Yii::app()->request->baseUrl; ?>/resources/assets/images/logo3.png"
+                                         alt="">
 
                                 </a>
                             </div><!-- /.logo -->

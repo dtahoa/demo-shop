@@ -2,9 +2,9 @@
 /* @var $this ContactController */
 /* @var $model Contact */
 
-$this->breadcrumbs=array(
-	'Liên hệ'=>array('index'),
-	$model->name,
+$this->breadcrumbs = array(
+    'Liên hệ' => array('index'),
+    $model->name,
 );
 
 /*$this->menu=array(
@@ -19,13 +19,13 @@ $this->breadcrumbs=array(
 <h1>Xem thông tin liên hệ #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'htmlOptions' => array('class' => 'detail-view grey', 'id'=>'mt-cart'),
-	'attributes'=>array(
-		'name',
-		'email',
-		'subject',
-		'body',
-		'updated',
-	),
+    'data' => $model,
+    'htmlOptions' => array('class' => 'detail-view grey', 'id' => 'mt-cart'),
+    'attributes' => array(
+        'name',
+        'email',
+        'subject',
+        'body',
+        'updated',
+    ),
 )); ?>

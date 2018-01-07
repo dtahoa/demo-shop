@@ -12,126 +12,130 @@
  */
 class OrderPosition extends CActiveRecord
 {
-	public static function model($className=__CLASS__)
-	{
-		return parent::model($className);
-	}
+    public static function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
 
-	public function tableName()
-	{
-		return 'shop_order_position';
-	}
+    public function tableName()
+    {
+        return 'shop_order_position';
+    }
 
-	public function rules()
-	{
-		return array(
-			array('order_id, product_id, amount, specifications', 'required'),
-			array('order_id, amount', 'numerical', 'integerOnly'=>true),
-			array('id, order_id, product_id, amount, specifications', 'safe', 'on'=>'search'),
-		);
-	}
+    public function rules()
+    {
+        return array(
+            array('order_id, product_id, amount, specifications', 'required'),
+            array('order_id, amount', 'numerical', 'integerOnly' => true),
+            array('id, order_id, product_id, amount, specifications', 'safe', 'on' => 'search'),
+        );
+    }
 
-	public function relations()
-	{
-		return array(
-			'order' => array(self::BELONGS_TO, 'Order', 'order_id'),
-			'product' => array(self::BELONGS_TO, 'Products', 'product_id'),
-		);
-	}
+    public function relations()
+    {
+        return array(
+            'order' => array(self::BELONGS_TO, 'Order', 'order_id'),
+            'product' => array(self::BELONGS_TO, 'Products', 'product_id'),
+        );
+    }
 
-	public function getSpecifications() {
-		$specs = json_decode($this->specifications, true);
-		$specifications = array();
-		if($specs)
-			foreach($specs as $key => $specification) {
-				$specifications[$key] = $specification;
-			}
+    public function getSpecifications()
+    {
+        $specs = json_decode($this->specifications, true);
+        $specifications = array();
+        if ($specs)
+            foreach ($specs as $key => $specification) {
+                $specifications[$key] = $specification;
+            }
 
-		return $specifications;
-	}
+        return $specifications;
+    }
 
-	public function renderSpecifications() {
-		$string = '<table>';
-		foreach($this->getSpecifications() as $key =>$specification) {
-			if($model = ProductSpecification::model()->findByPk($key))
-				if($model->is_user_input)
-					$value = $specification[0];
-				else
-					$value = @ProductVariation::model()->findByPk($specification[0])->title;
-			$string .= sprintf('<tr><td>%s</td><td>%s</td></tr>',
-				$model->title,
-				$value	
-				);
-		}
-		$string .= '</table>';
-		return $string;
-	}
+    public function renderSpecifications()
+    {
+        $string = '<table>';
+        foreach ($this->getSpecifications() as $key => $specification) {
+            if ($model = ProductSpecification::model()->findByPk($key))
+                if ($model->is_user_input)
+                    $value = $specification[0];
+                else
+                    $value = @ProductVariation::model()->findByPk($specification[0])->title;
+            $string .= sprintf('<tr><td>%s</td><td>%s</td></tr>',
+                $model->title,
+                $value
+            );
+        }
+        $string .= '</table>';
+        return $string;
+    }
 
-	public function listSpecifications() {
-		if(!$specs = $this->getSpecifications())
-			return '';
-	
-		$str = '(';	
-		foreach($specs as $key => $specification) {
-			if($model = ProductSpecification::model()->findByPk($key))
-				if($model->is_user_input)
-					$value = $specification[0];
-				else
-					$value = @ProductVariation::model()->findByPk($specification[0])->title;
+    public function listSpecifications()
+    {
+        if (!$specs = $this->getSpecifications())
+            return '';
 
-		$str .= $model->title. ': '.$value . ', ';
-		}
+        $str = '(';
+        foreach ($specs as $key => $specification) {
+            if ($model = ProductSpecification::model()->findByPk($key))
+                if ($model->is_user_input)
+                    $value = $specification[0];
+                else
+                    $value = @ProductVariation::model()->findByPk($specification[0])->title;
 
-		$str = substr($str, 0, -2);
-		$str .= ')';
+            $str .= $model->title . ': ' . $value . ', ';
+        }
 
-		return $str;
-	}
+        $str = substr($str, 0, -2);
+        $str .= ')';
 
-	public function getPrice() {
-		$price = $this->product->price;
+        return $str;
+    }
 
-		if($this->specifications)
-			foreach($this->getSpecifications() as $key => $spec) 
-				$price += @ProductVariation::model()->findByPk(@$spec[0])->price_adjustion;
+    public function getPrice()
+    {
+        $price = $this->product->price;
 
-		return $this->amount * $price;
-	}
+        if ($this->specifications)
+            foreach ($this->getSpecifications() as $key => $spec)
+                $price += @ProductVariation::model()->findByPk(@$spec[0])->price_adjustion;
+
+        return $this->amount * $price;
+    }
 
 
-	/**
-	 * @return array customized attribute labels (name=>label)
-	 */
-	public function attributeLabels()
-	{
-		return array(
-			'id' => 'ID',
-			'order_id' => Shop::t('Mã đơn hàng'),
-			'product_id' => Shop::t('Mã sản phẩm'),
-			'amount' => Shop::t('Số lượng'),
-			'specifications' => Shop::t('Specifications'),
-		);
-	}
+    /**
+     * @return array customized attribute labels (name=>label)
+     */
+    public function attributeLabels()
+    {
+        return array(
+            'id' => 'ID',
+            'order_id' => Shop::t('Mã đơn hàng'),
+            'product_id' => Shop::t('Mã sản phẩm'),
+            'amount' => Shop::t('Số lượng'),
+            'specifications' => Shop::t('Specifications'),
+        );
+    }
 
-	/**
-	 * Retrieves a list of models based on the current search/filter conditions.
-	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
-	 */
-	public function search()
-	{
-		// Warning: Please modify the following code to remove attributes that
-		// should not be searched.
+    /**
+     * Retrieves a list of models based on the current search/filter conditions.
+     * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+     */
+    public function search()
+    {
+        // Warning: Please modify the following code to remove attributes that
+        // should not be searched.
 
-		$criteria=new CDbCriteria;
+        $criteria = new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('order_id',$this->order_id);
-		$criteria->compare('product_id',$this->product_id);
-		$criteria->compare('amount',$this->amount);
-		$criteria->compare('specifications',$this->specifications,true);
+        $criteria->compare('id', $this->id);
+        $criteria->compare('order_id', $this->order_id);
+        $criteria->compare('product_id', $this->product_id);
+        $criteria->compare('amount', $this->amount);
+        $criteria->compare('specifications', $this->specifications, true);
 
-		return new CActiveDataProvider(get_class($this), array(
-			'criteria'=>$criteria,
-		));
-	}
+        return new CActiveDataProvider(get_class($this), array(
+            'criteria' => $criteria,
+        ));
+    }
 }

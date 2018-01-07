@@ -2,9 +2,9 @@
 /* @var $this ShopInformationController */
 /* @var $model ShopInformation */
 
-$this->breadcrumbs=array(
-	'Thông tin cửa hàng'=>array('index'),
-	'Quản lý',
+$this->breadcrumbs = array(
+    'Thông tin cửa hàng' => array('index'),
+    'Quản lý',
 );
 
 /*$this->menu=array(
@@ -30,29 +30,29 @@ $('.search-form form').submit(function(){
 
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'shop-information-grid',
-	'dataProvider'=>$model->search(),
-	/*'filter'=>$model,*/
-	'template'=>'{pager}{items}{pager}',
-	'columns'=>array(
-		/*'id',*/
-		'name',
-		'email',
-		/*'logo',*/
-		/*'working_time',*/
-		'phone',
-		/*'fax',*/
-		/*
-		'description',
-		'email_kinhdoanh',
-		'address',
-		'map',
-		'description',
-		'hotline',
-		*/
-		array(
-			'class'=>'CButtonColumn',
-			'template'=>'{update}{view}'
-		),
-	),
+    'id' => 'shop-information-grid',
+    'dataProvider' => $model->search(),
+    /*'filter'=>$model,*/
+    'template' => '{pager}{items}{pager}',
+    'columns' => array(
+        /*'id',*/
+        'name',
+        'email',
+        /*'logo',*/
+        /*'working_time',*/
+        'phone',
+        /*'fax',*/
+        /*
+        'description',
+        'email_kinhdoanh',
+        'address',
+        'map',
+        'description',
+        'hotline',
+        */
+        array(
+            'class' => 'CButtonColumn',
+            'template' => '{update}{view}'
+        ),
+    ),
 )); ?>
